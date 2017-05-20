@@ -6,23 +6,23 @@
 <body>
 	<section class="main-card">
 		<section class="disc">
-			<section class="head-icon"></section>
-			<section class="disc-shadow"></section>
-			<section class="axis"></section>
+			<section id="head-icon" class="head-icon"></section>
+			<section id="disc-shadow" class="disc-shadow"></section>
+			<section id="axis" class="axis"></section>
 		</section>
 		<section class="center color_999">
-			<span class="ft_fantasy">WE ARE YOUNG</span>
+			<span class="ft_fantasy ft1_5 fw700">WE ARE YOUNG</span>
 		</section>
-		<section class="center mt10 color_666">
-			<i class="fa fa-github fa-lg pointer"></i>
+		<section class="center mt5 color_666">
+			<i class="fa mh5 fa-github fa-lg pointer"></i>
 			<!-- <i class="fa fa-google-plus fa-lg pointer"></i> -->
-			<i class="fa fa-qq fa-lg pointer"></i>
-			<i class="fa fa-renren fa-lg pointer"></i>
-			<i class="fa fa-weibo fa-lg pointer"></i>
-			<i class="fa fa-weixin fa-lg pointer"></i>
-			<i class="fa fa-envelope-open fa-lg"></i>
-			<i class="fa fa-id-card fa-lg"></i>
-			<i class="fa fa-phone fa-lg"></i>
+			<i class="fa mh5 fa-qq fa-lg pointer"></i>
+			<i class="fa mh5 fa-renren fa-lg pointer"></i>
+			<i class="fa mh5 fa-weibo fa-lg pointer"></i>
+			<i class="fa mh5 fa-weixin fa-lg pointer"></i>
+			<i class="fa mh5 fa-envelope-open fa-lg pointer"></i>
+			<i class="fa mh5 fa-id-card fa-lg pointer"></i>
+			<i class="fa mh5 fa-phone fa-lg pointer"></i>
 		</section>
 	</section>
 	<footer>
@@ -34,12 +34,57 @@
 		</video>
 	</div>
 
-	<!-- <audio id="main-audio" data-id="main-audio" data-src="resource/video/audio.mp3" autoplay="" loop="" volume＝"0.2" style="display: none;">
+	<audio id="main-audio" data-id="main-audio" data-src="resource/audio/young.mp3" loop="" volume＝"0.2" style="display: none;">
 		<source src="resource/audio/young.mp3" type="video/webm">
 	</audio>
 	<script>
-	window.onload = function(){
-		document.getElementsByTagName('audio').volume = 0.2
-	}
-	</script> -->
+		window.onload = function(){
+			var axis = document.getElementById('axis'),
+				audio = document.getElementById('main-audio'),
+				icon = document.getElementById('head-icon');
+
+			axis.addEventListener('mousedown', function(e){
+				axis.addEventListener('mousemove', function(e){
+					axis.style.transform = 'rotateZ(20deg)';
+
+					// axis.addEventListener('mouseup', function(e){
+					// 	axis.style.transform = 'rotateZ(-3deg)';
+					// });
+
+					icon.style.animation = 'head-icon-animation 5s linear 0s infinite';
+					document.getElementById('disc-shadow').style.animation = 'disc-shadow-animation 5s linear 0s infinite';
+
+					audio.play();
+					audio.volume = 0.1;
+
+					if(!window.interval){
+						var position = icon.getBoundingClientRect(),
+							colors = ['#457c69','#74c393','#8f8c6d','#e5bf80','#e9d78d','#e2975d','#f29671','#e26553','#c94a53','#be5168','#a44974','#98376a','#65377f','#4e2372','#e279a1','#df598b','#7b9faf','#529ac0','#9cbe8c'],
+								idx = 0;
+
+						window.interval = setInterval(function(){
+							var section = document.createElement('section'),
+								color = colors[idx++ >= colors.length ? [idx=0,0] : idx];
+
+							section.style.position = 'fixed';
+							section.style.left = position.left + 'px';
+							section.style.top = position.top;
+							section.className = 'ripple';
+							section.style.border = '1px solid ' + color;
+							section.style.boxShadow = '4px 4px 4px '+ color;
+							section.style.zIndex = -1;
+							
+							document.body.appendChild(section);
+
+							(function(){
+								setTimeout(function(){
+									document.body.removeChild(section);
+								}, 5000);
+							})(section);
+						}, 1000);
+					}
+				});
+			});
+		}
+	</script>
 </body>
