@@ -2,14 +2,27 @@
 	<title>呆魔徐</title>
 </head>
 <link rel="stylesheet" type="text/css" href="resource/css/common.css">
+<link rel="stylesheet" type="text/css" href="resource/font-awesome-4.7.0/css/font-awesome.min.css">
 <body>
 	<section class="main-card">
 		<section class="disc">
 			<section class="head-icon"></section>
+			<section class="disc-shadow"></section>
 			<section class="axis"></section>
 		</section>
 		<section class="center color_999">
-			<span>WE ARE YOUNG</span>
+			<span class="ft_fantasy">WE ARE YOUNG</span>
+		</section>
+		<section class="center mt10 color_666">
+			<i class="fa fa-github fa-lg pointer"></i>
+			<!-- <i class="fa fa-google-plus fa-lg pointer"></i> -->
+			<i class="fa fa-qq fa-lg pointer"></i>
+			<i class="fa fa-renren fa-lg pointer"></i>
+			<i class="fa fa-weibo fa-lg pointer"></i>
+			<i class="fa fa-weixin fa-lg pointer"></i>
+			<i class="fa fa-envelope-open fa-lg"></i>
+			<i class="fa fa-id-card fa-lg"></i>
+			<i class="fa fa-phone fa-lg"></i>
 		</section>
 	</section>
 	<footer>
@@ -21,7 +34,12 @@
 		</video>
 	</div>
 
-	<audio id="main-audio" data-id="main-audio" data-src="resource/video/audio.mp3" autoplay="" loop="" style="display: none;">
+	<audio id="main-audio" data-id="main-audio" data-src="resource/video/audio.mp3" autoplay="" loop="" volume＝"0.2" style="display: none;">
 		<source src="resource/audio/young.mp3" type="video/webm">
 	</audio>
+	<script>
+	window.onload = function(){
+		document.getElementsByTagName('audio').volume = 0.2
+	}
+	</script>
 </body>

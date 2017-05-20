@@ -5,11 +5,11 @@ body{
 
 .main-card {
 	width: 400px;
-    height: 300px;
+    height: 200px;
     background: rgba(255,255,255,.3);
     position: absolute;
     left: calc(50% - 200px);
-    top: calc(50% - 150px);
+    top: calc(50% - 100px);
     border-radius: 10px;
 }
 
@@ -17,11 +17,22 @@ body{
 	position: relative;
 }
 
+.main-card .disc-shadow {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	background: url('../images/disc.png');
+	background-size: cover;
+    position: absolute;
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+}
+
 .main-card .head-icon{
 	width: 100px;
     height: 100px;
     border-radius: 50px;
-    margin: 40px auto 10px;
+    margin: 20px auto 10px;
 	background: url('../images/timg.jpeg');
 	background-size: cover;
 	background-position: -15px 0;
@@ -59,6 +70,7 @@ footer {
 	text-align: center;
 	padding: 10px 0;
 	color: #999;
+	font-size: .5rem;
 }
 
 .video-container {
@@ -76,10 +88,30 @@ footer {
 	object-fit: cover;
 }
 
-.center{
+.center {
 	text-align: center;
 }
 
-.color_999{
+.color_999 {
 	color: #999;
+}
+
+.color_666 {
+	color: #666;
+}
+
+.ft_fantasy {
+    font-family: fantasy;
+}
+
+.ft_25 {
+	font-size: 25px;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.mt10 {
+	margin-top: 10px;
 }
