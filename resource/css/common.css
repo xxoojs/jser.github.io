@@ -1,5 +1,6 @@
 body{
-	font: 16px 'PT Serif', 'STZhongsong', '华文中宋', 'Microsoft Yahei', serif;
+	/*font: 16px 'PT Serif', 'STZhongsong', '华文中宋', 'Microsoft Yahei', serif;*/
+	font: PingFangSC-Regular,'Roboto', Verdana, "Open Sans", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
 }
 
 .main-card {
@@ -12,6 +13,10 @@ body{
     border-radius: 10px;
 }
 
+.main-card .disc {
+	position: relative;
+}
+
 .main-card .head-icon{
 	width: 100px;
     height: 100px;
@@ -20,10 +25,30 @@ body{
 	background: url('../images/timg.jpeg');
 	background-size: cover;
 	background-position: -15px 0;
+	animation: head-icon-animation 5s linear 0s infinite;
+}
+
+@keyframes head-icon-animation {
+	50%{
+		transform: rotateZ(180deg);
+	}
+
+	100%{
+		transform: rotateZ(360deg);
+	}
 }
 
 .main-card .axis {
-	background: url('../images/axis.png');
+	width: 55px;
+    height: 80px;
+    background: url(../images/axis.png);
+    background-size: cover;
+    margin-left: 90%;
+    transform: rotateZ(20deg);
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: calc(50% + 40px);
 }
 
 footer {
@@ -49,4 +74,12 @@ footer {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+
+.center{
+	text-align: center;
+}
+
+.color_999{
+	color: #999;
 }
