@@ -92,19 +92,20 @@
 					})
 				});
 
-				var ap = new APlayer({ 
-				    element: document.getElementById('audio'), 
-				    narrow: false, 
-				    autoplay: true, 
-				    showlrc: false, 
-				    music: { 
-				        title: 'Preparation', 
-				        author: 'Hans Zimmer/Richard Harvey', 
-				        url: 'resource/audio/young.mp3', 
-				        // pic: 'http://7xifn9.com1.z0.glb.clouddn.com/Preparation.jpg' 
-				    } 
-				});
 				ap.init(); 
+			});
+
+			var ap = new APlayer({ 
+			    element: document.getElementById('audio'), 
+			    narrow: false, 
+			    autoplay: true, 
+			    showlrc: false, 
+			    music: { 
+			        title: 'Preparation', 
+			        author: 'Hans Zimmer/Richard Harvey', 
+			        url: 'resource/audio/young.mp3', 
+			        // pic: 'http://7xifn9.com1.z0.glb.clouddn.com/Preparation.jpg' 
+			    } 
 			});
 		}
 	</script>
