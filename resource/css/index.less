@@ -1,9 +1,4 @@
-body{
-	/*font: 16px 'PT Serif', 'STZhongsong', '华文中宋', 'Microsoft Yahei', serif;*/
-	font: PingFangSC-Regular,'Roboto', Verdana, "Open Sans", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
-}
-
-.main-card {
+.card {
 	width: 400px;
     height: 200px;
     background: rgba(255,255,255,.3);
@@ -13,11 +8,11 @@ body{
     border-radius: 10px;
 }
 
-.main-card .disc {
+.card .disc {
 	position: relative;
 }
 
-.main-card .disc-shadow {
+.card .shadow {
 	width: 100px;
 	height: 100px;
 	border-radius: 50px;
@@ -27,10 +22,10 @@ body{
     left: calc(50% - 50px);
     top: calc(50% - 50px);
     opacity: 0;
-    /*animation: disc-shadow-animation 5s linear 0s infinite;*/
+    /*animation: shadow-animation 5s linear 0s infinite;*/
 }
 
-@keyframes disc-shadow-animation {
+@keyframes shadow-animation {
 	10%{
 		opacity: .2
 	}
@@ -72,7 +67,7 @@ body{
 	}
 }
 
-.main-card .head-icon{
+.card .icon{
 	width: 100px;
     height: 100px;
     border-radius: 50px;
@@ -80,10 +75,10 @@ body{
 	background: url('../images/timg.jpeg');
 	background-size: cover;
 	background-position: -15px 0;
-	/*animation: head-icon-animation 5s linear 0s infinite;*/
+	/*animation: icon-animation 5s linear 0s infinite;*/
 }
 
-@keyframes head-icon-animation {
+@keyframes icon-animation {
 	10%{
 		transform: rotateZ(36deg);
 	}
@@ -125,7 +120,7 @@ body{
 	}
 }
 
-.main-card .axis {
+.card .axis {
 	width: 55px;
     height: 80px;
     background: url(../images/axis.png);
@@ -136,6 +131,7 @@ body{
     top: 0;
     margin-left: calc(50% + 40px);
     cursor: pointer;
+    transform-origin: top right;
 }
 
 footer {
@@ -255,46 +251,12 @@ footer {
 	}
 }
 
-.center {
-	text-align: center;
+.pauseWalk {
+   -webkit-animation-play-state: paused !important;
+   -moz-animation-play-state: paused !important;
 }
 
-.color_999 {
-	color: #999;
-}
-
-.color_666 {
-	color: #666;
-}
-
-.ft_fantasy {
-    font-family: fantasy;
-}
-
-.ft1_5{
-	font-size: 1.5rem;
-}
-
-.ft_25 {
-	font-size: 25px;
-}
-
-.pointer {
-	cursor: pointer;
-}
-
-.mt5 {
-	margin-top: 5px;
-}
-
-.mh5{
-	margin: 0 5px;
-}
-
-.fa{
-    text-shadow: 4px 4px 8px #aaa;
-}
-
-.fw700{
-	font-weight: 700;
+.goWalk {
+   -webkit-animation-play-state: running !important;
+   -moz-animation-play-state: running !important;
 }
