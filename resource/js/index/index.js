@@ -22,10 +22,12 @@
 					},100);
 				});
 				
-				initMusic();
+				aPlayer.play();
 			}else{
 				jukeboxEnd();
 				destroyRipple();
+
+				aPlayer.pause();
 			}
 		},500);
 	});
@@ -81,20 +83,21 @@
 		$shadow.removeClass('goWalk').addClass('pauseWalk');
 	}
 
+	initMusic();
 	function initMusic(){
 		aPlayer = new APlayer({ 
 		    element: document.getElementById('audio'), 
 		    narrow: false, 
-		    autoplay: true, 
+		    autoplay: false, 
 		    showlrc: false, 
 		    music: { 
 		        title: 'Preparation', 
 		        author: 'Hans Zimmer/Richard Harvey', 
 		        url: 'http://p2.music.126.net/53gPwHc0M9eYBj0-KeW9LQ==/2042892604416860.mp3', 
 		        // pic: 'http://7xifn9.com1.z0.glb.clouddn.com/Preparation.jpg'
-		    } 
+		    }
 		});
-
+		
 		aPlayer.init();
 	}
 })(jQuery);
