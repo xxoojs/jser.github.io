@@ -19,7 +19,7 @@
 
 					var angle = -(moveY - initY);
 
-					$el.css('transform', 'rotateZ(' + (angle > 55 ? 55 : angle) + 'deg)');
+					$el.css('transform', 'rotateZ(' + (angle > 55 ? 55 : (angle < -10 ? -10 : angle)) + 'deg)');
 					callback && callback();
 
 					$(document).mouseup(function(upevent){
