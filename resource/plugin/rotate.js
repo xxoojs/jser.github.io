@@ -7,6 +7,9 @@
 		constructor: iRotate,
 
 		render: function($el, callback){
+			var elRect = $el[0].getBoundingClientRect(),
+				initY = elRect.bottom;
+
 			$el.mousedown(function(downevent){
 				var downX = downevent.pageX,
 					downY = downevent.pageY;
@@ -14,7 +17,7 @@
 					var moveX = moveevent.pageX,
 						moveY = moveevent.pageY;
 
-					var angle = -moveY + downY;
+					var angle = -(moveY - initY);
 
 					$el.css('transform', 'rotateZ(' + (angle > 55 ? 55 : angle) + 'deg)');
 					callback && callback();
