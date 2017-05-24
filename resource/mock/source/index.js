@@ -1,6 +1,6 @@
 var index_mock = [{
 	title: 'github',
-	url: 'resource/images/git.png',
+	url: 'resource/images/git1.png',
 	data: 'http://github.com/xxoojs',
 	tip: '喵，i am github!'
 },{
