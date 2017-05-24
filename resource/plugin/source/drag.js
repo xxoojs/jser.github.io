@@ -14,12 +14,23 @@
 				var distanceX = downX - parseInt($el.css('left')),
 					distanceY = downY - parseInt($el.css('top'));
 
+					// console.log('down:');
+					// console.log(downX + ':' + downY);
+					// console.log($el.css('left') + ':' + $el.css('top'));
+
 				$(document).mousemove(function(moveEvt){
 					var moveX = moveEvt.pageX,
 						moveY = moveEvt.pageY;
 
 					$el.css('left', moveX - distanceX + 'px');
 					$el.css('top', moveY - distanceY + 'px');
+
+					// $el.css('left', parseInt($el.css('left')) + (moveX - downX) + 'px');
+					// $el.css('top', parseInt($el.css('top')) + (moveY - downY) + 'px');
+
+					// console.log('move:');
+					// console.log(moveX + ':' + moveY);
+					// console.log($el.css('left') + ':' + $el.css('top'));
 
 					$(document).mouseup(function(){
 						$(document).off('mousemove').off('mouseup');
