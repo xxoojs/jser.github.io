@@ -30,6 +30,8 @@
 			this.$el.find('.close').click(function(){
 				that.close();
 			});
+
+			this.$el.iDrag();
 		},
 
 		open: function(){
