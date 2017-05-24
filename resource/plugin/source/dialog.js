@@ -8,7 +8,7 @@
 			$.ajax({
 				url: 'resource/tmpl/dialog.html',
 				success: function(data){
-					
+					$(data).appendTo($('body'));
 				}
 			});
 		},

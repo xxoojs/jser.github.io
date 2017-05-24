@@ -1,0 +1,86 @@
+.banner {
+  position: absolute;
+  z-index: 99999;
+  top: 200px;
+  left: 50%;
+  margin-left: -229px;
+  display: none;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.banner .close {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: url(../images/close.png);
+  top: 9px;
+  right: 17px;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  transition: .5s;
+}
+.banner .close:hover {
+  transform: rotate(360deg);
+  transform-origin: center;
+}
+.banner .m {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: url(../images/git.jpg);
+  background-size: contain;
+  top: -30px;
+  left: 20px;
+  border: 2px solid #e76b83;
+}
+.banner .m i {
+  font-size: 100px;
+  padding: 17px 7.5px;
+  color: #e0919a;
+}
+.banner .bannerTop {
+  width: 402px;
+  padding: 72px 28px 0;
+  background: url(../images/alertTop.png) no-repeat center top;
+}
+.banner .bannerTop h3 {
+  line-height: 30px;
+  color: #fff0cc;
+  font-size: 18px;
+  text-align: center;
+  font-weight: normal;
+  padding-bottom: 12px;
+}
+.banner .bannerTop h3 a {
+  color: #fff0cc;
+}
+.banner .bannerMld {
+  width: 402px;
+  padding: 0 28px;
+  height: 2px;
+  background: url(../images/alertMdl.png) no-repeat center top;
+}
+.banner .bannerBtm {
+  width: 402px;
+  padding: 0 28px;
+  background: url(../images/alertBtm.png) no-repeat center bottom;
+}
+.banner .bannerBtm li {
+  padding-left: 18px;
+  padding-top: 18px;
+  font-size: 14px;
+  line-height: 28px;
+  color: #fff;
+}
+.banner .bannerBtm p {
+  padding: 32px 0;
+  text-align: center;
+  height: 14px;
+  line-height: 14px;
+  color: #000;
+  opacity: .6;
+  filter: alpha(opacity=60);
+}
+.banner .bannerBtm a {
+  color: #fff;
+}
