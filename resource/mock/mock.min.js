@@ -9,11 +9,6 @@ var index_mock = [{
 	data: '765526150',
 	tip: '喵，i am github!'
 },{
-	title: '人人网',
-	url: 'resource/images/renren.png',
-	data: 'http://github.com/xxoojs',
-	tip: '喵，i am github!'
-},{
 	title: '微博',
 	url: 'resource/images/blog.png',
 	data: 'http://github.com/xxoojs',
