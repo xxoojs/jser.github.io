@@ -4,12 +4,30 @@
 	}
 
 	iDialog.prototype = {
+		$el: '',
+
 		create: function(){
-			$.ajax({
-				url: 'resource/tmpl/dialog.html',
-				success: function(data){
-					$(data).appendTo($('body'));
-				}
+			if(this.$el){
+
+			}else{
+				var that = this;
+				$.ajax({
+					url: 'resource/tmpl/dialog.html',
+					success: function(data){
+						that.$el = $(data);
+
+						that.evtBind();
+
+						that.$el.appendTo($('body'));
+					}
+				});
+			}
+		},
+
+		evtBind: function(){
+			var that = this;
+			this.$el.find('.close').click(function(){
+				that.close();
 			});
 		},
 
@@ -18,7 +36,7 @@
 		},
 
 		close: function(){
-
+			this.$el.hide();
 		}
 	};
 
