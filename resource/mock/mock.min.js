@@ -5,24 +5,24 @@ var index_mock = [{
 	tip: '喵，i am github!'
 },{
 	title: 'QQ',
-	url: 'resource/images/qq.ico',
+	url: 'resource/images/qq.png',
 	data: '765526150',
 	tip: '喵，i am github!'
 },{
 	title: '人人网',
-	url: 'resource/images/git.jpg',
+	url: 'resource/images/renren.png',
 	data: 'http://github.com/xxoojs',
 	tip: '喵，i am github!'
 },{
 	title: '微博',
-	url: 'resource/images/git.jpg',
+	url: 'resource/images/blog.png',
 	data: 'http://github.com/xxoojs',
 	tip: '喵，i am github!'
 },{
 	title: '微信',
 	url: 'resource/images/chat.png',
-	data: 'http://github.com/xxoojs',
-	tip: '喵，i am github!'
+	data: '大侠，请留步，坐下聊一聊!',
+	tip: 'demo0808'
 },{
 	title: '邮箱',
 	url: 'resource/images/email.png',
@@ -35,7 +35,7 @@ var index_mock = [{
 	tip: '喵，i am github!'
 },{
 	title: '联系电话',
-	url: 'resource/images/git.jpg',
+	url: 'resource/images/phone.png',
 	data: '15157265900',
 	tip: '喵，i am github!'
 }]

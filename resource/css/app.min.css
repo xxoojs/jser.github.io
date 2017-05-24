@@ -310,11 +310,10 @@ li {
 }
 .banner .m {
   position: absolute;
-  width: 60px;
-  height: 60px;
-  top: -30px;
+  width: 80px;
+  height: 80px;
+  top: -40px;
   left: 20px;
-  border: 2px solid #e76b83;
 }
 .banner .m i {
   font-size: 100px;
