@@ -5,7 +5,7 @@ var index_mock = [{
 	tip: '喵，i am github!'
 },{
 	title: 'QQ',
-	url: 'resource/images/git.jpg',
+	url: 'resource/images/qq.ico',
 	data: '765526150',
 	tip: '喵，i am github!'
 },{
@@ -20,12 +20,12 @@ var index_mock = [{
 	tip: '喵，i am github!'
 },{
 	title: '微信',
-	url: 'resource/images/git.jpg',
+	url: 'resource/images/chat.png',
 	data: 'http://github.com/xxoojs',
 	tip: '喵，i am github!'
 },{
 	title: '邮箱',
-	url: 'resource/images/git.jpg',
+	url: 'resource/images/email.png',
 	data: 'http://github.com/xxoojs',
 	tip: '喵，i am github!'
 },{
