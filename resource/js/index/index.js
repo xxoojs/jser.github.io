@@ -100,4 +100,6 @@
 		
 		aPlayer.init();
 	}
+
+	$.iDialog();
 })(jQuery);
