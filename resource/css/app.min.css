@@ -57,8 +57,8 @@ li {
   height: 200px;
   background: rgba(255, 255, 255, 0.3);
   position: absolute;
-  left: calc(-150%);
-  top: calc(-50%);
+  left: calc(50% - 200px);
+  top: calc(50% - 100px);
   border-radius: 10px;
 }
 .card .disc {
@@ -71,8 +71,8 @@ li {
   background: url('../images/disc.png');
   background-size: cover;
   position: absolute;
-  left: calc(0%);
-  top: calc(0%);
+  left: calc(50% - 50px);
+  top: calc(50% - 50px);
   opacity: 0;
   /*animation: shadow-animation 5s linear 0s infinite;*/
 }
@@ -95,7 +95,7 @@ li {
   position: absolute;
   left: 0;
   top: 0;
-  margin-left: calc(90%);
+  margin-left: calc(50% + 40px);
   cursor: pointer;
   transform-origin: top right;
 }
