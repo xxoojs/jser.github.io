@@ -15,7 +15,7 @@
 										.replace('${title}', json.title)
 											.replace('${icon}', json.icon)
 												.replaceAll('${data}', json.data)
-													.replace('${time}', new Date());
+													.replace('${tip}', json.tip);
 					that.$el = $(tmpl);
 
 					that.evtBind();
