@@ -22,8 +22,27 @@
 					var moveX = moveEvt.pageX,
 						moveY = moveEvt.pageY;
 
-					$el.css('left', moveX - distanceX + 'px');
-					$el.css('top', moveY - distanceY + 'px');
+					var left = moveX - distanceX,
+						top = moveY - distanceY,
+						maxLeft = document.body.offsetWidth,
+						maxTop = document.body.offsetHeight;
+
+					if(left <= 0){
+						left = 0;
+					}
+					if((left + parseInt($el.css('width'))) > maxLeft){
+						left = maxLeft - parseInt($el.css('width'));
+					}
+
+					if(top <= 0){
+						top = 0;
+					}
+					if((top + parseInt($el.css('height'))) > maxTop){
+						top = maxTop - parseInt($el.css('height'));
+					}
+
+					$el.css('left', left + 'px');
+					$el.css('top', top + 'px');
 
 					// $el.css('left', parseInt($el.css('left')) + (moveX - downX) + 'px');
 					// $el.css('top', parseInt($el.css('top')) + (moveY - downY) + 'px');
