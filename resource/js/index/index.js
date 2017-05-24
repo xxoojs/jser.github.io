@@ -101,5 +101,14 @@
 		aPlayer.init();
 	}
 
-	$.iDialog();
+	evtBind();
+	function evtBind(){
+		$(document).click(function(e){
+			var $el = $(e.target);
+
+			if($el.hasClass('fa')){
+				$.iDialog(index_mock[$el.index()]);
+			}
+		});
+	}
 })(jQuery);

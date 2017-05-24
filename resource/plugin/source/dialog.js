@@ -1,27 +1,28 @@
 !(function($){
-	function iDialog(){
-		this.create();
+	function iDialog(json){
+		this.create(json);
 	}
 
 	iDialog.prototype = {
 		$el: '',
 
-		create: function(){
-			if(this.$el){
+		create: function(json){
+			var that = this;
+			$.ajax({
+				url: 'resource/tmpl/dialog.html',
+				success: function(data){
+					var tmpl = data.replace('${url}', json.url)
+										.replace('${title}', json.title)
+											.replace('${icon}', json.icon)
+												.replaceAll('${data}', json.data)
+													.replace('${time}', new Date());
+					that.$el = $(tmpl);
 
-			}else{
-				var that = this;
-				$.ajax({
-					url: 'resource/tmpl/dialog.html',
-					success: function(data){
-						that.$el = $(data);
+					that.evtBind();
 
-						that.evtBind();
-
-						that.$el.appendTo($('body'));
-					}
-				});
-			}
+					that.$el.appendTo($('body'));
+				}
+			});
 		},
 
 		evtBind: function(){
@@ -36,14 +37,14 @@
 		},
 
 		close: function(){
-			this.$el.hide();
+			this.$el.remove();
 		}
 	};
 
 	!(function(){
 		var old = $.iDialog;
-		$.iDialog = function(){
-			return new iDialog();
+		$.iDialog = function(json){
+			return new iDialog(json);
 		};
 		$.iDialog.constructor = iDialog;
 		$.iDialog.defaults = {};
