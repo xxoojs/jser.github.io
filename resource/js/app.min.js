@@ -117,6 +117,9 @@
 		}else{
 			clearLoading()
 		}
+
+		videoEl.pause();
+		videoEl.play();
 	}
 
 	loadingStart();
