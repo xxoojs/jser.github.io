@@ -118,8 +118,9 @@
 			clearLoading()
 		}
 
-		videoEl.pause();
-		videoEl.play();
+		videojs("main-video", {}, function(){
+			// Player (this) is initialized and ready.
+		});
 	}
 
 	loadingStart();

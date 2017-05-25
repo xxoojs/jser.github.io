@@ -6,6 +6,8 @@
 
 <link rel="stylesheet" type="text/css" href="resource/css/app.min.css">
 <link rel="stylesheet" type="text/css" href="resource/lib/font-awesome/css/font-awesome.min.css">
+<link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+<script src="http://vjs.zencdn.net/4.12/video.js"></script>
 
 <body ondragstart="return false;">
 	<section class="loading">
@@ -41,7 +43,7 @@
 	</footer>
 
 	<div class="video-container">
-		<video id="main-video" data-id="main-video" data-src="resource/video/1500_bright_faid.webm" width="1920" height="1080" autoplay="" loop="" style="opacity: 1;">
+		<video id="main-video" data-id="main-video" data-src="resource/video/1500_bright_faid.webm" width="1920" height="1080" preload="auto" autoplay="" loop="" style="opacity: 1;">
 			<source src="resource/video/1500_bright_faid.webm" type="video/webm">
 		</video>
 	</div>
