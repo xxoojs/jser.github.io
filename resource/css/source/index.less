@@ -56,8 +56,7 @@
         text-shadow: 2px 2px 2px #999;
     }
 
-    a {
-        text-decoration: none;
+    i {
         color: #666;
     }
 }
@@ -86,6 +85,16 @@
         height: 100%;
         object-fit: cover;
     }
+}
+
+.index-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(to right top, #fec76c 0%, #ef4e9c 100%);
 }
 
 .ripple {
@@ -122,6 +131,17 @@
         text-align: center;
         margin-top: calc(25% - 1.5rem);
         letter-spacing: .4rem;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .video-container{
+        display: none;
+    }
+}
+@media screen and (min-width: 1199px){
+    .index-bg{
+        display: none;
     }
 }
 
