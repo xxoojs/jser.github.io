@@ -142,4 +142,6 @@
 		$('.loading').fadeOut();
 		clearInterval(window.loadingInterval);
 	}
+
+	$.iGuide();
 })(jQuery);
