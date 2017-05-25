@@ -105,6 +105,26 @@
    -moz-animation-play-state: running !important;
 }
 
+.loading{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 99;
+
+    .tip{
+        height: 3rem;
+        line-height: 3rem;
+        font-size: 2rem;
+        font-family: fantasy;
+        text-align: center;
+        margin-top: calc(25% - 1.5rem);
+        letter-spacing: .4rem;
+    }
+}
+
 @keyframes shadow-animation {
     10%{
         opacity: .2

@@ -110,5 +110,36 @@
 				$.iDialog(index_mock[$el.index()]);
 			}
 		});
+
+		var videoEl = window.getEl('#main-video');
+		if(videoEl.onloadeddata){
+			videoEl.onloadeddata = clearLoading;
+		}else{
+			clearLoading()
+		}
+	}
+
+	loadingStart();
+	function loadingStart(){
+		var text = 'loading',
+			idx = 0;
+		window.loadingInterval = setInterval(function(){
+			if(idx < 4){
+				var html = text;
+				for(var i=0; i<idx; i++){
+					html += '.';
+				}
+				$('.loading > .tip').html(html);
+
+				idx++;
+			}else{
+				idx = 0;
+			}
+		},200);
+	}
+
+	function clearLoading(){
+		$('.loading').fadeOut();
+		clearInterval(window.loadingInterval);
 	}
 })(jQuery);
