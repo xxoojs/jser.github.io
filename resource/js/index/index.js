@@ -106,7 +106,7 @@
 		$(document).click(function(e){
 			var $el = $(e.target);
 
-			if($el.hasClass('fa')){
+			if($el.hasClass('fa-lg')){
 				$.iDialog(index_mock[$el.index()]);
 			}
 		});
@@ -143,5 +143,11 @@
 		clearInterval(window.loadingInterval);
 	}
 
-	$.iGuide();
+	guide();
+	function guide(){
+		if(!getCookie('isGuide')){
+			setCookie("isGuide","true","d2");
+			$.iGuide();
+		}
+	}
 })(jQuery);

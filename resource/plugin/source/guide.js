@@ -77,7 +77,7 @@
 				e.stopPropagation();
 			});
 
-			this.$el.iDrag();
+			// this.$el.iDrag();
 		},
 
 		unEvtBind: function(){
