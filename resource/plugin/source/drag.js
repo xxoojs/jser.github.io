@@ -18,7 +18,7 @@
 					// console.log(downX + ':' + downY);
 					// console.log($el.css('left') + ':' + $el.css('top'));
 
-				$(document).mousemove(function(moveEvt){
+				$(document).on('mousemove', function(moveEvt){
 					var moveX = moveEvt.pageX,
 						moveY = moveEvt.pageY;
 
