@@ -1,6 +1,8 @@
 var Music = {
 	imgLoaded: false,
 
+	cache:{},
+
 	init:function(){
 		this.render();
 		this.evtBind();
@@ -47,55 +49,58 @@ var Music = {
 
 		$('li.song').click(function(e){
 			var tpl = [
-				'<div id="aplayer" class="aplayer">',
-					// '<div class="pic" style="background-image: url(http://p4.music.126.net/mvOIUyknh0SjF7D56QKEwg==/5693271208664177.jpg?param=280y280);">',
-					// 	'<i class="fa fa-pause-circle-o stop"></i>',
-					// 	'<i class="fa fa-play-circle-o restart"></i>',
-					// '</div>',
-					// '<div class="info">',
-					// 	'<div class="music">',
-					// 		'<div class="title">',
-					// 			'依然想你',
-					// 		'</div>',
-					// 		'<div class="author">',
-					// 			' - Error happens ╥﹏╥',
-					// 		'</div>',
-					// 	'</div>',
-					// '</div>',
-				'</div>'
+				'<div id="aplayer" class="aplayer"></div>'
 			];
 
 			$(tpl.join('')).appendTo($('html')).iDrag();
 
-			// $.ajax({
-			// 	url: 'songs/'+e.target.getAttribute('data-id')+'.js',
-			// 	success: function(data){
 
-			// 	}
-			// })
+			var id = e.currentTarget.getAttribute('data-id'),
+				music = self.cache[id];
 
-			var option = {
-		      element: document.getElementById('aplayer'),
-		      narrow: false,
-		      autoplay: true,
-		      showlrc: 0,
-		      mutex: true,
-		      theme: '#e6d0b2',
-		      loop: true,
-		      preload: 'metadata',
-		      music: [{
-			      "title": "模特",
-			      "duration": 306,
-			      "url": "http://p2.music.126.net/FEa9ncIP1jzoAUZdV7Edqw==/7710875046712799.mp3",
-			      "author": "李荣浩"
-			    }]
-		    }
-		    self.pause();
-		    window._ap = new APlayer(option);
-		    window._ap.init();
-		    self.restart();
-		    $(".aplayer-list").addClass('aplayer-list-hide');
+			if(music){
+				self.start(music);
+			}
+			window['jsonp' + id] = function(music){
+				self.cache[id] = music;
+				self.start(music);
+				delete window['jsonp' + id];
+			};
+			$.getScript('resource/music/songs/' + id + '.js');
 		});
+	},
+
+	start: function(music){
+		var songs = [];
+		for(var i=0; i<music.songs.length; i++){
+			var item = music.songs[i];
+			songs.push({
+				title: item.title,
+				author: music.collect_author,
+				url: item.mp3,
+				pic: music.collect_cover + "?param=280y280"
+			});
+		}
+
+		var option = {
+			element: document.getElementById('aplayer'),
+			narrow: false,
+			autoplay: true,
+			showlrc: 0,
+			mutex: true,
+			theme: '#e6d0b2',
+			loop: true,
+			preload: 'metadata',
+			music: songs
+		}
+
+		this.pause();
+
+		window._ap = new APlayer(option);
+		window._ap.init();
+
+		this.restart();
+		$(".aplayer-list").addClass('aplayer-list-hide');
 	},
 
 	pause: function() {

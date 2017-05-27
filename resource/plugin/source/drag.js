@@ -8,7 +8,7 @@
 
 		render: function($el){
 			var active = false;
-			$el.mousedown(function(downEvt){
+			$el.on('mousedown touchstart', function(downEvt){
 				var downX = downEvt.pageX,
 					downY = downEvt.pageY;
 
@@ -21,7 +21,7 @@
 					// console.log(downX + ':' + downY);
 					// console.log($el.css('left') + ':' + $el.css('top'));
 
-				$(document).on('mousemove', function(moveEvt){
+				$(document).on('mousemove touchmove', function(moveEvt){
 					if(active){
 						var moveX = moveEvt.pageX,
 							moveY = moveEvt.pageY;
@@ -30,26 +30,26 @@
 							top = moveY - distanceY,
 							maxLeft = document.body.offsetWidth,
 							maxTop = document.body.offsetHeight;
+						
+						// if(left <= 0){
+						// 	left = 0;
+						// }
+						// if((left + parseInt($el.css('width'))) > maxLeft){
+						// 	left = maxLeft - parseInt($el.css('width'));
+						// }
 
-						if(left <= 0){
-							left = 0;
-						}
-						if((left + parseInt($el.css('width'))) > maxLeft){
-							left = maxLeft - parseInt($el.css('width'));
-						}
-
-						if(top <= 0){
-							top = 0;
-						}
-						if((top + parseInt($el.css('height'))) > maxTop){
-							top = maxTop - parseInt($el.css('height'));
-						}
+						// if(top <= 0){
+						// 	top = 0;
+						// }
+						// if((top + parseInt($el.css('height'))) > maxTop){
+						// 	top = maxTop - parseInt($el.css('height'));
+						// }
 
 						$el.css('left', left + 'px');
 						$el.css('top', top + 'px');
 					}
 
-					$(document).mouseup(function(){
+					$(document).on('mouseup touchend', function(){
 						// $(document).off('mousemove').off('mouseup');
 						active = false;
 					});
