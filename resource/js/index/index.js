@@ -93,7 +93,7 @@
 		    music: { 
 		        title: 'Preparation', 
 		        author: 'Hans Zimmer/Richard Harvey', 
-		        url: 'http://p2.music.126.net/53gPwHc0M9eYBj0-KeW9LQ==/2042892604416860.mp3', 
+		        url: 'http://m10.music.126.net/20170530220744/d7d8b15b7e21574ce44b953035544669/ymusic/2ea1/32fb/f88c/e459bed1cdc8282ebe6f69864d8a20a0.mp3', 
 		        // pic: 'http://7xifn9.com1.z0.glb.clouddn.com/Preparation.jpg'
 		    }
 		});
