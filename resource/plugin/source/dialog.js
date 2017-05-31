@@ -6,23 +6,30 @@
 	iDialog.prototype = {
 		$el: '',
 
+		tmpl: '',
+
 		create: function(json){
-			var that = this;
-			$.ajax({
-				url: 'resource/tmpl/dialog.html',
-				success: function(data){
-					var tmpl = data.replace('${url}', json.url)
-										.replace('${title}', json.title)
-											.replace('${icon}', json.icon)
-												.replaceAll('${data}', json.data)
-													.replace('${tip}', json.tip);
-					that.$el = $(tmpl);
-
-					that.evtBind();
-
-					that.$el.appendTo($('body'));
-				}
-			});
+			if(this.tmpl){
+				this.$el = $(this.tmpl);
+				that.evtBind();
+				that.$el.appendTo($('body'));
+			}else{
+				var that = this;
+				$.ajax({
+					url: 'resource/tmpl/dialog.html',
+					success: function(data){
+						that.tmpl = data;
+						var tmpl = data.replace('${url}', json.url)
+											.replace('${title}', json.title)
+												.replace('${icon}', json.icon)
+													.replaceAll('${data}', json.data)
+														.replace('${tip}', json.tip);
+						that.$el = $(tmpl);
+						that.evtBind();
+						that.$el.appendTo($('body'));
+					}
+				});
+			}
 		},
 
 		evtBind: function(){
