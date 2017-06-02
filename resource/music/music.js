@@ -28,22 +28,21 @@ var Music = {
           $(this).attr('src', $(this).attr('data-src')).hide().fadeIn();
         });
 
-        $(document).click(function(e){
-			var $el = $(e.target);
+		$('.music_icon').click(function(e){
+			var $el = $(e.currentTarget);
 
-			if($el.hasClass('music-down')){
-				var funcDown = $el.hasClass('fa-angle-down')?'addClass':'removeClass',
-					funcUp = $el.hasClass('fa-angle-down')?'removeClass':'addClass';
-				$('.song-list')[funcDown]('down-in')[funcUp]('up-out');
+			var funcUp = $el.hasClass('down')?'addClass':'removeClass',
+				funcDown = $el.hasClass('down')?'removeClass':'addClass';
 
-				$el.toggleClass('fa-angle-down').toggleClass('fa-angle-up');
+			$('.song-list')[funcDown]('down-in')[funcUp]('up-out');
 
-				if(!Music.imgLoaded) {
-					Music.imgLoaded = true;
-			        $('.song-list img').each(function() {
-			          $(this).attr('src', $(this).attr('data-src')).hide().fadeIn();
-			        });
-				}
+			$el.toggleClass('up').toggleClass('down');
+
+			if(!Music.imgLoaded) {
+				Music.imgLoaded = true;
+		        $('.song-list img').each(function() {
+		          $(this).attr('src', $(this).attr('data-src')).hide().fadeIn();
+		        });
 			}
 		});
 

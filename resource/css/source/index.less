@@ -1,15 +1,74 @@
 .topbar{
     position: absolute;
     left: calc(50% - 15px);
-    width: 30px;
-    height: 30px;
+    width: 70px;
+    height: 70px;
     text-align: center;
     z-index: 3;
+    margin-top: -35px;
+    transition: .2s;
 
-    i{
-        font-size: 2rem;
-        color: #999;
-        cursor: pointer;
+    // i{
+    //     font-size: 2rem;
+    //     color: #999;
+    //     cursor: pointer;
+    // }
+
+    .music_1{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        position: relative;
+        box-shadow: 2px 2px 2px #df598b;
+        animation: rotate 4s linear 0s infinite;
+    }
+    .music_2{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        box-shadow: 2px 2px 2px #7b9faf;
+        animation: rotate 2s linear 0s infinite;
+    }
+    .music_3{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        box-shadow: 0px 0px 10px #529ac0;
+        border: 2px solid #529ac0;
+        // animation: rotate 6s linear 0s infinite;
+    }
+    .music_txt{
+        font-size: 16px;
+        font-family: fantasy;
+        color: #9cbe8c;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        width: 70px;
+        text-align: center;
+    }
+}
+.topbar:hover{
+    margin-top: 0;
+    cursor: pointer;
+
+    .music_txt{
+        top: 25px;
+        color: #a44974;
+    }
+}
+@keyframes rotate{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(720deg);
     }
 }
 .card {
