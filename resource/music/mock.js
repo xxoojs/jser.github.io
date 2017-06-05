@@ -1,4 +1,11 @@
 var nmlist = {
+  "000001":{
+    "id": "000001",
+    "title": "还记得三只酷酷的猫吗",
+    "author": "The Coasters",
+    "count": 51,
+    "cover": "http://p4.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg"
+  },
   "250819": {
     "id": "250819",
     "title": "50首历史上最伟大的摇滚歌曲",

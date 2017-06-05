@@ -10,13 +10,13 @@ var Music = {
 
 	render: function(){
 		var xtpl = '<li class="song" data-id="{id}"><img data-src="{cover}?param=280y280" alt="{title}"><span>{title}</span><b>{count}</b><i class="fa fa-play-circle-o icon"></i></li>';
-	    var str = '<div class="song-list" ondragstart="return false;"><div class="title">DemoXu\'s song list<span class="tag">© from barretlee</span></div><ul>';
+	    var str = '<div class="song-list" ondragstart="return false;"><div class="title">DemoXu\'s song list<span class="tag">© from barretlee</span></div><div class="music_list"><ul>';
 	    for (var key in nmlist) {
 	      str += xtpl.replace(/\{([^\}]+?)\}/g, function(m0, m1) {
 	        return nmlist[key][m1];
 	      });
 	    }
-	    str += '<div class="clear"></div></ul></div>';
+	    str += '<div class="clear"></div></ul></div></div>';
 
 		$('html').append(str);
 	},
