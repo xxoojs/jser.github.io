@@ -106,6 +106,11 @@
 		$(document).click(function(e){
 			var $el = $(e.target);
 
+			if($el.hasClass('fa-align-justify')){
+				$.iBlog();
+				return;
+			}
+
 			if($el.hasClass('fa-lg')){
 				$.iDialog(index_mock[$el.index()]);
 			}

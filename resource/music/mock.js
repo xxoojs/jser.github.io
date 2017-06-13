@@ -1,9 +1,9 @@
 var nmlist = {
-  "000001":{
+  "000001": {
     "id": "000001",
     "title": "还记得三只酷酷的猫吗",
     "author": "The Coasters",
-    "count": 51,
+    "count": 271,
     "cover": "http://p4.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg"
   },
   "250819": {
