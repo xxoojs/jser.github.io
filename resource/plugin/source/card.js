@@ -49,6 +49,8 @@
 				var target = $(e.currentTarget),
 					deg = 140 + that.degs[that.idx % 3];
 				
+				that.degs[that.idx % 3] = deg;
+
 				target.find(that.cls[that.idx % 3]).css('transform', 'rotateZ('+ deg +'deg)');
 
 				++that.idx;
@@ -56,7 +58,7 @@
 					++that.round;
 					that.idx = 0;
 					that.cls.forEach(function(item, index){
-						deg = 360 + that.degs[index];
+						deg = 220 + that.degs[index];
 
 						that.degs[index] = deg;
 

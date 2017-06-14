@@ -7,6 +7,16 @@
     z-index: 90;
     cursor: pointer;
 
+    i{
+    	width: 30px;
+	    height: 30px;
+	    position: absolute;
+	    z-index: 100;
+	    background: url(../images/littleCircle.png);
+	    top: 10px;
+	    right: 10px;
+    }
+
     div{
     	width: 253px;
 	    height: 156px;
@@ -23,20 +33,39 @@
 		z-index: 3;
 		transform: rotateZ(0deg);
 		background: url('../images/card1.png');
-		// background: blue;
+		background: blue;
 	}
 
 	.introduce{
 		z-index: 2;
 		transform: rotateZ(-20deg);
 		background: url('../images/card2.png');
-		// background: red;
+		background: red;
+
 	}
 
 	.support{
 		z-index: 1;
 		transform: rotateZ(-40deg);
 		background: url('../images/card3.png');
-		// background: green;
+		background: green;
+
+	}
+
+	h3 {
+	    height: 40px;
+	    line-height: 40px;
+	    margin-left: 18px;
+	    font-size: 16px;
+	    font-weight: normal;
+	}
+
+	p {
+	    text-indent: 18px;
+	    opacity: .6;
+	}
+
+	ul {
+	    padding: 0 18px;
 	}
 }
