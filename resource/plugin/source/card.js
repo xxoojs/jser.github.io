@@ -81,6 +81,9 @@
 							.off('mouseover',that.fnMouseoverEvt)
 								.off('mouseout',that.fnMouseoutEvt)
 									.click(that.fnAnimationEvt);
+
+						that.idx = 0;
+						that.round = 0;
 					});
 				}, 1000);
 
