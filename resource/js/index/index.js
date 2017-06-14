@@ -155,4 +155,6 @@
 			$.iGuide();
 		}
 	}
+
+	$.iCard();
 })(jQuery);
