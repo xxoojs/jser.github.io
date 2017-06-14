@@ -3,9 +3,11 @@
     height: 141px;
     position: absolute;
     top: 200px;
-    right: 180px;
+    right: -50px;
     z-index: 90;
     cursor: pointer;
+    transform: rotateZ(-50deg);
+    transform-origin: top right;
 
     i{
     	width: 30px;
@@ -38,7 +40,7 @@
 
 	.introduce{
 		z-index: 2;
-		transform: rotateZ(-20deg);
+		transform: rotateZ(-5deg);
 		background: url('../images/card2.png');
 		// background: red;
 
@@ -46,7 +48,7 @@
 
 	.support{
 		z-index: 1;
-		transform: rotateZ(-40deg);
+		transform: rotateZ(-10deg);
 		background: url('../images/card3.png');
 		// background: green;
 
@@ -68,4 +70,16 @@
 	ul {
 	    padding: 0 18px;
 	}
+}
+
+.card-leftIn{
+	animation: cardLeftIn 1s ease-out 0s;
+}
+
+.introduce-leftIn{
+	animation: introduceLeftIn .7s ease-out .3s;
+}
+
+.support-leftIn{
+	animation: supportLeftIn .7s ease-out .3s;
 }

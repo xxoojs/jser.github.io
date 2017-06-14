@@ -222,3 +222,44 @@
         opacity:1
     }
 }
+
+@keyframes cardLeftIn{
+    0%{
+        right: -50px;
+        transform: rotateZ(-60deg);
+    }
+    30%{
+        right: calc(50% - 126px);
+        transform: rotateZ(-60deg);
+    }
+    65%{
+        right: calc(50% - 126px);
+        transform: rotateZ(40deg);
+    }
+    80%{
+        right: calc(50% - 126px);
+        transform: rotateZ(-20deg);
+    }
+    100%{
+        right: calc(50% - 126px);
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes introduceLeftIn{
+    0%{
+        transform: rotateZ(-5deg);
+    }
+    100%{
+        transform: rotateZ(-20deg);
+    }
+}
+
+@keyframes supportLeftIn{
+    0%{
+        transform: rotateZ(-10deg);
+    }
+    100%{
+        transform: rotateZ(-40deg);
+    }
+}
