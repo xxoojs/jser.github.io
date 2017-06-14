@@ -53,7 +53,7 @@
 			this.domEvt = this.domEvt();
 
 			var that = this;
-			this.$el.click(this.fnAnimationEvt);
+			this.$el.on('click touchstart', this.fnAnimationEvt);
 		},
 
 		animationEvt: function(){
@@ -67,9 +67,9 @@
 						.find('.introduce').css('transform', 'rotateZ(-20deg)')
 							.next('.support').css('transform', 'rotateZ(-40deg)');
 
-					that.$el.off('click', that.fnAnimationEvt).click(that.fnClickEvt).mouseover(that.fnMouseoverEvt).mouseout(that.fnMouseoutEvt);
+					that.$el.off('click', that.fnAnimationEvt).on('click touchstart',that.fnClickEvt).mouseover(that.fnMouseoverEvt).mouseout(that.fnMouseoutEvt);
 				
-					$(document).click(that.domEvt);
+					$(document).on('click touchstart', that.domEvt);
 				}, 1000);
 
 				e.stopPropagation();
@@ -91,7 +91,7 @@
 				that.$el.off('click', that.fnClickEvt)
 					.off('mouseover',that.fnMouseoverEvt)
 						.off('mouseout',that.fnMouseoutEvt)
-							.click(that.fnAnimationEvt);
+							.on('click touchstart', that.fnAnimationEvt);
 
 				$(document).off('click', that.domEvt);
 
