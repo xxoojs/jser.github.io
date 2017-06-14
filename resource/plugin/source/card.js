@@ -67,7 +67,24 @@
 							.next('.support').css('transform', 'rotateZ(-40deg)');
 
 					that.$el.off('click', that.fnAnimationEvt).click(that.fnClickEvt).mouseover(that.fnMouseoverEvt).mouseout(that.fnMouseoutEvt);
+				
+					$(document).click(function(){
+						that.$el.removeClass('card-leftIn')
+							.find('.introduce').removeClass('introduce-leftIn')
+								.next('.support').removeClass('support-leftIn');
+
+						that.$el.css('right', '-50px').css('transform', 'rotateZ(-50deg)')
+							.find('.introduce').css('transform', 'rotateZ(-5deg)')
+								.next('.support').css('transform', 'rotateZ(-10deg)');
+
+						that.$el.off('click', that.fnClickEvt)
+							.off('mouseover',that.fnMouseoverEvt)
+								.off('mouseout',that.fnMouseoutEvt)
+									.click(that.fnAnimationEvt);
+					});
 				}, 1000);
+
+				e.stopPropagation();
 			}
 		},
 
@@ -93,6 +110,7 @@
 						target.find(item).css('transform', 'rotateZ('+ deg +'deg)');
 					});
 				}
+				e.stopPropagation();
 			}
 		},
 
@@ -105,6 +123,7 @@
 						target.find(item).css('transform', 'rotateZ('+ (that.degs[index] + 10 * index) +'deg)');
 					}
 				});
+				e.stopPropagation();
 			}
 		},
 
@@ -117,6 +136,7 @@
 						target.find(item).css('transform', 'rotateZ('+ that.degs[index] +'deg)');
 					}
 				});
+				e.stopPropagation();
 			}
 		},
 
