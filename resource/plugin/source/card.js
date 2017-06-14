@@ -49,7 +49,8 @@
 			this.fnAnimationEvt = this.animationEvt(),
 			this.fnClickEvt = this.clickEvt(),
 			this.fnMouseoverEvt = this.mouseoverEvt(),
-			this.fnMouseoutEvt = this.mouseoutEvt();
+			this.fnMouseoutEvt = this.mouseoutEvt(),
+			this.domEvt = this.domEvt();
 
 			var that = this;
 			this.$el.click(this.fnAnimationEvt);
@@ -68,26 +69,35 @@
 
 					that.$el.off('click', that.fnAnimationEvt).click(that.fnClickEvt).mouseover(that.fnMouseoverEvt).mouseout(that.fnMouseoutEvt);
 				
-					$(document).click(function(){
-						that.$el.removeClass('card-leftIn')
-							.find('.introduce').removeClass('introduce-leftIn')
-								.next('.support').removeClass('support-leftIn');
-
-						that.$el.css('right', '-50px').css('transform', 'rotateZ(-50deg)')
-							.find('.introduce').css('transform', 'rotateZ(-5deg)')
-								.next('.support').css('transform', 'rotateZ(-10deg)');
-
-						that.$el.off('click', that.fnClickEvt)
-							.off('mouseover',that.fnMouseoverEvt)
-								.off('mouseout',that.fnMouseoutEvt)
-									.click(that.fnAnimationEvt);
-
-						that.idx = 0;
-						that.round = 0;
-					});
+					$(document).click(that.domEvt);
 				}, 1000);
 
 				e.stopPropagation();
+			}
+		},
+
+		domEvt: function(){
+			var that = this;
+			return function(){
+				that.$el.removeClass('card-leftIn')
+					.find('.introduce').removeClass('introduce-leftIn')
+						.next('.support').removeClass('support-leftIn');
+
+				that.$el.css('right', '-50px').css('transform', 'rotateZ(-50deg)')
+					.find('.contact').css('transform', 'rotateZ(0deg)')	
+						.next('.introduce').css('transform', 'rotateZ(-5deg)')
+							.next('.support').css('transform', 'rotateZ(-10deg)');
+
+				that.$el.off('click', that.fnClickEvt)
+					.off('mouseover',that.fnMouseoverEvt)
+						.off('mouseout',that.fnMouseoutEvt)
+							.click(that.fnAnimationEvt);
+
+				$(document).off('click', that.domEvt);
+
+				that.idx = 0;
+				that.round = 0;
+				that.degs = [0, -20, -40];
 			}
 		},
 
