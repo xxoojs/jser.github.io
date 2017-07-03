@@ -1,1630 +1,1644 @@
-<html>
- <head></head>
- <body>
-  <div class="container commentable doc-container" id="doc-container" data-reactid=".2.2.0.0.0" style="opacity: 1;">
-   <div id="editorcontainerbox" data-reactid=".2.2.0.0.0.0">
-    <div id="editorcontainer" class="pc editorcontainer" data-reactid=".2.2.0.0.0.0.0">
-     <div class="doc-title-box" data-reactid=".2.2.0.0.0.0.0.0">
-      <input id="doc-title-input" class="mousetrap" placeholder="Vue源码研究" data-value="Vue源码研究" maxlength="100" value="Vue源码研究" data-reactid=".2.2.0.0.0.0.0.0.0" />
-     </div>
-     <div id="outerdocbody" data-reactid=".2.2.0.0.0.0.0.1">
-      <div id="innerdocbody" spellcheck="false" class="syntax needsclick innerdocbody mousetrap authorColors doesWrap" autocorrect="off" autocomplete="off" data-reactid=".2.2.0.0.0.0.0.1.0" contenteditable="true">
-       <div id="magicdomid2" data-author-name="ecma" class="gutter-author-203135 heading-3 locate lineguid-sIP4u7DNCoRZCRzU">
-        <inherit>
-         <span class="author-203135">自定义标签的定义</span>
-        </inherit>
-       </div>
-       <div id="magicdomid3" data-author-name="ecma" class=" list-start-code1 line-bold gutter-author-203135 list-div list-code locate lineguid-tyV6e0GSP54rnfMS">
-        <ol start="1" class="list-code1">
-         <li><span class="author-203135 b"><b>vue里自定义标签的用法：</b></span></li>
-        </ol>
-       </div>
-       <div id="magicdomid4" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-SxcAsjOpIjBsd9Kh">
-        <ol start="2" class="list-code1">
-         <li><span class="author-203135">&lt;my-element&gt;afsefsefse&lt;/my-element&gt;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid5" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
-        <ol start="3" class="list-code1">
-         <li><br /></li>
-        </ol>
-       </div>
-       <div id="magicdomid6" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-frFr5tuSS5sAdOWe">
-        <ol start="4" class="list-code1">
-         <li><span class="author-203135">Vue.element('my-element', {</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid7" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-mUxOjYEKuSDcZlNM">
-        <ol start="5" class="list-code1">
-         <li><span class="author-203135">&nbsp; replace: true,</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid8" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-FTKGl9os9GngPOi6">
-        <ol start="6" class="list-code1">
-         <li><span class="author-203135">&nbsp; className: 'test',</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid9" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-e7KWTYY3De2sb01k">
-        <ol start="7" class="list-code1">
-         <li><span class="author-203135">&nbsp; template: '&lt;div&gt;{{msg}}&lt;/div&gt;'</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid10" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-PfE90OT85KUa3kCy">
-        <ol start="8" class="list-code1">
-         <li><span class="author-203135">});</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid11" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
-        <ol start="9" class="list-code1">
-         <li><br /></li>
-        </ol>
-       </div>
-       <div id="magicdomid12" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-UsRzp7SJs24J0zaX">
-        <inherit>
-         <ol start="10" class="list-code1">
-          <li><span class="author-203135">=&gt; &lt;div class=&quot;test&quot;&gt;hihi&lt;/div&gt;</span></li>
-         </ol>
-        </inherit>
-       </div>
-       <div id="magicdomid13" data-author-name="ecma" class="gutter-author-203135 heading-1 locate lineguid-vM5fiyNEJiKUcGSx">
-        <inherit>
-         <span class="author-203135">no.1</span>
-        </inherit>
-       </div>
-       <div id="magicdomid14" data-author-name="ecma" class=" list-start-code1 line-bold gutter-author-203135 list-div list-code locate lineguid-FAjPYpwam0e9hKlN">
-        <ol start="1" class="list-code1">
-         <li><span class="author-203135 b"><b>main.js</b></span></li>
-        </ol>
-       </div>
-       <div id="magicdomid15" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
-        <ol start="2" class="list-code1">
-         <li><br /></li>
-        </ol>
-       </div>
-       <div id="magicdomid16" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-5nCkKB0XxyUlIZvr">
-        <ol start="3" class="list-code1">
-         <li><span class="author-203135">id: my-element</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid17" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-cD1edjOcYyzQ2pMd">
-        <inherit>
-         <ol start="4" class="list-code1">
-          <li><span class="author-203135">Ctor:</span></li>
-         </ol>
-        </inherit>
-       </div>
-       <div id="magicdomid18" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-8LDDaT1SIPJxwCoA">
-        <ol start="5" class="list-code1">
-         <li><span class="author-203135">&nbsp; - className: 'test',</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid19" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-grLnlHYwYZDDunSk">
-        <ol start="6" class="list-code1">
-         <li><span class="author-203135">&nbsp; - replace: true,</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid20" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-MgMsV9kVEDTVpt8Q">
-        <ol start="7" class="list-code1">
-         <li><span class="author-203135">&nbsp; - template: '&lt;div&gt;{{msg}}&lt;/div&gt;'</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid21" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
-        <ol start="8" class="list-code1">
-         <li><br /></li>
-        </ol>
-       </div>
-       <div id="magicdomid22" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-4qrZC6e03tNt1Kde">
-        <ol start="9" class="list-code1">
-         <li><span class="author-203135">ViewModel.elements = function(id, Ctor){</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid23" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-AyDGLoEClZLnm0hW">
-        <ol start="10" class="list-code1">
-         <li><span class="author-203135">&nbsp; if(!Ctor) return utils.elements[id];</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid24" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-v0IRAZwYGKYMGmtO">
-        <ol start="11" class="list-code1">
-         <li><span class="author-203135">&nbsp; utils.elements[id] = utils.toConstructor(Ctor);</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid25" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-oAbqpT1osjNErnsz">
-        <ol start="12" class="list-code1">
-         <li><span class="author-203135">&nbsp; return this;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid26" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-tNWIDp3W1QtdhrLQ">
-        <ol start="13" class="list-code1">
-         <li><span class="author-203135">}</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid27" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
-        <ol start="14" class="list-code1">
-         <li><br /></li>
-        </ol>
-       </div>
-       <div id="magicdomid28" data-author-name="ecma" class="line-bold gutter-author-203135 list-div list-code locate lineguid-kmq5WECtdsYgW6KS">
-        <inherit>
-         <ol start="15" class="list-code1">
-          <li><span class="author-203135 b"><b>重点：调用utils的toConstructor</b></span></li>
-         </ol>
-        </inherit>
-       </div>
-       <div id="magicdomid29" data-author-name="ecma" class="gutter-author-203135 heading-1 locate lineguid-jttJdFmvqHAnTNPh">
-        <inherit>
-         <span class="author-203135">no.2</span>
-        </inherit>
-       </div>
-       <div id="magicdomid30" data-author-name="ecma" class=" list-start-code1 line-bold gutter-author-203135 list-div list-code locate lineguid-yaezik6C01PzFgOw">
-        <ol start="1" class="list-code1">
-         <li><span class="author-203135 b"><b>utils.js</b></span></li>
-        </ol>
-       </div>
-       <div id="magicdomid31" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
-        <ol start="2" class="list-code1">
-         <li><br /></li>
-        </ol>
-       </div>
-       <div id="magicdomid32" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-aftRbKFdFLw2vZR1">
-        <inherit>
-         <ol start="3" class="list-code1">
-          <li><span class="author-203135">toConstructor: function(obj){</span></li>
-         </ol>
-        </inherit>
-       </div>
-       <div id="magicdomid33" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-IRdOQ3hY1WTPD383">
-        <ol start="4" class="list-code1">
-         <li><span class="author-203135">&nbsp; viewModel = ViewModel || reuqire('./viewmodel');</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid34" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-7ItVgg2drFgKxyQe">
-        <ol start="5" class="list-code1">
-         <li><span class="author-203135">&nbsp; return utils.typeof(obj) === 'Object' ?</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid35" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-up3JQ9X4Al3A6Kp9 lineguid-1m0xffuN8tSjlHXf">
-        <ol start="6" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp; ViewModel.extend(obj)</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid36" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-cWOgSQ6WJRih4zfC">
-        <ol start="7" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp; : typeof obj === 'function' ? obj : null</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid37" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-kORAVymS8pr7cURd">
-        <ol start="8" class="list-code1">
-         <li><span class="author-203135">}</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid38" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
-        <ol start="9" class="list-code1">
-         <li><br /></li>
-        </ol>
-       </div>
-       <div id="magicdomid39" data-author-name="ecma" class="line-bold gutter-author-203135 list-div list-code locate lineguid-tm41QSYavWpYjYMD">
-        <inherit>
-         <ol start="10" class="list-code1">
-          <li><span class="author-203135 b"><b>重点：obj是Object时用ViewModel.extend</b></span></li>
-         </ol>
-        </inherit>
-       </div>
-       <div id="magicdomid40" data-author-name="ecma" class="line-bold gutter-author-203135 list-div list-code locate lineguid-OYddBrS49FT8uSGN lineguid-LU5Q6f9G1mrrMt8S lineguid-CTvLwP4PsF7Dmdzw">
-        <ol start="11" class="list-code1">
-         <li><span class="author-203135 b"><b>&nbsp;&nbsp;&nbsp;&nbsp; obj是function则直接返回，其他返回null</b></span></li>
-        </ol>
-       </div>
-       <div id="magicdomid41" data-author-name="ecma" class="gutter-author-203135 heading-1 locate lineguid-CuYz7Q1jeIQyn2U7">
-        <inherit>
-         <span class="author-203135">no.3</span>
-        </inherit>
-       </div>
-       <div id="magicdomid42" data-author-name="ecma" class=" list-start-code1 line-bold gutter-author-203135 list-div list-code locate lineguid-pBC5HlH9aA1P2cLw">
-        <ol start="1" class="list-code1">
-         <li><span class="author-203135 b"><b>main.js</b></span></li>
-        </ol>
-       </div>
-       <div id="magicdomid43" data-author-name="ecma" class="line-bold gutter-author-203135 list-div list-code">
-        <ol start="2" class="list-code1">
-         <li><br /></li>
-        </ol>
-       </div>
-       <div id="magicdomid44" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-IV4Ou3Vjc2Hgl1C2">
-        <inherit>
-         <ol start="3" class="list-code1">
-          <li><span class="author-203135">function extend(options){</span></li>
-         </ol>
-        </inherit>
-       </div>
-       <div id="magicdomid45" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-LtCchsxgwvHh1AyO">
-        <ol start="4" class="list-code1">
-         <li><span class="author-203135">&nbsp; var ParentVM = this;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid46" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-IeMHMhApef6q6riy">
-        <ol start="5" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid47" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-d8luBaKDgH2kB9vD lineguid-ZesGbgADSPNb66BE">
-        <ol start="6" class="list-code1">
-         <li><span class="author-203135">&nbsp; options = inheritOptions(options, ParentVM.options, true);</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid48" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-OKwQk3h1fyMiI5w2">
-        <ol start="7" class="list-code1">
-         <li><span class="author-203135">&nbsp; utils.processOptions(options);</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid49" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-esDoLbPsgblUd4hW">
-        <ol start="8" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid50" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-dssDjpuLYUkm1YxH">
-        <ol start="9" class="list-code1">
-         <li><span class="author-203135">&nbsp; var ExtendedVM = function(opts){</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid51" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-XcLb2a4ur1tZBVeS lineguid-Cohw1GvhGbP4nwmc">
-        <ol start="10" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp; opts = inheritOptions(opts, options, true);</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid52" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-BI1Eb83RUTavLcPN">
-        <ol start="11" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp; ParentVM.call(this, opts);</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid53" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-lzVGGh4ptOcfqhyQ lineguid-RNRQvpY0WvjPOHE0">
-        <ol start="12" class="list-code1">
-         <li><span class="author-203135">&nbsp; }</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid54" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-sgQCq9Eh1M6lbHpR">
-        <ol start="13" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid55" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-YgZDMvfZwY4P96ky">
-        <ol start="14" class="list-code1">
-         <li><span class="author-203135">&nbsp; var proto = ExtendedVM.prototype</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid56" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-RG4WxVYIOYsUaebr lineguid-D3nF8PdyETWTb9Jm lineguid-vYO7DPXGX96BWoUC">
-        <ol start="15" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp; = Object.create(ParentVM.prototype);</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid57" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-suXObaPJKUDlQI15">
-        <ol start="16" class="list-code1">
-         <li><span class="author-203135">&nbsp; utils.defProtected(proto, 'constructor', ExtendedVM);</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid58" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-UfWZ9tLh0ZymyO3s">
-        <ol start="17" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid59" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-rBYYrhsnAHjFGO0b">
-        <ol start="18" class="list-code1">
-         <li><span class="author-203135">&nbsp; var protoMixins = options.proto;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid60" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-1X543CyKRM6fiV6l">
-        <ol start="19" class="list-code1">
-         <li><span class="author-203135">&nbsp; if(protoMixins){</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid61" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-MwKogi7DSfmTqTdG lineguid-ulAINmFWIOjqdXvF">
-        <ol start="20" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp; for(var key in protoMixins){</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid62" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-Mqg1xhB9UAxwgdpz lineguid-oZ5QNbRc4X3fpO2y">
-        <ol start="21" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(!(key in ViewModel.prototype)){</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid63" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-8h2icF5n0UlHlZgk lineguid-JddrI2yE43kQE3Uh">
-        <ol start="22" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; proto[key] = protoMixins[key];</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid64" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-dGUNsWbTa2uKUfq1 lineguid-WQRhmWcyOnYkO1YA">
-        <ol start="23" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid65" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-L1kTcM88A1XYdx5q lineguid-13lO1Hk7pQMjSvfP">
-        <ol start="24" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp; }</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid66" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-GpqLDMqwtLlWSHfQ lineguid-0FvWz8E5xsRxDLw5">
-        <ol start="25" class="list-code1">
-         <li><span class="author-203135">&nbsp; }</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid67" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-TRFSpniaETNEulbi">
-        <ol start="26" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid68" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-GA11BOmY1facgdvk">
-        <ol start="27" class="list-code1">
-         <li><span class="author-203135">&nbsp; ExtendedVM.extend = extend;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid69" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-Te1YlX79Cff7586x">
-        <ol start="28" class="list-code1">
-         <li><span class="author-203135">&nbsp; ExtendedVM.super = ParentVM;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid70" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-sZi1XBm70QddOIMC">
-        <ol start="29" class="list-code1">
-         <li><span class="author-203135">&nbsp; ExtendedVM.options = options;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid71" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-AAONBEZHJXfyhK7e">
-        <ol start="30" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid72" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-xJDAywGEtlK7OioY">
-        <ol start="31" class="list-code1">
-         <li><span class="author-203135">&nbsp; return ExtendedVM;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid73" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-1yGady74pyNy4snY">
-        <ol start="32" class="list-code1">
-         <li><span class="author-203135">}</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid74" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
-        <ol start="33" class="list-code1">
-         <li><br /></li>
-        </ol>
-       </div>
-       <div id="magicdomid75" data-author-name="ecma" class="line-bold gutter-author-203135 list-div list-code locate lineguid-LMSmY2vkkq7qJWMF">
-        <inherit>
-         <ol start="34" class="list-code1">
-          <li><span class="author-203135 b"><b>重点：</b></span><span class="author-203135">utils.elements[id]存储的就是ExtendedVM;&nbsp;&nbsp;</span></li>
-         </ol>
-        </inherit>
-       </div>
-       <div id="magicdomid76" data-author-name="ecma" class="line-bold gutter-author-203135 list-div list-code locate lineguid-faeRgjQnpsPj7zjW lineguid-6Fp7Ru7ONVeZbFBe">
-        <ol start="35" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp; ExtendedVM是继承了ViewModel（为什么不直接用ViewModel?）</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid77" data-author-name="ecma" class="line-bold gutter-author-203135 list-div list-code locate lineguid-Ly6ocTrWCMPXCtfD">
-        <ol start="36" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp; utils.processOptions重新封装了options</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid78" data-author-name="ecma" class="gutter-author-203135 heading-1 locate lineguid-Iu2mVa95fp7zv6z2">
-        <inherit>
-         <span class="author-203135">no.4</span>
-        </inherit>
-       </div>
-       <div id="magicdomid79" data-author-name="ecma" class=" list-start-code1 line-bold gutter-author-203135 list-div list-code locate lineguid-gARW8JWa3EPaEuLK">
-        <ol start="1" class="list-code1">
-         <li><span class="author-203135 b"><b>utils.js</b></span></li>
-        </ol>
-       </div>
-       <div id="magicdomid80" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
-        <ol start="2" class="list-code1">
-         <li><br /></li>
-        </ol>
-       </div>
-       <div id="magicdomid81" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-Os22hxV0Sjf7ogpY">
-        <inherit>
-         <ol start="3" class="list-code1">
-          <li><span class="author-203135">processOptions: function(options){</span></li>
-         </ol>
-        </inherit>
-       </div>
-       <div id="magicdomid82" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-U3za0dp2YC254bwq">
-        <ol start="4" class="list-code1">
-         <li><span class="author-203135">&nbsp; var components = options.components,</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid83" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-1WbHlkjFELEx0rYv lineguid-VJmfipM5fHTLYEIy lineguid-k4Qn5aw3Qs8aNdcQ">
-        <ol start="5" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; partials = options.partials,</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid84" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-TB8CtzvZcPH4c0P9">
-        <ol start="6" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; template = options.template,</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid85" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-5wUIbW5rHLUSkdlp">
-        <ol start="7" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; elements = options.elements,</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid86" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-nqUEXPHoy38ZiOZq">
-        <ol start="8" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; key;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid87" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-gQB33bwSpW79WvY7">
-        <ol start="9" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid88" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-EgNIMMPRq8Gj0nmf">
-        <ol start="10" class="list-code1">
-         <li><span class="author-203135">&nbsp; if(components){</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid89" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-Wvpo8o5Y1IyYds9r lineguid-3obkXJN6dr2vMfGX">
-        <ol start="11" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp; for(key in components){</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid90" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-p61CwsCQPe20caCd lineguid-rLynDYota3vBN6Gd">
-        <ol start="12" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; components[key] = utils.toConstructor(components[key]);</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid91" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-i18hXQWFYH7kXlYH lineguid-hxnFxda6gIhJ9OSo">
-        <ol start="13" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp; }</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid92" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-clZVHHHklZihvub2 lineguid-vwnpjJofsHakZ4yk">
-        <ol start="14" class="list-code1">
-         <li><span class="author-203135">&nbsp; }</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid93" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
-        <ol start="15" class="list-code1">
-         <li><br /></li>
-        </ol>
-       </div>
-       <div id="magicdomid94" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-Fo8KyQwZRCLt7KNm">
-        <ol start="16" class="list-code1">
-         <li><span class="author-203135">&nbsp; if(elements){</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid95" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-9itb6bL8qZyPahgT">
-        <ol start="17" class="list-code1">
-         <li><span class="author-203135 font-color-12 font-size-3"><font color="#2b2b2b"><font size="3">&nbsp;&nbsp;&nbsp; for(key in </font></font></span><span class="author-203135">elem</span><span class="author-203135 font-color-12 font-size-3"><font color="#2b2b2b"><font size="3">ents){</font></font></span></li>
-        </ol>
-       </div>
-       <div id="magicdomid96" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-L2hZkTJIKurr56qw">
-        <ol start="18" class="list-code1">
-         <li><span class="author-203135 font-color-12 font-size-3"><font color="#2b2b2b"><font size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></font></span><span class="author-203135">elem</span><span class="author-203135 font-color-12 font-size-3"><font color="#2b2b2b"><font size="3">ents[key] = utils.toConstructor(</font></font></span><span class="author-203135">elem</span><span class="author-203135 font-color-12 font-size-3"><font color="#2b2b2b"><font size="3">ents[key]);</font></font></span></li>
-        </ol>
-       </div>
-       <div id="magicdomid97" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-asA46sBkAVhEApat">
-        <ol start="19" class="list-code1">
-         <li><span class="author-203135 font-color-12 font-size-3"><font color="#2b2b2b"><font size="3">&nbsp;&nbsp;&nbsp; }</font></font></span></li>
-        </ol>
-       </div>
-       <div id="magicdomid98" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-n8DpkG4LTKEtt38J">
-        <ol start="20" class="list-code1">
-         <li><span class="author-203135 font-color-12 font-size-3"><font color="#2b2b2b"><font size="3">&nbsp; }</font></font></span></li>
-        </ol>
-       </div>
-       <div id="magicdomid99" data-author-name="ecma" class="font-color-12 gutter-author-203135 list-div list-code locate lineguid-6PjdF1MhOLFoXTjc">
-        <ol start="21" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid100" data-author-name="ecma" class="font-color-12 gutter-author-203135 list-div list-code locate lineguid-SH9nFHHtJtThegEx lineguid-5HDzAk1s54WsBu0p">
-        <ol start="22" class="list-code1">
-         <li><span class="author-203135">&nbsp; if(partials){</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid101" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-NuYFoRUnqgvy2lCS">
-        <ol start="23" class="list-code1">
-         <li><span class="author-203135 font-color-12 font-size-3"><font color="#2b2b2b"><font size="3">&nbsp;&nbsp;&nbsp; for(key in </font></font></span><span class="author-203135">partial</span><span class="author-203135 font-color-12 font-size-3"><font color="#2b2b2b"><font size="3">s){</font></font></span></li>
-        </ol>
-       </div>
-       <div id="magicdomid102" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-O9TxVNjtLxAV26jy">
-        <ol start="24" class="list-code1">
-         <li><span class="author-203135 font-color-12 font-size-3"><font color="#2b2b2b"><font size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></font></span><span class="author-203135">partial</span><span class="author-203135 font-color-12 font-size-3"><font color="#2b2b2b"><font size="3">s[key] = utils.toConstructor(</font></font></span><span class="author-203135">partial</span><span class="author-203135 font-color-12 font-size-3"><font color="#2b2b2b"><font size="3">s[key]);</font></font></span></li>
-        </ol>
-       </div>
-       <div id="magicdomid103" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-H9kqkKaEmKJECItg">
-        <ol start="25" class="list-code1">
-         <li><span class="author-203135 font-color-12 font-size-3"><font color="#2b2b2b"><font size="3">&nbsp;&nbsp;&nbsp; }</font></font></span></li>
-        </ol>
-       </div>
-       <div id="magicdomid104" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-mq5mqeTujVIidKTB">
-        <ol start="26" class="list-code1">
-         <li><span class="author-203135 font-color-12 font-size-3"><font color="#2b2b2b"><font size="3">&nbsp; }</font></font></span></li>
-        </ol>
-       </div>
-       <div id="magicdomid105" data-author-name="ecma" class="font-color-12 gutter-author-203135 list-div list-code locate lineguid-zMlSznR6tC3JUsfi">
-        <ol start="27" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid106" data-author-name="ecma" class="font-color-12 gutter-author-203135 list-div list-code locate lineguid-L6XktjLkCrmlXBpZ">
-        <ol start="28" class="list-code1">
-         <li><span class="author-203135">&nbsp; if(template){</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid107" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-1vyWWfH4M7uQALnY lineguid-PQfsCqqRq21KpWoC">
-        <ol start="29" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp; options.template = utils.toFragment(template);</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid108" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-cOLuvPTHP5GeTX9T lineguid-PDKcVzVBxuFBDjz3">
-        <ol start="30" class="list-code1">
-         <li><span class="author-203135">&nbsp; }</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid109" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-bvqt3mIDO2fXPVlA">
-        <ol start="31" class="list-code1">
-         <li><span class="author-203135">}</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid110" data-author-name="ecma" class="line-bold gutter-author-203135 list-div list-code">
-        <ol start="32" class="list-code1">
-         <li><br /></li>
-        </ol>
-       </div>
-       <div id="magicdomid111" data-author-name="ecma" class="line-bold gutter-author-203135 list-div list-code locate lineguid-rYP2MsDiPrOFPMU1">
-        <inherit>
-         <ol start="33" class="list-code1">
-          <li><span class="author-203135 b"><b>重点：自定义标签调用这个方法主要是把template转换为节点</b></span></li>
-         </ol>
-        </inherit>
-       </div>
-       <div id="magicdomid112" data-author-name="ecma" class="line-bold gutter-author-203135 list-div list-code locate lineguid-Bs3F0tHYhs8UQfOa lineguid-GziGNUItqgBNbr89 lineguid-8XZQ2TRSL48KbWc9">
-        <ol start="34" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp; utils.toFragment</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid113" data-author-name="ecma" class="gutter-author-203135 heading-1 locate lineguid-lSUgQfT7PLctJFsM">
-        <inherit>
-         <span class="author-203135">no.5</span>
-        </inherit>
-       </div>
-       <div id="magicdomid114" data-author-name="ecma" class=" list-start-code1 line-bold gutter-author-203135 list-div list-code locate lineguid-WX8988MxYV6AYgvH">
-        <ol start="1" class="list-code1">
-         <li><span class="author-203135 b"><b>utils.js</b></span></li>
-        </ol>
-       </div>
-       <div id="magicdomid115" data-author-name="ecma" class="line-bold gutter-author-203135 list-div list-code">
-        <ol start="2" class="list-code1">
-         <li><br /></li>
-        </ol>
-       </div>
-       <div id="magicdomid116" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-1QzLDbtglL56FVrI">
-        <inherit>
-         <ol start="3" class="list-code1">
-          <li><span class="author-203135">toFragment: function(template){</span></li>
-         </ol>
-        </inherit>
-       </div>
-       <div id="magicdomid117" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-DdXj652zunny3MEZ">
-        <ol start="4" class="list-code1">
-         <li><span class="author-203135">&nbsp; if(typeof template !== 'string'){</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid118" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-5wlSw5LHb3keOo4E lineguid-MeK3cZz9YbkkpJfz">
-        <ol start="5" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp; return template;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid119" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-EMIGN34lnrq7LZTc lineguid-0xAeXIRE8Ecu6uLt">
-        <ol start="6" class="list-code1">
-         <li><span class="author-203135">&nbsp; }</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid120" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-euNPSDTY9qNj4pkG">
-        <ol start="7" class="list-code1">
-         <li><span class="author-203135">&nbsp; if(template.charAt(0) === '#'){</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid121" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-4BxUvhm5pcZKT3v0 lineguid-KH8u9sOPaMY65bmE">
-        <ol start="8" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp; var templateNode = document.getElementById(template.slice(1));</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid122" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-TMTYT5b6eAoH90J9">
-        <ol start="9" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp; if(!templateNode) return;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid123" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-bNyohGXHiCV51bAi">
-        <ol start="10" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp; template = templateNode.innerHTML;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid124" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-KpqzMWalelWZs3To lineguid-zSkqhaF74JbHU6oo">
-        <ol start="11" class="list-code1">
-         <li><span class="author-203135">&nbsp; }</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid125" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-vlHpEAwAKbeZBrn9">
-        <ol start="12" class="list-code1">
-         <li><span class="author-203135">&nbsp; var node = document.createElement('div'),</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid126" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-i7YVT1yChmMKIUv7 lineguid-3vVrHuzkAdJyOvZG">
-        <ol start="13" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; frag = document.createDocumentFragment(),</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid127" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-7KX6mmQEmlp9vrEF">
-        <ol start="14" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; child;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid128" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-Xr06BBb7RvOh1mYh">
-        <ol start="15" class="list-code1">
-         <li><span class="author-203135">&nbsp; node.innerHTML = template.trim();</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid129" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-SgBPeIsQFbRMDOTd">
-        <ol start="16" class="list-code1">
-         <li><span class="author-203135">&nbsp; while(child = node.firstChild){</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid130" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-60xU3T5QphWcJ7Yu lineguid-wSA32ldkO3R8wB8h">
-        <ol start="17" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp; frag.appendChild(child);</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid131" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-oZPPvBFPHuMoowdv lineguid-JBVE8dXYmFAqKlE7">
-        <ol start="18" class="list-code1">
-         <li><span class="author-203135">&nbsp; }</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid132" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-aSUmwLzEeMQ1VjpW">
-        <ol start="19" class="list-code1">
-         <li><span class="author-203135">&nbsp; return frag;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid133" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-Ghf0Q65kEqVYQXAk">
-        <ol start="20" class="list-code1">
-         <li><span class="author-203135">}</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid134" data-author-name="ecma" class="gutter-author-203135 heading-1 locate lineguid-gG5r8hIKKD7AiHhC">
-        <inherit>
-         <span class="author-203135">no.6</span>
-        </inherit>
-       </div>
-       <div id="magicdomid135" data-author-name="ecma" class=" list-start-code1 gutter-author-203135 list-div list-code locate lineguid-lQfdCcgKooLDVZCS">
-        <ol start="1" class="list-code1">
-         <li><span class="author-203135">执行完上述的操作，utils.elements上面就注册了一个自定义标签</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid136" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-qQiFT4eG2WlwbtBI">
-        <ol start="2" class="list-code1">
-         <li><span class="author-203135">utils.elements['my-element'], 存储值如下：</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid137" class="">
-        <br />
-       </div>
-       <div id="magicdomid138" data-author-name="ecma" class="gutter-author-203135 line-center locate lineguid-hNOXL7IrvTdudY1e">
-        <inherit>
-         <span class="author-203135 upload-image img-orbBA5ZQnXtx6rE4 image-width-491 image-height-198"><img alt="" style="width:491px;height:198px;" src="resource/images/article/vue/1.png" /></span>
-        </inherit>
-       </div>
-       <div id="magicdomid139" data-author-name="ecma" class=" list-start-code1 gutter-author-203135 list-div list-code locate lineguid-wGhPB4MN1NauPuvm">
-        <ol start="1" class="list-code1">
-         <li><span class="author-203135">utils.elements['my-element']存储的是ExtendedVM - function</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid140" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-eonAOVWRj3QhWS0v">
-        <ol start="2" class="list-code1">
-         <li><span class="author-203135">&nbsp;- extend: function extend</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid141" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-N0C1rdwHLPetaIRU">
-        <ol start="3" class="list-code1">
-         <li><span class="author-203135">&nbsp;- options: className replace template</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid142" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-Zss8vFQPjtEvAKgt">
-        <ol start="4" class="list-code1">
-         <li><span class="author-203135">&nbsp;- super: ParentVM - function ViewModel</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid143" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-C5nGI2UdtZ8XwsIk">
-        <ol start="5" class="list-code1">
-         <li><span class="author-203135">&nbsp;- prototype: ViewModel</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid144" data-author-name="ecma" class="gutter-author-203135 list-div locate lineguid-DiXcceIjHpL3LayY">
-        <ul class="list-indent1">
-         <li><br /></li>
-        </ul>
-       </div>
-       <div id="magicdomid145" data-author-name="ecma" class="gutter-author-203135 line-center locate lineguid-GgEIj2CIWpocZtPm">
-        <inherit>
-         <span class="author-203135 upload-image img-QZ96xJpWzKPIxzaY image-width-331 image-height-147"><img alt="" style="width:331px;height:147px;" src="resource/images/article/vue/2.png" /></span>
-        </inherit>
-       </div>
-       <div id="magicdomid146" data-author-name="ecma" class="gutter-author-203135 list-div locate lineguid-PfWFeKcQWj50g6nA">
-        <ul class="list-indent1">
-         <li><br /></li>
-        </ul>
-       </div>
-       <div id="magicdomid147" data-author-name="ecma" class="gutter-author-203135 line-center locate lineguid-Xw1mokEtZwiDI849">
-        <inherit>
-         <span class="author-203135 upload-image img-ea4pPH6jpwB1h9sk image-width-338 image-height-226"><img alt="" style="width:338px;height:226px;" src="resource/images/article/vue/3.png" /></span>
-        </inherit>
-       </div>
-       <div id="magicdomid148" data-author-name="ecma" class="gutter-author-203135">
-        <inherit>
-         <br />
-        </inherit>
-       </div>
-       <div id="magicdomid149" data-author-name="ecma" class="gutter-author-203135 locate lineguid-JhhHqq2FeRhXW9hA">
-        <span class="author-203135">到这里感觉有一大堆问题：</span>
-       </div>
-       <div id="magicdomid150" data-author-name="ecma" class=" list-start-number1 gutter-author-203135 list-div locate lineguid-IHYMAOOeSdLz9uBs">
-        <ol start="1" class="list-number1">
-         <li><span class="author-203135">super和prototype都是ViewModel，那么为何不同？</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid151" data-author-name="ecma" class="gutter-author-203135 list-div locate lineguid-QMXxhv41iPiktRkH">
-        <ol start="2" class="list-number1">
-         <li><span class="author-203135">作者这么写用意又何在？</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid152" data-author-name="ecma" class="gutter-author-203135 list-div locate lineguid-rHaHojRtbQE8Bn1z">
-        <ol start="3" class="list-number1">
-         <li><span class="author-203135">viewModel又到底是个什么东西？</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid153" data-author-name="ecma" class="gutter-author-203135 locate lineguid-3Q6mqG347rQEpde0">
-        <span class="author-203135">码下面就先看代码解决下这些问题：</span>
-       </div>
-       <div id="magicdomid154" class="">
-        <br />
-       </div>
-       <div id="magicdomid155" class="">
-        <br />
-       </div>
-       <div id="magicdomid156" data-author-name="ecma" class=" list-start-code1 line-bold gutter-author-203135 list-div list-code locate lineguid-R6zk25akncwp0mvt">
-        <ol start="1" class="list-code1">
-         <li><span class="author-203135 b"><b>super和prototype都是ViewModel，那么为何不同？</b></span></li>
-        </ol>
-       </div>
-       <div id="magicdomid157" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
-        <ol start="2" class="list-code1">
-         <li><br /></li>
-        </ol>
-       </div>
-       <div id="magicdomid158" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-sTjGgDB6yiFbUUB7">
-        <inherit>
-         <ol start="3" class="list-code1">
-          <li><span class="author-203135">super放的是function ViewModel, 而prototype放的是ViewModel放的是Object.create(ViewModel.prototype);</span></li>
-         </ol>
-        </inherit>
-       </div>
-       <div id="magicdomid159" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
-        <ol start="4" class="list-code1">
-         <li><br /></li>
-        </ol>
-       </div>
-       <div id="magicdomid160" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-mq897wq5bPgR0dr2">
-        <inherit>
-         <ol start="5" class="list-code1">
-          <li><span class="author-203135">ViewModel结构:</span></li>
-         </ol>
-        </inherit>
-       </div>
-       <div id="magicdomid161" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-fY5qguSY0NzR7zBD">
-        <ol start="6" class="list-code1">
-         <li><span class="author-203135">&nbsp;- component</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid162" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-8OYNDB2kDoOxUd5W">
-        <ol start="7" class="list-code1">
-         <li><span class="author-203135">&nbsp;- config</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid163" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-JNe4cyg5JJJbMosV">
-        <ol start="8" class="list-code1">
-         <li><span class="author-203135">&nbsp;- directive</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid164" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-WT7zkinRXtLwrjP2">
-        <ol start="9" class="list-code1">
-         <li><span class="author-203135">&nbsp;- element</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid165" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-xTzfFJ2uqlyQlGuU">
-        <ol start="10" class="list-code1">
-         <li><span class="author-203135">&nbsp;- extend</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid166" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-kYHLobJby9TnCIQV">
-        <ol start="11" class="list-code1">
-         <li><span class="author-203135">&nbsp;- filter</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid167" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-9jIo7lvkh8HJ8tge">
-        <ol start="12" class="list-code1">
-         <li><span class="author-203135">&nbsp;- partial</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid168" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-SSc6FtERuBp0ou6G lineguid-Z0kENDz5u1pikZEr">
-        <ol start="13" class="list-code1">
-         <li><span class="author-203135">&nbsp;- transition&nbsp;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid169" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-RA3Ml8TTWraNpJ0i">
-        <ol start="14" class="list-code1">
-         <li><span class="author-203135">&nbsp;- prototype</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid170" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-L7H8QqF0RYs5GfKL lineguid-nUVte3CssjE2Wkq1">
-        <ol start="15" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp; - $broadcast</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid171" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-6HF2s2seszs0Lzpp">
-        <ol start="16" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp; - $destroy</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid172" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-BuDplfRUGgypcomN">
-        <ol start="17" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp; - $emit</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid173" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-UuRL7644PjDKSehE">
-        <ol start="18" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp; - $off</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid174" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-s5U9nn8oXDPXmzua">
-        <ol start="19" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp; - $on</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid175" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-HhML80Blw9DwBH3v">
-        <ol start="20" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp; - $once</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid176" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-TUczBC1ZeNw0ZFFZ">
-        <ol start="21" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp; - $set</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid177" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-cbwbAewebgqtfHDg">
-        <ol start="22" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp; - $unwatch</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid178" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-nbdmNA5ypo2SaICD">
-        <ol start="23" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp; - $watch</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid179" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
-        <ol start="24" class="list-code1">
-         <li><br /></li>
-        </ol>
-       </div>
-       <div id="magicdomid180" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-PvKgXs79yI6OQOpH">
-        <inherit>
-         <ol start="25" class="list-code1">
-          <li><span class="author-203135">ViewModel构造函数上的属性是在main.js里申明的，ViewModel的prototype是在viewmodel.js里申明的</span></li>
-         </ol>
-        </inherit>
-       </div>
-       <div id="magicdomid181" class="">
-        <br />
-       </div>
-       <div id="magicdomid182" data-author-name="ecma" class="gutter-author-203135 locate lineguid-m0KMZsDO5pcF0WBL">
-        <span class="author-203135">那么问题来了，上述把elements存储起来了，elements又是何时被替换的呢？</span>
-       </div>
-       <div id="magicdomid183" data-author-name="ecma" class="gutter-author-203135 heading-3 locate lineguid-FsauLiqHDF2tOU4z">
-        <inherit>
-         <span class="author-203135">自定义标签的使用</span>
-        </inherit>
-       </div>
-       <div id="magicdomid184" data-author-name="ecma" class=" list-start-code1 gutter-author-203135 list-div list-code locate lineguid-cZrNRuNymkxtL5Vo">
-        <ol start="1" class="list-code1">
-         <li><span class="author-203135">Compiler</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid185" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-tSxGPKLRymVyQ2DM lineguid-mPu4nWlqEc6sZKnp">
-        <ol start="2" class="list-code1">
-         <li><span class="author-203135">&nbsp; － compiler 做vue初始化的东西</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid186" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-JKxJ9puYRidjjhnk lineguid-ZxFx4HHqQEQ1aQsJ">
-        <ol start="3" class="list-code1">
-         <li><span class="author-203135">&nbsp; － getOption（取options下的elements或者utils下的elements）</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid187" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-1nlr17qPMw5BVfvz lineguid-X6Alkvv8l1iECMs8 lineguid-FzzB9JBXnaqHmKPH">
-        <ol start="4" class="list-code1">
-         <li><span class="author-203135">&nbsp; － addChild&nbsp;&nbsp;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid188" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-68GZXTAChCmuQf5a lineguid-iazo345tqb0l2cl4 lineguid-NOmkrQMO5BwEmv9J">
-        <ol start="5" class="list-code1">
-         <li><span class="author-203135">&nbsp; － compileNode&nbsp;&nbsp;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid189" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-nMF0HtsRBVESzSeU lineguid-T77BKrArjpqxRwCe">
-        <ol start="6" class="list-code1">
-         <li><span class="author-203135">&nbsp; － compileTextNode&nbsp; {{msg}} =&gt; hihi</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid190" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-wS8UXL2enVMPySql lineguid-DiMQDwNqTVm5OhDC">
-        <ol start="7" class="list-code1">
-         <li><span class="author-203135">&nbsp; － setupElement&nbsp; my-element =&gt; div</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid191" data-author-name="ecma" class="gutter-author-203135 locate lineguid-MlOya45Xxiu1ZZy5">
-        <inherit>
-         <span class="author-203135">自定义标签的使用要从Vue初始化开始讲起：</span>
-        </inherit>
-       </div>
-       <div id="magicdomid192" data-author-name="ecma" class="gutter-author-203135 heading-1 locate lineguid-qm5MRbBHNl9MWU6g">
-        <inherit>
-         <span class="author-203135">no.1</span>
-        </inherit>
-       </div>
-       <div id="magicdomid193" data-author-name="ecma" class=" list-start-code1 gutter-author-203135 list-div list-code locate lineguid-h50jA79dijeYoAr6">
-        <ol start="1" class="list-code1">
-         <li><span class="author-203135">从最基础的代码开始：new Vue</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid194" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-zQtESayJdgxAoFtn">
-        <ol start="2" class="list-code1">
-         <li><span class="author-203135">那么他执行了Vue的构造函数，在源码中是ViewModel</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid195" data-author-name="ecma" class="line-bold gutter-author-203135 list-div list-code locate lineguid-jcc80PP0OjjWUuy7">
-        <ol start="3" class="list-code1">
-         <li><span class="author-203135 b"><b>viewmodel.js =&gt; ViewModel</b></span></li>
-        </ol>
-       </div>
-       <div id="magicdomid196" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-x7zhIji8KqzhMW17">
-        <ol start="4" class="list-code1">
-         <li><span class="author-203135">function ViewModel(options){</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid197" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-tAy9VvNo9cDdV2Px">
-        <ol start="5" class="list-code1">
-         <li><span class="author-203135">&nbsp; new Compiler(this, options);</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid198" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-0xAYNP6dnrKKZSJw">
-        <ol start="6" class="list-code1">
-         <li><span class="author-203135">}</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid199" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-pcQwOHko71695TuY">
-        <ol start="7" class="list-code1">
-         <li><span class="author-203135">从这里看Compiler才是大头</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid200" data-author-name="ecma" class="gutter-author-203135 heading-1 locate lineguid-dKmScvoNtvDNSuM0">
-        <inherit>
-         <span class="author-203135">no.2</span>
-        </inherit>
-       </div>
-       <div id="magicdomid201" data-author-name="ecma" class=" list-start-code1 gutter-author-203135 list-div list-code locate lineguid-PYi1KJExDlpOnS2t">
-        <ol start="1" class="list-code1">
-         <li><span class="author-203135">compiler比较繁杂，拣重点的以及与自定义标签相关的看:</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid202" data-author-name="ecma" class="line-bold gutter-author-203135 list-div list-code locate lineguid-f97rxVWqlZ2BfzEp">
-        <ol start="2" class="list-code1">
-         <li><span class="author-203135 b"><b>compiler.js =&gt; Compiler</b></span></li>
-        </ol>
-       </div>
-       <div id="magicdomid203" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-r1pLNWc7piqwuN1F">
-        <ol start="3" class="list-code1">
-         <li><span class="author-203135">var el = compiler.setupElement(options);</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid204" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
-        <ol start="4" class="list-code1">
-         <li><br /></li>
-        </ol>
-       </div>
-       <div id="magicdomid205" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-r7DFBqwUaHGHSFSr">
-        <inherit>
-         <ol start="5" class="list-code1">
-          <li><span class="author-203135">compiler.compiler(el, true);</span></li>
-         </ol>
-        </inherit>
-       </div>
-       <div id="magicdomid206" data-author-name="ecma" class="gutter-author-203135 heading-1 locate lineguid-Ow1NcdyDtizomnyR">
-        <inherit>
-         <span class="author-203135">no.3</span>
-        </inherit>
-       </div>
-       <div id="magicdomid207" data-author-name="ecma" class=" list-start-code1 gutter-author-203135 list-div list-code locate lineguid-57LpuUq8fXIBtCy9">
-        <ol start="1" class="list-code1">
-         <li><span class="author-203135">compile =&gt; compile a DOM node</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid208" data-author-name="ecma" class="line-bold gutter-author-203135 list-div list-code locate lineguid-pzKPqbzRlSFunfOH">
-        <ol start="2" class="list-code1">
-         <li><span class="author-203135 b"><b>compiler.js =&gt; compile</b></span></li>
-        </ol>
-       </div>
-       <div id="magicdomid209" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-8YSaVhB8Nf2HCqby">
-        <ol start="3" class="list-code1">
-         <li><span class="author-203135">判断nodeType</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid210" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-9hNkK1eMJqkcjKNM">
-        <ol start="4" class="list-code1">
-         <li><span class="author-203135">－ nodeType =&gt; 1</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid211" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-cAV4dXlknenQ89qY lineguid-Dc179zoGRFB9PUGX">
-        <ol start="5" class="list-code1">
-         <li><span class="author-203135">&nbsp; 是普通节点（包括自定义节点）</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid212" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-m8JmB1zuilGXN8Rc">
-        <ol start="6" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid213" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-VOADHKJBHykAebmN lineguid-BLzWmN1usY4YQ27g">
-        <ol start="7" class="list-code1">
-         <li><span class="author-203135">&nbsp; </span><span class="author-203135 b"><b>v1.一开始接收的是new Vue时的el即body,或者说是普通节点</b></span></li>
-        </ol>
-       </div>
-       <div id="magicdomid214" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-kwnhnitHimeF5t4I lineguid-qUvlwXoWDCFYY79w">
-        <ol start="8" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp; compiler.compileNode(node)</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid215" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-rz5f5bQezwyzRlrH">
-        <ol start="9" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp; －if(node.childNodes.length){</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid216" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-4HqEMv9naw4FBc5X lineguid-HkNLzmZK37euflEM lineguid-3oQTKSLazrfJHcdz">
-        <ol start="10" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; var nodes = Array.prototype.slice.call(node.childNodes);</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid217" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-cGPvGAQOtqlylVwv">
-        <ol start="11" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for(var node of nodes){</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid218" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-B2XJWb5EBxEkCwiC lineguid-u0dNanH3TWeq40Bx">
-        <ol start="12" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.compile(node);</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid219" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-BrLDjQVHoGIbpTG9 lineguid-oTGWiXG451DttAdZ">
-        <ol start="13" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid220" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-mHrxEc7pjtHbghj0 lineguid-R9E6LdhXKt0PuGwo lineguid-UCPfdzIJq9yoym8s">
-        <ol start="14" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid221" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-GXDO8YBAtwZEXUYo">
-        <ol start="15" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid222" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-4tfnnyRaQd5hITst">
-        <ol start="16" class="list-code1">
-         <li><span class="author-203135">&nbsp; </span><span class="author-203135 b"><b>v2.如果是自定义标签</b></span></li>
-        </ol>
-       </div>
-       <div id="magicdomid223" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-6sHdNVuBVXuFgk3z lineguid-gjU9p7MlhlitKzMO">
-        <ol start="17" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp; customeElementFn =&nbsp;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid224" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-c79CaV3qXLm2hFmg lineguid-YxiyxEbDUXmDjrSm lineguid-jxBb5BC7kOBs7Aqc lineguid-5orhsgRtqbfI73E0">
-        <ol start="18" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; compiler.getOptions('elements', node.tagName.toLowerCase())；</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid225" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-uQ5XOFgc9qH1FUtm">
-        <ol start="19" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp; addChild(customElementFn)</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid226" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-IfYSTfcLgA4zJFzp">
-        <ol start="20" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid227" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-klwFUnucMI4y42NB lineguid-IbUc1Sih7928fAhM">
-        <ol start="21" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp; function addChild(Ctor){</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid228" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-SS4Un0tnhhhMabDN lineguid-dXOI5TWN3l97iOXe">
-        <ol start="22" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(utils.isConstructor(Ctor)){</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid229" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-N9YedHNpg6QzHrnD lineguid-PoilC37q8OCyVuMo">
-        <ol start="23" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; var child = new Ctor({</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid230" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-UPfOR2UpODGTTkBC lineguid-faMENrTUwrt3MnU2">
-        <ol start="24" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; el: node,</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid231" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-9onWTYOkBlwYEbfu">
-        <ol start="25" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; child: true,</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid232" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-G8utW2lf9anFZ4Xa">
-        <ol start="26" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; compilerOptions: {</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid233" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-r7GlflN21XSoXXl6 lineguid-jn4QccXee5URvLXL">
-        <ol start="27" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; parentCompiler: compiler</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid234" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-sRXzyNk7gZX8RHZO lineguid-jvH14owrW1r6h2N7">
-        <ol start="28" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid235" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-WtjEbtYxvBkUdxwy lineguid-iaJwaZY4qHvgdx70">
-        <ol start="29" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; });</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid236" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-n3OFYZJkemFpn2n9">
-        <ol start="30" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; compiler.childCompilers.push(child.$compiler);</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid237" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-RwaXF1HbXdf9uwDC lineguid-aqIm8CVQ6W62eCv4">
-        <ol start="31" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }else{</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid238" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-RsDnFy2ZodHbMNoA lineguid-YWRz4wZtbKbMmcIC">
-        <ol start="32" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ctor(node);</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid239" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-fKw8T9hetawX5pif lineguid-RIbuLeZpMR2vZhxQ">
-        <ol start="33" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid240" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-dShQCNTBtB5NIykS lineguid-HWJd22CdopEy5L7f">
-        <ol start="34" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp; }&nbsp;&nbsp;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid241" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-UcyRtvL5i20xV2qL">
-        <inherit>
-         <ol start="35" class="list-code1">
-          <li><span class="author-203135">－ nodeType =&gt; 3</span></li>
-         </ol>
-        </inherit>
-       </div>
-       <div id="magicdomid242" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-yHuGfpvGYYfDfoNt">
-        <ol start="36" class="list-code1">
-         <li><span class="author-203135">&nbsp; compiler.compileTextNode(node);</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid243" data-author-name="ecma" class="gutter-author-203135 heading-3 locate lineguid-wPSOs0kjreqO96NP">
-        <inherit>
-         <span class="author-203135">Vue初始化</span>
-        </inherit>
-       </div>
-       <div id="magicdomid244" data-author-name="ecma" class="gutter-author-203135 locate lineguid-tp8OzIulkDcn2E3t">
-        <span class="author-203135">初始化干了什么？</span>
-       </div>
-       <div id="magicdomid245" data-author-name="ecma" class="gutter-author-203135 heading-1 locate lineguid-9udM35aF5iyw4Yhi">
-        <inherit>
-         <span class="author-203135">no.1</span>
-        </inherit>
-       </div>
-       <div id="magicdomid246" data-author-name="ecma" class=" list-start-code1 gutter-author-203135 list-div list-code locate lineguid-WAD4glw1t9MBqQ5m">
-        <ol start="1" class="list-code1">
-         <li><span class="author-203135">function Compiler(vm, options){</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid247" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-l0ZppfmtL9NfKdAY">
-        <ol start="2" class="list-code1">
-         <li><span class="author-203135">&nbsp; var compiler = this;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid248" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-Gq9L8iWIAE3mDyEq">
-        <ol start="3" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid249" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-27uHUMzQT2mJWZXv">
-        <ol start="4" class="list-code1">
-         <li><span class="author-203135">&nbsp; compiler.init = true;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid250" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-zw4HqeUUIv7GkcBp">
-        <ol start="5" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid251" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-nkgK9PShmyzbya5N">
-        <ol start="6" class="list-code1">
-         <li><span class="author-203135">&nbsp; //此处是获取options以及处理，elements会处理成el</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid252" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-ICFHUy9NYhLHEveq">
-        <ol start="7" class="list-code1">
-         <li><span class="author-203135">&nbsp; options = compiler.options = options || makeHash();</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid253" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-bZzQBrTFNTxve920">
-        <ol start="8" class="list-code1">
-         <li><span class="author-203135">&nbsp; utils.processOptions(options);</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid254" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-ogGijOcLaeqKBcza">
-        <ol start="9" class="list-code1">
-         <li><span class="author-203135">&nbsp; utils.extend(compiler, options.compilerOptions);</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid255" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-xLDP3kziSE79Qti2">
-        <ol start="10" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid256" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-vPrKHWRKetYTn3bs">
-        <ol start="11" class="list-code1">
-         <li><span class="author-203135">&nbsp; var el = compiler.setupElement(options);</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid257" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-bPQXqHG1tSaAW3NH">
-        <ol start="12" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid258" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-7LTZd6Suy745wbuM">
-        <ol start="13" class="list-code1">
-         <li><span class="author-203135">&nbsp; var scope = options.scope;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid259" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-tzg5wm7H5spDQA8r">
-        <ol start="14" class="list-code1">
-         <li><span class="author-203135">&nbsp; if(scope) utils.extend(vm, scope, true);</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid260" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-jGsOsK82CKpisaYo">
-        <ol start="15" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid261" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-B9k82vZMXAfqu6Fa">
-        <ol start="16" class="list-code1">
-         <li><span class="author-203135">&nbsp; compiler.vm = vm;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid262" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-PdzfMFgttMcBc8rs">
-        <ol start="17" class="list-code1">
-         <li><span class="author-203135">&nbsp; def(vm, '$', makeHash());</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid263" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-9NWTpmhc4VIfJir8">
-        <ol start="18" class="list-code1">
-         <li><span class="author-203135">&nbsp; def(vm, '$el', el);</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid264" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-8ZVN9S0NhTFM48V6">
-        <ol start="19" class="list-code1">
-         <li><span class="author-203135">&nbsp; def(vm, '$compiler', compiler);</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid265" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-rWk3ujLdOGJs1aWn">
-        <ol start="20" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid266" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-vaDsyo0nz43AKLLY">
-        <ol start="21" class="list-code1">
-         <li><span class="author-203135">&nbsp; compiler.dirs = [];</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid267" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-D1a7PaxvembQlHGW">
-        <ol start="22" class="list-code1">
-         <li><span class="author-203135">&nbsp; compiler.exps = [];</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid268" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-ozojFiPeW0iUDzhX">
-        <ol start="23" class="list-code1">
-         <li><span class="author-203135">&nbsp; compiler.childCompilers = [];</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid269" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-3GtIdscZoGQ6McVZ">
-        <ol start="24" class="list-code1">
-         <li><span class="author-203135">&nbsp; compiler.emitter = new Emitter();</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid270" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-gl8HXS9EdKacaYGw">
-        <ol start="25" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid271" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-2JJXtxiyqZa4rcc1">
-        <ol start="26" class="list-code1">
-         <li><span class="author-203135">&nbsp; var observables ＝ compiler.observables = [],</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid272" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-lvvkuudlrWDEZrTY lineguid-JjhPUoflsGdLlgZC lineguid-41zUYexaTqiv1JzZ">
-        <ol start="27" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; computed = compiler.computed = [];</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid273" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-HJKwWODY9EIVcbqx">
-        <ol start="28" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid274" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-7q55wbgmge7liceD">
-        <ol start="29" class="list-code1">
-         <li><span class="author-203135">&nbsp; var parent = compiler.parentCompiler;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid275" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-rS61HSwGOyo07nfz">
-        <ol start="30" class="list-code1">
-         <li><span class="author-203135">&nbsp; compiler.bindings = parent ? Object.create():makeHash();</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid276" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-aaEM1m5YXr1Uy2ve">
-        <ol start="31" class="list-code1">
-         <li><span class="author-203135">&nbsp; compiler.rootCompiler = parent ? getRoot(parent) : compiler;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid277" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-RwTd1Lkg7f2KgkQz">
-        <ol start="32" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid278" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-KE0uQowqPb3bFVZW">
-        <ol start="33" class="list-code1">
-         <li><span class="author-203135">&nbsp; var childId = utils.attr(el, 'id');</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid279" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-p6H0XIhV0f6sHkht">
-        <ol start="34" class="list-code1">
-         <li><span class="author-203135">&nbsp; if(parent){</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid280" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-RURokzcRp7x0AkFO lineguid-mOMStD6EBm48Os6L">
-        <ol start="35" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp; def(vm, '$parent', parent.vm);</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid281" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-2kU0B4XXb0RCQfXc">
-        <ol start="36" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp; if(childId){</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid282" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-aLqQYjQ2Fodl5x7t lineguid-ZibJWxI0dVpwNwEi">
-        <ol start="37" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; compiler.childId = childId;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid283" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-3BQYXjGfvAetE2Ij">
-        <ol start="38" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; parent.vm.$[childId] = vm;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid284" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-8A4P7PvJDg7VOBHc lineguid-Kq5R1poIdrDmxOVE">
-        <ol start="39" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp; }</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid285" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-f1qbZjVZjTfwIiqV lineguid-B0vsJoa8R6p59WBH">
-        <ol start="40" class="list-code1">
-         <li><span class="author-203135">&nbsp; }</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid286" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-an4nGLi5z6S4OGnO">
-        <ol start="41" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid287" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-CZvuQtOUHw8e2mYB">
-        <ol start="42" class="list-code1">
-         <li><span class="author-203135">&nbsp; compiler.setupObserver();</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid288" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-i26huGnUeT2qynlm">
-        <ol start="43" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid289" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-Wbf8Jveb8UvH5lw8">
-        <ol start="44" class="list-code1">
-         <li><span class="author-203135">&nbsp; if(options.init){</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid290" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-agVl7OnjDnek4tHb lineguid-hhEapKnY5BCHhW0k">
-        <ol start="45" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp; options.init.apply(vm, options.args || []);</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid291" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-lQkZqBjIoHSrCibK lineguid-zmbQ7YLV7YIuM0aR">
-        <ol start="46" class="list-code1">
-         <li><span class="author-203135">&nbsp; }</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid292" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-TPvBeJawmlf7PUYw">
-        <ol start="47" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid293" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-sUyJalqI37xnAm7X">
-        <ol start="48" class="list-code1">
-         <li><span class="author-203135">&nbsp; var key, keyPrefix;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid294" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-tZxAc5YDMzjcYs8O">
-        <ol start="49" class="list-code1">
-         <li><span class="author-203135">&nbsp; for(key in vm){</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid295" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-Im1pVedb1ZcX2dZc lineguid-gnuQJ3ecJWnKnfw2">
-        <ol start="50" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp; keyPrefix = key.charAt(0);</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid296" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-vJAij1badSNHuzki">
-        <ol start="51" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp; if(keyPrefix !== '$' &amp;&amp; keyPrefix !== '_'){</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid297" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-fifLd8xpGkHa6WyV lineguid-B3AeLrGqpPj91YiS">
-        <ol start="52" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; compiler.createBinding(key);</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid298" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-IuDxaurI1hZGsKZc lineguid-pS9lmeyekVZmlefM">
-        <ol start="53" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp; }</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid299" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-Ab2Gk2hzlJD4mqSj lineguid-cX51UrMTnM2fmDjg">
-        <ol start="54" class="list-code1">
-         <li><span class="author-203135">&nbsp; }</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid300" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-9aexnhQ16fl9479m">
-        <ol start="55" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid301" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-yz3ETHOtNQF758Xl">
-        <ol start="56" class="list-code1">
-         <li><span class="author-203135">&nbsp; if(compiler.repeat){</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid302" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-GDYgZigqHVwQ0tPy lineguid-faAWnZZnoEVGzBZ9">
-        <ol start="57" class="list-code1">
-         <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid303" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-Vyt5WOviaTd6UYnm lineguid-3CdfRhgC0x51nrjn">
-        <ol start="58" class="list-code1">
-         <li><span class="author-203135">&nbsp; }</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid304" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-HYo2Hjks3kLExrny">
-        <ol start="59" class="list-code1">
-         <li><span class="author-203135">}</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid305" class="">
-        <br />
-       </div>
-       <div id="magicdomid306" data-author-name="ecma" class=" list-start-code1 gutter-author-203135 list-div list-code locate lineguid-eGDvMGHtsI9EDImc">
-        <ol start="1" class="list-code1">
-         <li><span class="author-203135">function makeHash(){</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid307" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-rkta0j14WYtozS0V">
-        <ol start="2" class="list-code1">
-         <li><span class="author-203135">&nbsp; return Object.create(null);</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid308" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-I9rJEy81p3xfcz7j">
-        <ol start="3" class="list-code1">
-         <li><span class="author-203135">}</span></li>
-        </ol>
-       </div>
-       <div id="magicdomid309" class="">
-        <br />
-       </div>
-       <div id="magicdomid310" class="">
-        <br />
-       </div>
-       <div id="magicdomid311" class="">
-        <br />
-       </div>
-       <div id="magicdomid312" class="">
-        <br />
-       </div>
-       <div id="magicdomid313" class="">
-        <br />
-       </div>
-       <div id="magicdomid314" class="">
-        <br />
-       </div>
-       <div id="magicdomid315" class="">
-        <br />
-       </div>
-       <div id="magicdomid316" class="">
-        <br />
-       </div>
-       <div id="magicdomid317" class="">
-        <br />
-       </div>
-       <div id="magicdomid318" class="">
-        <br />
-       </div>
-       <div id="magicdomid319" class="">
-        <br />
-       </div>
-       <div id="magicdomid320" class="">
-        <br />
-       </div>
-       <div id="magicdomid321" class="">
-        <br />
-       </div>
-       <div id="magicdomid322" class="">
-        <br />
-       </div>
-      </div>
-      <div id="mention-pop" class="doc-mention-pop" data-reactid=".2.2.0.0.0.0.0.1.1">
-       <div class="trangle-box" data-reactid=".2.2.0.0.0.0.0.1.1.0">
-        <span class="top doc-metion-trangle-item" data-reactid=".2.2.0.0.0.0.0.1.1.0.0"></span>
-        <span class="down doc-metion-trangle-item" data-reactid=".2.2.0.0.0.0.0.1.1.0.1"></span>
-       </div>
-       <ul class="doc-mention-list" data-reactid=".2.2.0.0.0.0.0.1.1.1">
-        <li class="doc-mention-placeholder doc-mention-item" data-reactid=".2.2.0.0.0.0.0.1.1.1.0">@朋友或者文档</li>
-       </ul>
-       <ul class="result-list doc-mention-list doc-mention-result-list" data-reactid=".2.2.0.0.0.0.0.1.1.2"></ul>
-      </div>
-      <span id="mention-width" data-reactid=".2.2.0.0.0.0.0.1.2"></span>
-      <div id="track-avatars" data-reactid=".2.2.0.0.0.0.0.1.3">
-       <div id="track-avatar-203135" class="track-avatar" style="opacity: 0; left: 0px;"> 
-        <!-- <img src="/static/unmd5/default-avatar-moke.png" alt="ecma" title="ecma" />  -->
-       </div>
-      </div>
-      <div id="drag-li" tabindex="-1" data-reactid=".2.2.0.0.0.0.0.1.4"></div>
-     </div>
-     <div id="buddle-box" data-reactid=".2.2.0.0.0.0.0.2"></div>
-     <!-- <div id="buddle-comment-btn" class="hicon icon-comment-add buddle-comment-btn" data-reactid=".2.2.0.0.0.0.0.3" style="top: 171.667px; display: block;"></div> -->
-     <div id="image-resize-frame" data-reactid=".2.2.0.0.0.0.0.4"></div>
-     <div class="image-resize-bar" data-reactid=".2.2.0.0.0.0.0.5"></div>
-     <div class="copy-container" contenteditable="true" data-reactid=".2.2.0.0.0.0.0.6"></div>
-    </div>
+<div class="container commentable doc-container" id="doc-container" data-reactid=".2.2.0.0.0" style="opacity: 1;">
+ <div id="editorcontainerbox" data-reactid=".2.2.0.0.0.0">
+  <div id="editorcontainer" class="pc editorcontainer" data-reactid=".2.2.0.0.0.0.0">
+   <div class="doc-title-box" data-reactid=".2.2.0.0.0.0.0.0">
+    <input id="doc-title-input" class="mousetrap" placeholder="Vue源码研究" data-value="Vue源码研究" maxlength="100" value="Vue源码研究" data-reactid=".2.2.0.0.0.0.0.0.0" />
    </div>
-   <div id="overlaysdiv" data-reactid=".2.2.0.0.0.1"></div>
+   <div id="outerdocbody" data-reactid=".2.2.0.0.0.0.0.1">
+    <div id="innerdocbody" spellcheck="false" class="syntax needsclick innerdocbody mousetrap authorColors doesWrap" autocorrect="off" autocomplete="off" data-reactid=".2.2.0.0.0.0.0.1.0" contenteditable="true">
+     <div id="magicdomid2" data-author-name="ecma" class="gutter-author-203135 heading-3 locate lineguid-sIP4u7DNCoRZCRzU">
+      <inherit>
+       <span class="author-203135">自定义标签的定义</span>
+      </inherit>
+     </div>
+     <div id="magicdomid3" data-author-name="ecma" class=" list-start-code1 line-bold gutter-author-203135 list-div list-code locate lineguid-tyV6e0GSP54rnfMS">
+      <ol start="1" class="list-code1">
+       <li><span class="author-203135 b"><b>vue里自定义标签的用法：</b></span></li>
+      </ol>
+     </div>
+     <div id="magicdomid4" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-SxcAsjOpIjBsd9Kh">
+      <ol start="2" class="list-code1">
+       <li><span class="author-203135">&lt;my-element&gt;afsefsefse&lt;/my-element&gt;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid5" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
+      <ol start="3" class="list-code1">
+       <li><br /></li>
+      </ol>
+     </div>
+     <div id="magicdomid6" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-frFr5tuSS5sAdOWe">
+      <ol start="4" class="list-code1">
+       <li><span class="author-203135">Vue.element('my-element', {</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid7" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-mUxOjYEKuSDcZlNM">
+      <ol start="5" class="list-code1">
+       <li><span class="author-203135">&nbsp; replace: true,</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid8" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-FTKGl9os9GngPOi6">
+      <ol start="6" class="list-code1">
+       <li><span class="author-203135">&nbsp; className: 'test',</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid9" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-e7KWTYY3De2sb01k">
+      <ol start="7" class="list-code1">
+       <li><span class="author-203135">&nbsp; template: '&lt;div&gt;{{msg}}&lt;/div&gt;'</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid10" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-PfE90OT85KUa3kCy">
+      <ol start="8" class="list-code1">
+       <li><span class="author-203135">});</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid11" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
+      <ol start="9" class="list-code1">
+       <li><br /></li>
+      </ol>
+     </div>
+     <div id="magicdomid12" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-UsRzp7SJs24J0zaX">
+      <inherit>
+       <ol start="10" class="list-code1">
+        <li><span class="author-203135">=&gt; &lt;div class=&quot;test&quot;&gt;hihi&lt;/div&gt;</span></li>
+       </ol>
+      </inherit>
+     </div>
+     <div id="magicdomid13" data-author-name="ecma" class="gutter-author-203135 heading-1 locate lineguid-vM5fiyNEJiKUcGSx">
+      <inherit>
+       <span class="author-203135">no.1</span>
+      </inherit>
+     </div>
+     <div id="magicdomid14" data-author-name="ecma" class=" list-start-code1 line-bold gutter-author-203135 list-div list-code locate lineguid-FAjPYpwam0e9hKlN">
+      <ol start="1" class="list-code1">
+       <li><span class="author-203135 b"><b>main.js</b></span></li>
+      </ol>
+     </div>
+     <div id="magicdomid15" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
+      <ol start="2" class="list-code1">
+       <li><br /></li>
+      </ol>
+     </div>
+     <div id="magicdomid16" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-5nCkKB0XxyUlIZvr">
+      <ol start="3" class="list-code1">
+       <li><span class="author-203135">id: my-element</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid17" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-cD1edjOcYyzQ2pMd">
+      <inherit>
+       <ol start="4" class="list-code1">
+        <li><span class="author-203135">Ctor:</span></li>
+       </ol>
+      </inherit>
+     </div>
+     <div id="magicdomid18" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-8LDDaT1SIPJxwCoA">
+      <ol start="5" class="list-code1">
+       <li><span class="author-203135">&nbsp; - className: 'test',</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid19" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-grLnlHYwYZDDunSk">
+      <ol start="6" class="list-code1">
+       <li><span class="author-203135">&nbsp; - replace: true,</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid20" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-MgMsV9kVEDTVpt8Q">
+      <ol start="7" class="list-code1">
+       <li><span class="author-203135">&nbsp; - template: '&lt;div&gt;{{msg}}&lt;/div&gt;'</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid21" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
+      <ol start="8" class="list-code1">
+       <li><br /></li>
+      </ol>
+     </div>
+     <div id="magicdomid22" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-4qrZC6e03tNt1Kde">
+      <ol start="9" class="list-code1">
+       <li><span class="author-203135">ViewModel.elements = function(id, Ctor){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid23" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-AyDGLoEClZLnm0hW">
+      <ol start="10" class="list-code1">
+       <li><span class="author-203135">&nbsp; if(!Ctor) return utils.elements[id];</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid24" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-v0IRAZwYGKYMGmtO">
+      <ol start="11" class="list-code1">
+       <li><span class="author-203135">&nbsp; utils.elements[id] = utils.toConstructor(Ctor);</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid25" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-oAbqpT1osjNErnsz">
+      <ol start="12" class="list-code1">
+       <li><span class="author-203135">&nbsp; return this;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid26" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-tNWIDp3W1QtdhrLQ">
+      <ol start="13" class="list-code1">
+       <li><span class="author-203135">}</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid27" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
+      <ol start="14" class="list-code1">
+       <li><br /></li>
+      </ol>
+     </div>
+     <div id="magicdomid28" data-author-name="ecma" class="line-bold gutter-author-203135 list-div list-code locate lineguid-kmq5WECtdsYgW6KS">
+      <inherit>
+       <ol start="15" class="list-code1">
+        <li><span class="author-203135 b"><b>重点：调用utils的toConstructor</b></span></li>
+       </ol>
+      </inherit>
+     </div>
+     <div id="magicdomid29" data-author-name="ecma" class="gutter-author-203135 heading-1 locate lineguid-jttJdFmvqHAnTNPh">
+      <inherit>
+       <span class="author-203135">no.2</span>
+      </inherit>
+     </div>
+     <div id="magicdomid30" data-author-name="ecma" class=" list-start-code1 line-bold gutter-author-203135 list-div list-code locate lineguid-yaezik6C01PzFgOw">
+      <ol start="1" class="list-code1">
+       <li><span class="author-203135 b"><b>utils.js</b></span></li>
+      </ol>
+     </div>
+     <div id="magicdomid31" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
+      <ol start="2" class="list-code1">
+       <li><br /></li>
+      </ol>
+     </div>
+     <div id="magicdomid32" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-aftRbKFdFLw2vZR1">
+      <inherit>
+       <ol start="3" class="list-code1">
+        <li><span class="author-203135">toConstructor: function(obj){</span></li>
+       </ol>
+      </inherit>
+     </div>
+     <div id="magicdomid33" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-IRdOQ3hY1WTPD383">
+      <ol start="4" class="list-code1">
+       <li><span class="author-203135">&nbsp; viewModel = ViewModel || reuqire('./viewmodel');</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid34" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-7ItVgg2drFgKxyQe">
+      <ol start="5" class="list-code1">
+       <li><span class="author-203135">&nbsp; return utils.typeof(obj) === 'Object' ?</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid35" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-up3JQ9X4Al3A6Kp9 lineguid-1m0xffuN8tSjlHXf">
+      <ol start="6" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; ViewModel.extend(obj)</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid36" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-cWOgSQ6WJRih4zfC">
+      <ol start="7" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; : typeof obj === 'function' ? obj : null</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid37" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-kORAVymS8pr7cURd">
+      <ol start="8" class="list-code1">
+       <li><span class="author-203135">}</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid38" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
+      <ol start="9" class="list-code1">
+       <li><br /></li>
+      </ol>
+     </div>
+     <div id="magicdomid39" data-author-name="ecma" class="line-bold gutter-author-203135 list-div list-code locate lineguid-tm41QSYavWpYjYMD">
+      <inherit>
+       <ol start="10" class="list-code1">
+        <li><span class="author-203135 b"><b>重点：obj是Object时用ViewModel.extend</b></span></li>
+       </ol>
+      </inherit>
+     </div>
+     <div id="magicdomid40" data-author-name="ecma" class="line-bold gutter-author-203135 list-div list-code locate lineguid-OYddBrS49FT8uSGN lineguid-LU5Q6f9G1mrrMt8S lineguid-CTvLwP4PsF7Dmdzw">
+      <ol start="11" class="list-code1">
+       <li><span class="author-203135 b"><b>&nbsp;&nbsp;&nbsp;&nbsp; obj是function则直接返回，其他返回null</b></span></li>
+      </ol>
+     </div>
+     <div id="magicdomid41" data-author-name="ecma" class="gutter-author-203135 heading-1 locate lineguid-CuYz7Q1jeIQyn2U7">
+      <inherit>
+       <span class="author-203135">no.3</span>
+      </inherit>
+     </div>
+     <div id="magicdomid42" data-author-name="ecma" class=" list-start-code1 line-bold gutter-author-203135 list-div list-code locate lineguid-pBC5HlH9aA1P2cLw">
+      <ol start="1" class="list-code1">
+       <li><span class="author-203135 b"><b>main.js</b></span></li>
+      </ol>
+     </div>
+     <div id="magicdomid43" data-author-name="ecma" class="line-bold gutter-author-203135 list-div list-code">
+      <ol start="2" class="list-code1">
+       <li><br /></li>
+      </ol>
+     </div>
+     <div id="magicdomid44" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-IV4Ou3Vjc2Hgl1C2">
+      <inherit>
+       <ol start="3" class="list-code1">
+        <li><span class="author-203135">function extend(options){</span></li>
+       </ol>
+      </inherit>
+     </div>
+     <div id="magicdomid45" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-LtCchsxgwvHh1AyO">
+      <ol start="4" class="list-code1">
+       <li><span class="author-203135">&nbsp; var ParentVM = this;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid46" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-IeMHMhApef6q6riy">
+      <ol start="5" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid47" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-d8luBaKDgH2kB9vD lineguid-ZesGbgADSPNb66BE">
+      <ol start="6" class="list-code1">
+       <li><span class="author-203135">&nbsp; options = inheritOptions(options, ParentVM.options, true);</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid48" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-OKwQk3h1fyMiI5w2">
+      <ol start="7" class="list-code1">
+       <li><span class="author-203135">&nbsp; utils.processOptions(options);</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid49" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-esDoLbPsgblUd4hW">
+      <ol start="8" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid50" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-dssDjpuLYUkm1YxH">
+      <ol start="9" class="list-code1">
+       <li><span class="author-203135">&nbsp; var ExtendedVM = function(opts){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid51" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-XcLb2a4ur1tZBVeS lineguid-Cohw1GvhGbP4nwmc">
+      <ol start="10" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; opts = inheritOptions(opts, options, true);</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid52" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-BI1Eb83RUTavLcPN">
+      <ol start="11" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; ParentVM.call(this, opts);</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid53" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-lzVGGh4ptOcfqhyQ lineguid-RNRQvpY0WvjPOHE0">
+      <ol start="12" class="list-code1">
+       <li><span class="author-203135">&nbsp; }</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid54" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-sgQCq9Eh1M6lbHpR">
+      <ol start="13" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid55" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-YgZDMvfZwY4P96ky">
+      <ol start="14" class="list-code1">
+       <li><span class="author-203135">&nbsp; var proto = ExtendedVM.prototype</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid56" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-RG4WxVYIOYsUaebr lineguid-D3nF8PdyETWTb9Jm lineguid-vYO7DPXGX96BWoUC">
+      <ol start="15" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; = Object.create(ParentVM.prototype);</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid57" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-suXObaPJKUDlQI15">
+      <ol start="16" class="list-code1">
+       <li><span class="author-203135">&nbsp; utils.defProtected(proto, 'constructor', ExtendedVM);</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid58" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-UfWZ9tLh0ZymyO3s">
+      <ol start="17" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid59" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-rBYYrhsnAHjFGO0b">
+      <ol start="18" class="list-code1">
+       <li><span class="author-203135">&nbsp; var protoMixins = options.proto;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid60" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-1X543CyKRM6fiV6l">
+      <ol start="19" class="list-code1">
+       <li><span class="author-203135">&nbsp; if(protoMixins){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid61" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-MwKogi7DSfmTqTdG lineguid-ulAINmFWIOjqdXvF">
+      <ol start="20" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; for(var key in protoMixins){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid62" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-Mqg1xhB9UAxwgdpz lineguid-oZ5QNbRc4X3fpO2y">
+      <ol start="21" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(!(key in ViewModel.prototype)){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid63" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-8h2icF5n0UlHlZgk lineguid-JddrI2yE43kQE3Uh">
+      <ol start="22" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; proto[key] = protoMixins[key];</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid64" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-dGUNsWbTa2uKUfq1 lineguid-WQRhmWcyOnYkO1YA">
+      <ol start="23" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid65" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-L1kTcM88A1XYdx5q lineguid-13lO1Hk7pQMjSvfP">
+      <ol start="24" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; }</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid66" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-GpqLDMqwtLlWSHfQ lineguid-0FvWz8E5xsRxDLw5">
+      <ol start="25" class="list-code1">
+       <li><span class="author-203135">&nbsp; }</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid67" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-TRFSpniaETNEulbi">
+      <ol start="26" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid68" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-GA11BOmY1facgdvk">
+      <ol start="27" class="list-code1">
+       <li><span class="author-203135">&nbsp; ExtendedVM.extend = extend;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid69" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-Te1YlX79Cff7586x">
+      <ol start="28" class="list-code1">
+       <li><span class="author-203135">&nbsp; ExtendedVM.super = ParentVM;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid70" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-sZi1XBm70QddOIMC">
+      <ol start="29" class="list-code1">
+       <li><span class="author-203135">&nbsp; ExtendedVM.options = options;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid71" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-AAONBEZHJXfyhK7e">
+      <ol start="30" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid72" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-xJDAywGEtlK7OioY">
+      <ol start="31" class="list-code1">
+       <li><span class="author-203135">&nbsp; return ExtendedVM;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid73" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-1yGady74pyNy4snY">
+      <ol start="32" class="list-code1">
+       <li><span class="author-203135">}</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid74" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
+      <ol start="33" class="list-code1">
+       <li><br /></li>
+      </ol>
+     </div>
+     <div id="magicdomid75" data-author-name="ecma" class="line-bold gutter-author-203135 list-div list-code locate lineguid-LMSmY2vkkq7qJWMF">
+      <inherit>
+       <ol start="34" class="list-code1">
+        <li><span class="author-203135 b"><b>重点：</b></span><span class="author-203135">utils.elements[id]存储的就是ExtendedVM;&nbsp;&nbsp;</span></li>
+       </ol>
+      </inherit>
+     </div>
+     <div id="magicdomid76" data-author-name="ecma" class="line-bold gutter-author-203135 list-div list-code locate lineguid-faeRgjQnpsPj7zjW lineguid-6Fp7Ru7ONVeZbFBe">
+      <ol start="35" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp; ExtendedVM是继承了ViewModel（为什么不直接用ViewModel?）</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid77" data-author-name="ecma" class="line-bold gutter-author-203135 list-div list-code locate lineguid-Ly6ocTrWCMPXCtfD">
+      <ol start="36" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp; utils.processOptions重新封装了options</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid78" data-author-name="ecma" class="gutter-author-203135 heading-1 locate lineguid-Iu2mVa95fp7zv6z2">
+      <inherit>
+       <span class="author-203135">no.4</span>
+      </inherit>
+     </div>
+     <div id="magicdomid79" data-author-name="ecma" class=" list-start-code1 line-bold gutter-author-203135 list-div list-code locate lineguid-gARW8JWa3EPaEuLK">
+      <ol start="1" class="list-code1">
+       <li><span class="author-203135 b"><b>utils.js</b></span></li>
+      </ol>
+     </div>
+     <div id="magicdomid80" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
+      <ol start="2" class="list-code1">
+       <li><br /></li>
+      </ol>
+     </div>
+     <div id="magicdomid81" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-Os22hxV0Sjf7ogpY">
+      <inherit>
+       <ol start="3" class="list-code1">
+        <li><span class="author-203135">processOptions: function(options){</span></li>
+       </ol>
+      </inherit>
+     </div>
+     <div id="magicdomid82" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-U3za0dp2YC254bwq">
+      <ol start="4" class="list-code1">
+       <li><span class="author-203135">&nbsp; var components = options.components,</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid83" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-1WbHlkjFELEx0rYv lineguid-VJmfipM5fHTLYEIy lineguid-k4Qn5aw3Qs8aNdcQ">
+      <ol start="5" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; partials = options.partials,</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid84" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-TB8CtzvZcPH4c0P9">
+      <ol start="6" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; template = options.template,</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid85" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-5wUIbW5rHLUSkdlp">
+      <ol start="7" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; elements = options.elements,</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid86" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-nqUEXPHoy38ZiOZq">
+      <ol start="8" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; key;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid87" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-gQB33bwSpW79WvY7">
+      <ol start="9" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid88" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-EgNIMMPRq8Gj0nmf">
+      <ol start="10" class="list-code1">
+       <li><span class="author-203135">&nbsp; if(components){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid89" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-Wvpo8o5Y1IyYds9r lineguid-3obkXJN6dr2vMfGX">
+      <ol start="11" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; for(key in components){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid90" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-p61CwsCQPe20caCd lineguid-rLynDYota3vBN6Gd">
+      <ol start="12" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; components[key] = utils.toConstructor(components[key]);</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid91" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-i18hXQWFYH7kXlYH lineguid-hxnFxda6gIhJ9OSo">
+      <ol start="13" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; }</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid92" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-clZVHHHklZihvub2 lineguid-vwnpjJofsHakZ4yk">
+      <ol start="14" class="list-code1">
+       <li><span class="author-203135">&nbsp; }</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid93" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
+      <ol start="15" class="list-code1">
+       <li><br /></li>
+      </ol>
+     </div>
+     <div id="magicdomid94" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-Fo8KyQwZRCLt7KNm">
+      <ol start="16" class="list-code1">
+       <li><span class="author-203135">&nbsp; if(elements){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid95" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-9itb6bL8qZyPahgT">
+      <ol start="17" class="list-code1">
+       <li><span class="author-203135 font-color-12 font-size-3"><font color="#2b2b2b"><font size="3">&nbsp;&nbsp;&nbsp; for(key in </font></font></span><span class="author-203135">elem</span><span class="author-203135 font-color-12 font-size-3"><font color="#2b2b2b"><font size="3">ents){</font></font></span></li>
+      </ol>
+     </div>
+     <div id="magicdomid96" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-L2hZkTJIKurr56qw">
+      <ol start="18" class="list-code1">
+       <li><span class="author-203135 font-color-12 font-size-3"><font color="#2b2b2b"><font size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></font></span><span class="author-203135">elem</span><span class="author-203135 font-color-12 font-size-3"><font color="#2b2b2b"><font size="3">ents[key] = utils.toConstructor(</font></font></span><span class="author-203135">elem</span><span class="author-203135 font-color-12 font-size-3"><font color="#2b2b2b"><font size="3">ents[key]);</font></font></span></li>
+      </ol>
+     </div>
+     <div id="magicdomid97" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-asA46sBkAVhEApat">
+      <ol start="19" class="list-code1">
+       <li><span class="author-203135 font-color-12 font-size-3"><font color="#2b2b2b"><font size="3">&nbsp;&nbsp;&nbsp; }</font></font></span></li>
+      </ol>
+     </div>
+     <div id="magicdomid98" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-n8DpkG4LTKEtt38J">
+      <ol start="20" class="list-code1">
+       <li><span class="author-203135 font-color-12 font-size-3"><font color="#2b2b2b"><font size="3">&nbsp; }</font></font></span></li>
+      </ol>
+     </div>
+     <div id="magicdomid99" data-author-name="ecma" class="font-color-12 gutter-author-203135 list-div list-code locate lineguid-6PjdF1MhOLFoXTjc">
+      <ol start="21" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid100" data-author-name="ecma" class="font-color-12 gutter-author-203135 list-div list-code locate lineguid-SH9nFHHtJtThegEx lineguid-5HDzAk1s54WsBu0p">
+      <ol start="22" class="list-code1">
+       <li><span class="author-203135">&nbsp; if(partials){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid101" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-NuYFoRUnqgvy2lCS">
+      <ol start="23" class="list-code1">
+       <li><span class="author-203135 font-color-12 font-size-3"><font color="#2b2b2b"><font size="3">&nbsp;&nbsp;&nbsp; for(key in </font></font></span><span class="author-203135">partial</span><span class="author-203135 font-color-12 font-size-3"><font color="#2b2b2b"><font size="3">s){</font></font></span></li>
+      </ol>
+     </div>
+     <div id="magicdomid102" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-O9TxVNjtLxAV26jy">
+      <ol start="24" class="list-code1">
+       <li><span class="author-203135 font-color-12 font-size-3"><font color="#2b2b2b"><font size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></font></span><span class="author-203135">partial</span><span class="author-203135 font-color-12 font-size-3"><font color="#2b2b2b"><font size="3">s[key] = utils.toConstructor(</font></font></span><span class="author-203135">partial</span><span class="author-203135 font-color-12 font-size-3"><font color="#2b2b2b"><font size="3">s[key]);</font></font></span></li>
+      </ol>
+     </div>
+     <div id="magicdomid103" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-H9kqkKaEmKJECItg">
+      <ol start="25" class="list-code1">
+       <li><span class="author-203135 font-color-12 font-size-3"><font color="#2b2b2b"><font size="3">&nbsp;&nbsp;&nbsp; }</font></font></span></li>
+      </ol>
+     </div>
+     <div id="magicdomid104" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-mq5mqeTujVIidKTB">
+      <ol start="26" class="list-code1">
+       <li><span class="author-203135 font-color-12 font-size-3"><font color="#2b2b2b"><font size="3">&nbsp; }</font></font></span></li>
+      </ol>
+     </div>
+     <div id="magicdomid105" data-author-name="ecma" class="font-color-12 gutter-author-203135 list-div list-code locate lineguid-zMlSznR6tC3JUsfi">
+      <ol start="27" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid106" data-author-name="ecma" class="font-color-12 gutter-author-203135 list-div list-code locate lineguid-L6XktjLkCrmlXBpZ">
+      <ol start="28" class="list-code1">
+       <li><span class="author-203135">&nbsp; if(template){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid107" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-1vyWWfH4M7uQALnY lineguid-PQfsCqqRq21KpWoC">
+      <ol start="29" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; options.template = utils.toFragment(template);</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid108" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-cOLuvPTHP5GeTX9T lineguid-PDKcVzVBxuFBDjz3">
+      <ol start="30" class="list-code1">
+       <li><span class="author-203135">&nbsp; }</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid109" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-bvqt3mIDO2fXPVlA">
+      <ol start="31" class="list-code1">
+       <li><span class="author-203135">}</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid110" data-author-name="ecma" class="line-bold gutter-author-203135 list-div list-code">
+      <ol start="32" class="list-code1">
+       <li><br /></li>
+      </ol>
+     </div>
+     <div id="magicdomid111" data-author-name="ecma" class="line-bold gutter-author-203135 list-div list-code locate lineguid-rYP2MsDiPrOFPMU1">
+      <inherit>
+       <ol start="33" class="list-code1">
+        <li><span class="author-203135 b"><b>重点：自定义标签调用这个方法主要是把template转换为节点</b></span></li>
+       </ol>
+      </inherit>
+     </div>
+     <div id="magicdomid112" data-author-name="ecma" class="line-bold gutter-author-203135 list-div list-code locate lineguid-Bs3F0tHYhs8UQfOa lineguid-GziGNUItqgBNbr89 lineguid-8XZQ2TRSL48KbWc9">
+      <ol start="34" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp; utils.toFragment</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid113" data-author-name="ecma" class="gutter-author-203135 heading-1 locate lineguid-lSUgQfT7PLctJFsM">
+      <inherit>
+       <span class="author-203135">no.5</span>
+      </inherit>
+     </div>
+     <div id="magicdomid114" data-author-name="ecma" class=" list-start-code1 line-bold gutter-author-203135 list-div list-code locate lineguid-WX8988MxYV6AYgvH">
+      <ol start="1" class="list-code1">
+       <li><span class="author-203135 b"><b>utils.js</b></span></li>
+      </ol>
+     </div>
+     <div id="magicdomid115" data-author-name="ecma" class="line-bold gutter-author-203135 list-div list-code">
+      <ol start="2" class="list-code1">
+       <li><br /></li>
+      </ol>
+     </div>
+     <div id="magicdomid116" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-1QzLDbtglL56FVrI">
+      <inherit>
+       <ol start="3" class="list-code1">
+        <li><span class="author-203135">toFragment: function(template){</span></li>
+       </ol>
+      </inherit>
+     </div>
+     <div id="magicdomid117" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-DdXj652zunny3MEZ">
+      <ol start="4" class="list-code1">
+       <li><span class="author-203135">&nbsp; if(typeof template !== 'string'){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid118" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-5wlSw5LHb3keOo4E lineguid-MeK3cZz9YbkkpJfz">
+      <ol start="5" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; return template;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid119" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-EMIGN34lnrq7LZTc lineguid-0xAeXIRE8Ecu6uLt">
+      <ol start="6" class="list-code1">
+       <li><span class="author-203135">&nbsp; }</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid120" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-euNPSDTY9qNj4pkG">
+      <ol start="7" class="list-code1">
+       <li><span class="author-203135">&nbsp; if(template.charAt(0) === '#'){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid121" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-4BxUvhm5pcZKT3v0 lineguid-KH8u9sOPaMY65bmE">
+      <ol start="8" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; var templateNode = document.getElementById(template.slice(1));</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid122" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-TMTYT5b6eAoH90J9">
+      <ol start="9" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; if(!templateNode) return;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid123" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-bNyohGXHiCV51bAi">
+      <ol start="10" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; template = templateNode.innerHTML;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid124" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-KpqzMWalelWZs3To lineguid-zSkqhaF74JbHU6oo">
+      <ol start="11" class="list-code1">
+       <li><span class="author-203135">&nbsp; }</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid125" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-vlHpEAwAKbeZBrn9">
+      <ol start="12" class="list-code1">
+       <li><span class="author-203135">&nbsp; var node = document.createElement('div'),</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid126" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-i7YVT1yChmMKIUv7 lineguid-3vVrHuzkAdJyOvZG">
+      <ol start="13" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; frag = document.createDocumentFragment(),</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid127" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-7KX6mmQEmlp9vrEF">
+      <ol start="14" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; child;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid128" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-Xr06BBb7RvOh1mYh">
+      <ol start="15" class="list-code1">
+       <li><span class="author-203135">&nbsp; node.innerHTML = template.trim();</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid129" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-SgBPeIsQFbRMDOTd">
+      <ol start="16" class="list-code1">
+       <li><span class="author-203135">&nbsp; while(child = node.firstChild){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid130" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-60xU3T5QphWcJ7Yu lineguid-wSA32ldkO3R8wB8h">
+      <ol start="17" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; frag.appendChild(child);</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid131" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-oZPPvBFPHuMoowdv lineguid-JBVE8dXYmFAqKlE7">
+      <ol start="18" class="list-code1">
+       <li><span class="author-203135">&nbsp; }</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid132" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-aSUmwLzEeMQ1VjpW">
+      <ol start="19" class="list-code1">
+       <li><span class="author-203135">&nbsp; return frag;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid133" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-Ghf0Q65kEqVYQXAk">
+      <ol start="20" class="list-code1">
+       <li><span class="author-203135">}</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid134" data-author-name="ecma" class="gutter-author-203135 heading-1 locate lineguid-gG5r8hIKKD7AiHhC">
+      <inherit>
+       <span class="author-203135">no.6</span>
+      </inherit>
+     </div>
+     <div id="magicdomid135" data-author-name="ecma" class=" list-start-code1 gutter-author-203135 list-div list-code locate lineguid-lQfdCcgKooLDVZCS">
+      <ol start="1" class="list-code1">
+       <li><span class="author-203135">执行完上述的操作，utils.elements上面就注册了一个自定义标签</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid136" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-qQiFT4eG2WlwbtBI">
+      <ol start="2" class="list-code1">
+       <li><span class="author-203135">utils.elements['my-element'], 存储值如下：</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid137" class="">
+      <br />
+     </div>
+     <div id="magicdomid138" data-author-name="ecma" class="gutter-author-203135 line-center locate lineguid-hNOXL7IrvTdudY1e">
+      <inherit>
+       <span class="author-203135 upload-image img-orbBA5ZQnXtx6rE4 image-width-491 image-height-198"><img alt="" style="width:491px;height:198px;" src="resource/images/article/vue/1.png" /></span>
+      </inherit>
+     </div>
+     <div id="magicdomid139" data-author-name="ecma" class=" list-start-code1 gutter-author-203135 list-div list-code locate lineguid-wGhPB4MN1NauPuvm">
+      <ol start="1" class="list-code1">
+       <li><span class="author-203135">utils.elements['my-element']存储的是ExtendedVM - function</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid140" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-eonAOVWRj3QhWS0v">
+      <ol start="2" class="list-code1">
+       <li><span class="author-203135">&nbsp;- extend: function extend</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid141" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-N0C1rdwHLPetaIRU">
+      <ol start="3" class="list-code1">
+       <li><span class="author-203135">&nbsp;- options: className replace template</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid142" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-Zss8vFQPjtEvAKgt">
+      <ol start="4" class="list-code1">
+       <li><span class="author-203135">&nbsp;- super: ParentVM - function ViewModel</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid143" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-C5nGI2UdtZ8XwsIk">
+      <ol start="5" class="list-code1">
+       <li><span class="author-203135">&nbsp;- prototype: ViewModel</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid144" data-author-name="ecma" class="gutter-author-203135 list-div locate lineguid-DiXcceIjHpL3LayY">
+      <ul class="list-indent1">
+       <li><br /></li>
+      </ul>
+     </div>
+     <div id="magicdomid145" data-author-name="ecma" class="gutter-author-203135 line-center locate lineguid-GgEIj2CIWpocZtPm">
+      <inherit>
+       <span class="author-203135 upload-image img-QZ96xJpWzKPIxzaY image-width-331 image-height-147"><img alt="" style="width:331px;height:147px;" src="resource/images/article/vue/2.png" /></span>
+      </inherit>
+     </div>
+     <div id="magicdomid146" data-author-name="ecma" class="gutter-author-203135 list-div locate lineguid-PfWFeKcQWj50g6nA">
+      <ul class="list-indent1">
+       <li><br /></li>
+      </ul>
+     </div>
+     <div id="magicdomid147" data-author-name="ecma" class="gutter-author-203135 line-center locate lineguid-Xw1mokEtZwiDI849">
+      <inherit>
+       <span class="author-203135 upload-image img-ea4pPH6jpwB1h9sk image-width-338 image-height-226"><img alt="" style="width:338px;height:226px;" src="resource/images/article/vue/3.png" /></span>
+      </inherit>
+     </div>
+     <div id="magicdomid148" data-author-name="ecma" class="gutter-author-203135">
+      <inherit>
+       <br />
+      </inherit>
+     </div>
+     <div id="magicdomid149" data-author-name="ecma" class="gutter-author-203135 locate lineguid-JhhHqq2FeRhXW9hA">
+      <span class="author-203135">到这里感觉有一大堆问题：</span>
+     </div>
+     <div id="magicdomid150" data-author-name="ecma" class=" list-start-number1 gutter-author-203135 list-div locate lineguid-IHYMAOOeSdLz9uBs">
+      <ol start="1" class="list-number1">
+       <li><span class="author-203135">super和prototype都是ViewModel，那么为何不同？</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid151" data-author-name="ecma" class="gutter-author-203135 list-div locate lineguid-QMXxhv41iPiktRkH">
+      <ol start="2" class="list-number1">
+       <li><span class="author-203135">作者这么写用意又何在？</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid152" data-author-name="ecma" class="gutter-author-203135 list-div locate lineguid-rHaHojRtbQE8Bn1z">
+      <ol start="3" class="list-number1">
+       <li><span class="author-203135">viewModel又到底是个什么东西？</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid153" data-author-name="ecma" class="gutter-author-203135 locate lineguid-3Q6mqG347rQEpde0">
+      <span class="author-203135">码下面就先看代码解决下这些问题：</span>
+     </div>
+     <div id="magicdomid154" class="">
+      <br />
+     </div>
+     <div id="magicdomid155" class="">
+      <br />
+     </div>
+     <div id="magicdomid156" data-author-name="ecma" class=" list-start-code1 line-bold gutter-author-203135 list-div list-code locate lineguid-R6zk25akncwp0mvt">
+      <ol start="1" class="list-code1">
+       <li><span class="author-203135 b"><b>super和prototype都是ViewModel，那么为何不同？</b></span></li>
+      </ol>
+     </div>
+     <div id="magicdomid157" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
+      <ol start="2" class="list-code1">
+       <li><br /></li>
+      </ol>
+     </div>
+     <div id="magicdomid158" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-sTjGgDB6yiFbUUB7">
+      <inherit>
+       <ol start="3" class="list-code1">
+        <li><span class="author-203135">super放的是function ViewModel, 而prototype放的是ViewModel放的是Object.create(ViewModel.prototype);</span></li>
+       </ol>
+      </inherit>
+     </div>
+     <div id="magicdomid159" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
+      <ol start="4" class="list-code1">
+       <li><br /></li>
+      </ol>
+     </div>
+     <div id="magicdomid160" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-mq897wq5bPgR0dr2">
+      <inherit>
+       <ol start="5" class="list-code1">
+        <li><span class="author-203135">ViewModel结构:</span></li>
+       </ol>
+      </inherit>
+     </div>
+     <div id="magicdomid161" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-fY5qguSY0NzR7zBD">
+      <ol start="6" class="list-code1">
+       <li><span class="author-203135">&nbsp;- component</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid162" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-8OYNDB2kDoOxUd5W">
+      <ol start="7" class="list-code1">
+       <li><span class="author-203135">&nbsp;- config</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid163" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-JNe4cyg5JJJbMosV">
+      <ol start="8" class="list-code1">
+       <li><span class="author-203135">&nbsp;- directive</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid164" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-WT7zkinRXtLwrjP2">
+      <ol start="9" class="list-code1">
+       <li><span class="author-203135">&nbsp;- element</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid165" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-xTzfFJ2uqlyQlGuU">
+      <ol start="10" class="list-code1">
+       <li><span class="author-203135">&nbsp;- extend</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid166" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-kYHLobJby9TnCIQV">
+      <ol start="11" class="list-code1">
+       <li><span class="author-203135">&nbsp;- filter</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid167" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-9jIo7lvkh8HJ8tge">
+      <ol start="12" class="list-code1">
+       <li><span class="author-203135">&nbsp;- partial</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid168" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-SSc6FtERuBp0ou6G lineguid-Z0kENDz5u1pikZEr">
+      <ol start="13" class="list-code1">
+       <li><span class="author-203135">&nbsp;- transition&nbsp;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid169" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-RA3Ml8TTWraNpJ0i">
+      <ol start="14" class="list-code1">
+       <li><span class="author-203135">&nbsp;- prototype</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid170" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-L7H8QqF0RYs5GfKL lineguid-nUVte3CssjE2Wkq1">
+      <ol start="15" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp; - $broadcast</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid171" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-6HF2s2seszs0Lzpp">
+      <ol start="16" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp; - $destroy</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid172" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-BuDplfRUGgypcomN">
+      <ol start="17" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp; - $emit</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid173" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-UuRL7644PjDKSehE">
+      <ol start="18" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp; - $off</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid174" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-s5U9nn8oXDPXmzua">
+      <ol start="19" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp; - $on</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid175" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-HhML80Blw9DwBH3v">
+      <ol start="20" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp; - $once</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid176" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-TUczBC1ZeNw0ZFFZ">
+      <ol start="21" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp; - $set</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid177" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-cbwbAewebgqtfHDg">
+      <ol start="22" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp; - $unwatch</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid178" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-nbdmNA5ypo2SaICD">
+      <ol start="23" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp; - $watch</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid179" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
+      <ol start="24" class="list-code1">
+       <li><br /></li>
+      </ol>
+     </div>
+     <div id="magicdomid180" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-PvKgXs79yI6OQOpH">
+      <inherit>
+       <ol start="25" class="list-code1">
+        <li><span class="author-203135">ViewModel构造函数上的属性是在main.js里申明的，ViewModel的prototype是在viewmodel.js里申明的</span></li>
+       </ol>
+      </inherit>
+     </div>
+     <div id="magicdomid181" class="">
+      <br />
+     </div>
+     <div id="magicdomid182" data-author-name="ecma" class="gutter-author-203135 locate lineguid-m0KMZsDO5pcF0WBL">
+      <span class="author-203135">那么问题来了，上述把elements存储起来了，elements又是何时被替换的呢？</span>
+     </div>
+     <div id="magicdomid183" data-author-name="ecma" class="gutter-author-203135 heading-3 locate lineguid-FsauLiqHDF2tOU4z">
+      <inherit>
+       <span class="author-203135">自定义标签的使用</span>
+      </inherit>
+     </div>
+     <div id="magicdomid184" data-author-name="ecma" class=" list-start-code1 gutter-author-203135 list-div list-code locate lineguid-cZrNRuNymkxtL5Vo">
+      <ol start="1" class="list-code1">
+       <li><span class="author-203135">Compiler</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid185" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-tSxGPKLRymVyQ2DM lineguid-mPu4nWlqEc6sZKnp">
+      <ol start="2" class="list-code1">
+       <li><span class="author-203135">&nbsp; － compiler 做vue初始化的东西</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid186" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-JKxJ9puYRidjjhnk lineguid-ZxFx4HHqQEQ1aQsJ">
+      <ol start="3" class="list-code1">
+       <li><span class="author-203135">&nbsp; － getOption（取options下的elements或者utils下的elements）</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid187" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-1nlr17qPMw5BVfvz lineguid-X6Alkvv8l1iECMs8 lineguid-FzzB9JBXnaqHmKPH">
+      <ol start="4" class="list-code1">
+       <li><span class="author-203135">&nbsp; － addChild&nbsp;&nbsp;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid188" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-68GZXTAChCmuQf5a lineguid-iazo345tqb0l2cl4 lineguid-NOmkrQMO5BwEmv9J">
+      <ol start="5" class="list-code1">
+       <li><span class="author-203135">&nbsp; － compileNode&nbsp;&nbsp;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid189" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-nMF0HtsRBVESzSeU lineguid-T77BKrArjpqxRwCe">
+      <ol start="6" class="list-code1">
+       <li><span class="author-203135">&nbsp; － compileTextNode&nbsp; {{msg}} =&gt; hihi</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid190" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-wS8UXL2enVMPySql lineguid-DiMQDwNqTVm5OhDC">
+      <ol start="7" class="list-code1">
+       <li><span class="author-203135">&nbsp; － setupElement&nbsp; my-element =&gt; div</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid191" data-author-name="ecma" class="gutter-author-203135 locate lineguid-MlOya45Xxiu1ZZy5">
+      <inherit>
+       <span class="author-203135">自定义标签的使用要从Vue初始化开始讲起：</span>
+      </inherit>
+     </div>
+     <div id="magicdomid192" data-author-name="ecma" class="gutter-author-203135 heading-1 locate lineguid-qm5MRbBHNl9MWU6g">
+      <inherit>
+       <span class="author-203135">no.1</span>
+      </inherit>
+     </div>
+     <div id="magicdomid193" data-author-name="ecma" class=" list-start-code1 gutter-author-203135 list-div list-code locate lineguid-h50jA79dijeYoAr6">
+      <ol start="1" class="list-code1">
+       <li><span class="author-203135">从最基础的代码开始：new Vue</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid194" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-zQtESayJdgxAoFtn">
+      <ol start="2" class="list-code1">
+       <li><span class="author-203135">那么他执行了Vue的构造函数，在源码中是ViewModel</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid195" data-author-name="ecma" class="line-bold gutter-author-203135 list-div list-code locate lineguid-jcc80PP0OjjWUuy7">
+      <ol start="3" class="list-code1">
+       <li><span class="author-203135 b"><b>viewmodel.js =&gt; ViewModel</b></span></li>
+      </ol>
+     </div>
+     <div id="magicdomid196" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-x7zhIji8KqzhMW17">
+      <ol start="4" class="list-code1">
+       <li><span class="author-203135">function ViewModel(options){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid197" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-tAy9VvNo9cDdV2Px">
+      <ol start="5" class="list-code1">
+       <li><span class="author-203135">&nbsp; new Compiler(this, options);</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid198" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-0xAYNP6dnrKKZSJw">
+      <ol start="6" class="list-code1">
+       <li><span class="author-203135">}</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid199" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-pcQwOHko71695TuY">
+      <ol start="7" class="list-code1">
+       <li><span class="author-203135">从这里看Compiler才是大头</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid200" data-author-name="ecma" class="gutter-author-203135 heading-1 locate lineguid-dKmScvoNtvDNSuM0">
+      <inherit>
+       <span class="author-203135">no.2</span>
+      </inherit>
+     </div>
+     <div id="magicdomid201" data-author-name="ecma" class=" list-start-code1 gutter-author-203135 list-div list-code locate lineguid-PYi1KJExDlpOnS2t">
+      <ol start="1" class="list-code1">
+       <li><span class="author-203135">compiler比较繁杂，拣重点的以及与自定义标签相关的看:</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid202" data-author-name="ecma" class="line-bold gutter-author-203135 list-div list-code locate lineguid-f97rxVWqlZ2BfzEp">
+      <ol start="2" class="list-code1">
+       <li><span class="author-203135 b"><b>compiler.js =&gt; Compiler</b></span></li>
+      </ol>
+     </div>
+     <div id="magicdomid203" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-r1pLNWc7piqwuN1F">
+      <ol start="3" class="list-code1">
+       <li><span class="author-203135">var el = compiler.setupElement(options);</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid204" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
+      <ol start="4" class="list-code1">
+       <li><br /></li>
+      </ol>
+     </div>
+     <div id="magicdomid205" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-r7DFBqwUaHGHSFSr">
+      <inherit>
+       <ol start="5" class="list-code1">
+        <li><span class="author-203135">compiler.compiler(el, true);</span></li>
+       </ol>
+      </inherit>
+     </div>
+     <div id="magicdomid206" data-author-name="ecma" class="gutter-author-203135 heading-1 locate lineguid-Ow1NcdyDtizomnyR">
+      <inherit>
+       <span class="author-203135">no.3</span>
+      </inherit>
+     </div>
+     <div id="magicdomid207" data-author-name="ecma" class=" list-start-code1 gutter-author-203135 list-div list-code locate lineguid-57LpuUq8fXIBtCy9">
+      <ol start="1" class="list-code1">
+       <li><span class="author-203135">compile =&gt; compile a DOM node</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid208" data-author-name="ecma" class="line-bold gutter-author-203135 list-div list-code locate lineguid-pzKPqbzRlSFunfOH">
+      <ol start="2" class="list-code1">
+       <li><span class="author-203135 b"><b>compiler.js =&gt; compile</b></span></li>
+      </ol>
+     </div>
+     <div id="magicdomid209" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-8YSaVhB8Nf2HCqby">
+      <ol start="3" class="list-code1">
+       <li><span class="author-203135">判断nodeType</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid210" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-9hNkK1eMJqkcjKNM">
+      <ol start="4" class="list-code1">
+       <li><span class="author-203135">－ nodeType =&gt; 1</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid211" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-cAV4dXlknenQ89qY lineguid-Dc179zoGRFB9PUGX">
+      <ol start="5" class="list-code1">
+       <li><span class="author-203135">&nbsp; 是普通节点（包括自定义节点）</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid212" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-m8JmB1zuilGXN8Rc">
+      <ol start="6" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid213" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-VOADHKJBHykAebmN lineguid-BLzWmN1usY4YQ27g">
+      <ol start="7" class="list-code1">
+       <li><span class="author-203135">&nbsp; </span><span class="author-203135 b"><b>v1.一开始接收的是new Vue时的el即body,或者说是普通节点</b></span></li>
+      </ol>
+     </div>
+     <div id="magicdomid214" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-kwnhnitHimeF5t4I lineguid-qUvlwXoWDCFYY79w">
+      <ol start="8" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; compiler.compileNode(node)</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid215" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-rz5f5bQezwyzRlrH">
+      <ol start="9" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; －if(node.childNodes.length){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid216" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-4HqEMv9naw4FBc5X lineguid-HkNLzmZK37euflEM lineguid-3oQTKSLazrfJHcdz">
+      <ol start="10" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; var nodes = Array.prototype.slice.call(node.childNodes);</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid217" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-cGPvGAQOtqlylVwv">
+      <ol start="11" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for(var node of nodes){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid218" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-B2XJWb5EBxEkCwiC lineguid-u0dNanH3TWeq40Bx">
+      <ol start="12" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.compile(node);</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid219" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-BrLDjQVHoGIbpTG9 lineguid-oTGWiXG451DttAdZ">
+      <ol start="13" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid220" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-mHrxEc7pjtHbghj0 lineguid-R9E6LdhXKt0PuGwo lineguid-UCPfdzIJq9yoym8s">
+      <ol start="14" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid221" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-GXDO8YBAtwZEXUYo">
+      <ol start="15" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid222" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-4tfnnyRaQd5hITst">
+      <ol start="16" class="list-code1">
+       <li><span class="author-203135">&nbsp; </span><span class="author-203135 b"><b>v2.如果是自定义标签</b></span></li>
+      </ol>
+     </div>
+     <div id="magicdomid223" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-6sHdNVuBVXuFgk3z lineguid-gjU9p7MlhlitKzMO">
+      <ol start="17" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; customeElementFn =&nbsp;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid224" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-c79CaV3qXLm2hFmg lineguid-YxiyxEbDUXmDjrSm lineguid-jxBb5BC7kOBs7Aqc lineguid-5orhsgRtqbfI73E0">
+      <ol start="18" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; compiler.getOptions('elements', node.tagName.toLowerCase())；</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid225" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-uQ5XOFgc9qH1FUtm">
+      <ol start="19" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; addChild(customElementFn)</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid226" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-IfYSTfcLgA4zJFzp">
+      <ol start="20" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid227" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-klwFUnucMI4y42NB lineguid-IbUc1Sih7928fAhM">
+      <ol start="21" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; function addChild(Ctor){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid228" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-SS4Un0tnhhhMabDN lineguid-dXOI5TWN3l97iOXe">
+      <ol start="22" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(utils.isConstructor(Ctor)){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid229" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-N9YedHNpg6QzHrnD lineguid-PoilC37q8OCyVuMo">
+      <ol start="23" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; var child = new Ctor({</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid230" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-UPfOR2UpODGTTkBC lineguid-faMENrTUwrt3MnU2">
+      <ol start="24" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; el: node,</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid231" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-9onWTYOkBlwYEbfu">
+      <ol start="25" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; child: true,</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid232" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-G8utW2lf9anFZ4Xa">
+      <ol start="26" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; compilerOptions: {</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid233" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-r7GlflN21XSoXXl6 lineguid-jn4QccXee5URvLXL">
+      <ol start="27" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; parentCompiler: compiler</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid234" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-sRXzyNk7gZX8RHZO lineguid-jvH14owrW1r6h2N7">
+      <ol start="28" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid235" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-WtjEbtYxvBkUdxwy lineguid-iaJwaZY4qHvgdx70">
+      <ol start="29" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; });</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid236" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-n3OFYZJkemFpn2n9">
+      <ol start="30" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; compiler.childCompilers.push(child.$compiler);</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid237" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-RwaXF1HbXdf9uwDC lineguid-aqIm8CVQ6W62eCv4">
+      <ol start="31" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }else{</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid238" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-RsDnFy2ZodHbMNoA lineguid-YWRz4wZtbKbMmcIC">
+      <ol start="32" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ctor(node);</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid239" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-fKw8T9hetawX5pif lineguid-RIbuLeZpMR2vZhxQ">
+      <ol start="33" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid240" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-dShQCNTBtB5NIykS lineguid-HWJd22CdopEy5L7f">
+      <ol start="34" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; }&nbsp;&nbsp;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid241" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-UcyRtvL5i20xV2qL">
+      <inherit>
+       <ol start="35" class="list-code1">
+        <li><span class="author-203135">－ nodeType =&gt; 3</span></li>
+       </ol>
+      </inherit>
+     </div>
+     <div id="magicdomid242" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-yHuGfpvGYYfDfoNt">
+      <ol start="36" class="list-code1">
+       <li><span class="author-203135">&nbsp; compiler.compileTextNode(node);</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid243" data-author-name="ecma" class="gutter-author-203135 heading-3 locate lineguid-wPSOs0kjreqO96NP">
+      <inherit>
+       <span class="author-203135">Vue初始化</span>
+      </inherit>
+     </div>
+     <div id="magicdomid244" data-author-name="ecma" class="gutter-author-203135 locate lineguid-tp8OzIulkDcn2E3t">
+      <span class="author-203135">初始化干了什么？</span>
+     </div>
+     <div id="magicdomid245" data-author-name="ecma" class="gutter-author-203135 heading-1 locate lineguid-9udM35aF5iyw4Yhi">
+      <inherit>
+       <span class="author-203135">no.1</span>
+      </inherit>
+     </div>
+     <div id="magicdomid246" data-author-name="ecma" class=" list-start-code1 gutter-author-203135 list-div list-code locate lineguid-WAD4glw1t9MBqQ5m">
+      <ol start="1" class="list-code1">
+       <li><span class="author-203135">function Compiler(vm, options){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid247" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-l0ZppfmtL9NfKdAY">
+      <ol start="2" class="list-code1">
+       <li><span class="author-203135">&nbsp; var compiler = this;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid248" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-Gq9L8iWIAE3mDyEq">
+      <ol start="3" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid249" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-27uHUMzQT2mJWZXv">
+      <ol start="4" class="list-code1">
+       <li><span class="author-203135">&nbsp; compiler.init = true;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid250" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-zw4HqeUUIv7GkcBp">
+      <ol start="5" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid251" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-nkgK9PShmyzbya5N">
+      <ol start="6" class="list-code1">
+       <li><span class="author-203135">&nbsp; //此处是获取options以及处理，elements会处理成el</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid252" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-ICFHUy9NYhLHEveq">
+      <ol start="7" class="list-code1">
+       <li><span class="author-203135">&nbsp; options = compiler.options = options || makeHash();</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid253" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-bZzQBrTFNTxve920">
+      <ol start="8" class="list-code1">
+       <li><span class="author-203135">&nbsp; utils.processOptions(options);</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid254" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-ogGijOcLaeqKBcza">
+      <ol start="9" class="list-code1">
+       <li><span class="author-203135">&nbsp; utils.extend(compiler, options.compilerOptions);</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid255" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-xLDP3kziSE79Qti2">
+      <ol start="10" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid256" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-vPrKHWRKetYTn3bs">
+      <ol start="11" class="list-code1">
+       <li><span class="author-203135">&nbsp; var el = compiler.setupElement(options);</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid257" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-bPQXqHG1tSaAW3NH">
+      <ol start="12" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid258" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-7LTZd6Suy745wbuM">
+      <ol start="13" class="list-code1">
+       <li><span class="author-203135">&nbsp; var scope = options.scope;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid259" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-tzg5wm7H5spDQA8r">
+      <ol start="14" class="list-code1">
+       <li><span class="author-203135">&nbsp; if(scope) utils.extend(vm, scope, true);</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid260" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-jGsOsK82CKpisaYo">
+      <ol start="15" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid261" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-B9k82vZMXAfqu6Fa">
+      <ol start="16" class="list-code1">
+       <li><span class="author-203135">&nbsp; compiler.vm = vm;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid262" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-PdzfMFgttMcBc8rs">
+      <ol start="17" class="list-code1">
+       <li><span class="author-203135">&nbsp; def(vm, '$', makeHash());</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid263" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-9NWTpmhc4VIfJir8">
+      <ol start="18" class="list-code1">
+       <li><span class="author-203135">&nbsp; def(vm, '$el', el);</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid264" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-8ZVN9S0NhTFM48V6">
+      <ol start="19" class="list-code1">
+       <li><span class="author-203135">&nbsp; def(vm, '$compiler', compiler);</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid265" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-rWk3ujLdOGJs1aWn">
+      <ol start="20" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid266" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-vaDsyo0nz43AKLLY">
+      <ol start="21" class="list-code1">
+       <li><span class="author-203135">&nbsp; compiler.dirs = [];</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid267" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-D1a7PaxvembQlHGW">
+      <ol start="22" class="list-code1">
+       <li><span class="author-203135">&nbsp; compiler.exps = [];</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid268" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-ozojFiPeW0iUDzhX">
+      <ol start="23" class="list-code1">
+       <li><span class="author-203135">&nbsp; compiler.childCompilers = [];</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid269" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-3GtIdscZoGQ6McVZ">
+      <ol start="24" class="list-code1">
+       <li><span class="author-203135">&nbsp; compiler.emitter = new Emitter();</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid270" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-gl8HXS9EdKacaYGw">
+      <ol start="25" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid271" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-2JJXtxiyqZa4rcc1">
+      <ol start="26" class="list-code1">
+       <li><span class="author-203135">&nbsp; var observables ＝ compiler.observables = [],</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid272" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-lvvkuudlrWDEZrTY lineguid-JjhPUoflsGdLlgZC lineguid-41zUYexaTqiv1JzZ">
+      <ol start="27" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; computed = compiler.computed = [];</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid273" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-HJKwWODY9EIVcbqx">
+      <ol start="28" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid274" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-7q55wbgmge7liceD">
+      <ol start="29" class="list-code1">
+       <li><span class="author-203135">&nbsp; var parent = compiler.parentCompiler;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid275" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-rS61HSwGOyo07nfz">
+      <ol start="30" class="list-code1">
+       <li><span class="author-203135">&nbsp; compiler.bindings = parent ? Object.create():makeHash();</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid276" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-aaEM1m5YXr1Uy2ve">
+      <ol start="31" class="list-code1">
+       <li><span class="author-203135">&nbsp; compiler.rootCompiler = parent ? getRoot(parent) : compiler;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid277" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-RwTd1Lkg7f2KgkQz">
+      <ol start="32" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid278" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-KE0uQowqPb3bFVZW">
+      <ol start="33" class="list-code1">
+       <li><span class="author-203135">&nbsp; var childId = utils.attr(el, 'id');</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid279" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-p6H0XIhV0f6sHkht">
+      <ol start="34" class="list-code1">
+       <li><span class="author-203135">&nbsp; if(parent){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid280" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-RURokzcRp7x0AkFO lineguid-mOMStD6EBm48Os6L">
+      <ol start="35" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; def(vm, '$parent', parent.vm);</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid281" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-2kU0B4XXb0RCQfXc">
+      <ol start="36" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; if(childId){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid282" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-aLqQYjQ2Fodl5x7t lineguid-ZibJWxI0dVpwNwEi">
+      <ol start="37" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; compiler.childId = childId;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid283" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-3BQYXjGfvAetE2Ij">
+      <ol start="38" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; parent.vm.$[childId] = vm;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid284" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-8A4P7PvJDg7VOBHc lineguid-Kq5R1poIdrDmxOVE">
+      <ol start="39" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; }</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid285" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-f1qbZjVZjTfwIiqV lineguid-B0vsJoa8R6p59WBH">
+      <ol start="40" class="list-code1">
+       <li><span class="author-203135">&nbsp; }</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid286" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-an4nGLi5z6S4OGnO">
+      <ol start="41" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid287" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-CZvuQtOUHw8e2mYB">
+      <ol start="42" class="list-code1">
+       <li><span class="author-203135">&nbsp; compiler.setupObserver();</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid288" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-i26huGnUeT2qynlm">
+      <ol start="43" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid289" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-Wbf8Jveb8UvH5lw8">
+      <ol start="44" class="list-code1">
+       <li><span class="author-203135">&nbsp; if(options.init){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid290" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-agVl7OnjDnek4tHb lineguid-hhEapKnY5BCHhW0k">
+      <ol start="45" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; options.init.apply(vm, options.args || []);</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid291" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-lQkZqBjIoHSrCibK lineguid-zmbQ7YLV7YIuM0aR">
+      <ol start="46" class="list-code1">
+       <li><span class="author-203135">&nbsp; }</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid292" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-TPvBeJawmlf7PUYw">
+      <ol start="47" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid293" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-sUyJalqI37xnAm7X">
+      <ol start="48" class="list-code1">
+       <li><span class="author-203135">&nbsp; var key, keyPrefix;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid294" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-tZxAc5YDMzjcYs8O">
+      <ol start="49" class="list-code1">
+       <li><span class="author-203135">&nbsp; for(key in vm){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid295" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-Im1pVedb1ZcX2dZc lineguid-gnuQJ3ecJWnKnfw2">
+      <ol start="50" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; keyPrefix = key.charAt(0);</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid296" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-vJAij1badSNHuzki">
+      <ol start="51" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; if(keyPrefix !== '$' &amp;&amp; keyPrefix !== '_'){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid297" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-fifLd8xpGkHa6WyV lineguid-B3AeLrGqpPj91YiS">
+      <ol start="52" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; compiler.createBinding(key);</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid298" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-IuDxaurI1hZGsKZc lineguid-pS9lmeyekVZmlefM">
+      <ol start="53" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; }</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid299" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-Ab2Gk2hzlJD4mqSj lineguid-cX51UrMTnM2fmDjg">
+      <ol start="54" class="list-code1">
+       <li><span class="author-203135">&nbsp; }</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid300" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-9aexnhQ16fl9479m">
+      <ol start="55" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid301" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-yz3ETHOtNQF758Xl">
+      <ol start="56" class="list-code1">
+       <li><span class="author-203135">&nbsp; if(compiler.repeat){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid302" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-GDYgZigqHVwQ0tPy lineguid-faAWnZZnoEVGzBZ9">
+      <ol start="57" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid303" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-Vyt5WOviaTd6UYnm lineguid-3CdfRhgC0x51nrjn">
+      <ol start="58" class="list-code1">
+       <li><span class="author-203135">&nbsp; }</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid304" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-HYo2Hjks3kLExrny">
+      <ol start="59" class="list-code1">
+       <li><span class="author-203135">}</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid305" class="">
+      <br />
+     </div>
+     <div id="magicdomid306" data-author-name="ecma" class=" list-start-code1 gutter-author-203135 list-div list-code locate lineguid-eGDvMGHtsI9EDImc">
+      <ol start="1" class="list-code1">
+       <li><span class="author-203135">function makeHash(){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid307" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-rkta0j14WYtozS0V">
+      <ol start="2" class="list-code1">
+       <li><span class="author-203135">&nbsp; return Object.create(null);</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid308" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-I9rJEy81p3xfcz7j">
+      <ol start="3" class="list-code1">
+       <li><span class="author-203135">}</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid309" class="">
+      <br />
+     </div>
+     <div id="magicdomid310" class="">
+      <br />
+     </div>
+     <div id="magicdomid311" class="">
+      <br />
+     </div>
+     <div id="magicdomid312" class="">
+      <br />
+     </div>
+     <div id="magicdomid313" class="">
+      <br />
+     </div>
+     <div id="magicdomid314" class="">
+      <br />
+     </div>
+     <div id="magicdomid315" class="">
+      <br />
+     </div>
+     <div id="magicdomid316" class="">
+      <br />
+     </div>
+     <div id="magicdomid317" class="">
+      <br />
+     </div>
+     <div id="magicdomid318" class="">
+      <br />
+     </div>
+     <div id="magicdomid319" class="">
+      <br />
+     </div>
+     <div id="magicdomid320" class="">
+      <br />
+     </div>
+     <div id="magicdomid321" class="">
+      <br />
+     </div>
+     <div id="magicdomid322" class="">
+      <br />
+     </div>
+    </div>
+    <div id="mention-pop" class="doc-mention-pop" data-reactid=".2.2.0.0.0.0.0.1.1">
+     <div class="trangle-box" data-reactid=".2.2.0.0.0.0.0.1.1.0">
+      <span class="top doc-metion-trangle-item" data-reactid=".2.2.0.0.0.0.0.1.1.0.0"></span>
+      <span class="down doc-metion-trangle-item" data-reactid=".2.2.0.0.0.0.0.1.1.0.1"></span>
+     </div>
+     <ul class="doc-mention-list" data-reactid=".2.2.0.0.0.0.0.1.1.1">
+      <li class="doc-mention-placeholder doc-mention-item" data-reactid=".2.2.0.0.0.0.0.1.1.1.0">@朋友或者文档</li>
+     </ul>
+     <ul class="result-list doc-mention-list doc-mention-result-list" data-reactid=".2.2.0.0.0.0.0.1.1.2"></ul>
+    </div>
+    <span id="mention-width" data-reactid=".2.2.0.0.0.0.0.1.2"></span>
+    <div id="track-avatars" data-reactid=".2.2.0.0.0.0.0.1.3">
+     <div id="track-avatar-203135" class="track-avatar" style="opacity: 0; left: 0px;"> 
+      <!-- <img src="/static/unmd5/default-avatar-moke.png" alt="ecma" title="ecma" />  -->
+     </div>
+    </div>
+    <div id="drag-li" tabindex="-1" data-reactid=".2.2.0.0.0.0.0.1.4"></div>
+   </div>
+   <div id="buddle-box" data-reactid=".2.2.0.0.0.0.0.2"></div>
+   <!-- <div id="buddle-comment-btn" class="hicon icon-comment-add buddle-comment-btn" data-reactid=".2.2.0.0.0.0.0.3" style="top: 171.667px; display: block;"></div> -->
+   <div id="image-resize-frame" data-reactid=".2.2.0.0.0.0.0.4"></div>
+   <div class="image-resize-bar" data-reactid=".2.2.0.0.0.0.0.5"></div>
+   <div class="copy-container" contenteditable="true" data-reactid=".2.2.0.0.0.0.0.6"></div>
   </div>
- </body>
-</html>
+ </div>
+ <div id="overlaysdiv" data-reactid=".2.2.0.0.0.1"></div>
+</div>
+<div class="catalog">
+  <div>目录：</div>
+  <h1>自定义标签的定义</h1>
+  <h2>vue里自定义标签的用法</h2>
+  <h3>no.1</h3>
+  <h3>no.2</h3>
+  <h3>no.3</h3>
+  <h3>no.4</h3>
+  <h3>no.5</h3>
+  <h3>no.6</h3>
+  <h3>super和prototype都是ViewModel，那么为何不同？</h3>
+  <h3>作者这么写用意又何在？</h3>
+  <h3>viewModel又到底是个什么东西？</h3>
+  <h1>自定义标签的使用</h1>
+  <h3>no.1</h3>
+  <h3>no.2</h3>
+  <h1>Vue初始化, 干了什么</h1>
+  <h3>no.1</h3>
+</div>
