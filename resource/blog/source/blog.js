@@ -29,7 +29,7 @@
 					];
 					catalog.forEach(function(item, index){
 						var block = [
-							'<div class="block">',
+							'<div class="block" data-id="' + item.id + '">',
 								'<div class="dot">',
 
 								'</div>',
@@ -89,6 +89,11 @@
 						this.$el.remove();
 					},200);
 				}
+			});
+
+			this.$el.find('.block').click(function(e){
+				var target = e.currentTarget;
+				$.iArticle(target.getAttribute('data-id'));
 			});
 
 			this.evtBind();
