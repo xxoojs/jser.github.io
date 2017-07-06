@@ -20,6 +20,9 @@
 					success: function(data){
 						that.tmpl = [
 							'<div class="article">',
+								'<div class="article-close">',
+									'<span class="fa fa-close"></span>',
+								'</div>',
 								data,
 							'</div>',
 						].join('');
@@ -33,14 +36,22 @@
 		},
 
 		render: function(){
-			this.$el.appendTo($('body'));
+			var $catalog = this.$el.find('.catalog').css('height', 0);
+
+			this.$el.appendTo($('body')).css('overflow', 'hidden');
+
+			var that = this;
+			setTimeout(function(){
+				that.$el.css('overflow', 'auto');
+				$catalog.css('height', 'auto').iDrag();
+			}, 2000);
 
 			this.evtBind();
 		},
 
 		evtBind: function(){
 			var that = this;
-			this.$el.find('.close').click(function(){
+			this.$el.find('.article-close').click(function(){
 				that.close();
 			});
 		},
@@ -50,7 +61,11 @@
 		},
 
 		close: function(){
-			this.$el.remove();
+			this.$el.addClass('article-out');
+			var that = this;
+			setTimeout(function(){
+				that.$el.remove();
+			},1000);
 		}
 	};
 

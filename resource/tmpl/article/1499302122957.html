@@ -1,0 +1,510 @@
+<div class="container commentable doc-container" id="doc-container" data-reactid=".2.2.0.0.0" style="opacity: 1;">
+ <div id="editorcontainerbox" data-reactid=".2.2.0.0.0.0">
+  <div id="editorcontainer" class="pc editorcontainer" data-reactid=".2.2.0.0.0.0.0">
+   <div class="doc-title-box" data-reactid=".2.2.0.0.0.0.0.0">
+    <input id="doc-title-input" class="mousetrap" placeholder="ng2组件之间通信" data-value="ng2组件之间通信" maxlength="100" value="ng2组件之间通信" data-reactid=".2.2.0.0.0.0.0.0.0" />
+   </div>
+   <div id="outerdocbody" data-reactid=".2.2.0.0.0.0.0.1">
+    <div id="innerdocbody" spellcheck="false" class="syntax needsclick innerdocbody mousetrap authorColors doesWrap" autocorrect="off" autocomplete="off" data-reactid=".2.2.0.0.0.0.0.1.0" contenteditable="true">
+     <div id="magicdomid2" data-author-name="ecma" class="gutter-author-203135 locate lineguid-95Hk4ensl5xBsCq3">
+      <span class="author-203135 font-color-15"><font color="#fe2c23">父组件数据流向子组件以及子组件如何监听数据变化的3种方法：</font></span>
+     </div>
+     <div id="magicdomid3" data-author-name="ecma" class="font-color-15 gutter-author-203135">
+      <inherit>
+       <br />
+      </inherit>
+     </div>
+     <div id="magicdomid4" data-author-name="ecma" class="list-start-code1 gutter-author-203135 list-div list-code locate lineguid-2a7jMmAlyNuJxPtM">
+      <ol start="1" class="list-code1">
+       <li><span class="author-203135 font-size-3"><font size="3">1.输入型绑定（属性型绑定方式）</font></span></li>
+      </ol>
+     </div>
+     <div id="magicdomid5" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-rjr1G6u7xZTf8P5n">
+      <ol start="2" class="list-code1">
+       <li><span class="author-203135 font-size-3"><font size="3">[options] = &quot;options&quot;;</font></span></li>
+      </ol>
+     </div>
+     <div id="magicdomid6" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-tdK24TCrvOYCglPc">
+      <ol start="3" class="list-code1">
+       <li><span class="author-203135 font-size-3"><font size="3">@</font></span><span class="author-203135">Input() options: any;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid7" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
+      <ol start="4" class="list-code1">
+       <li><br /></li>
+      </ol>
+     </div>
+     <div id="magicdomid8" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-fhyVWIgUTiAZfi9h">
+      <inherit>
+       <ol start="5" class="list-code1">
+        <li><span class="author-203135 font-size-3"><font size="3">=&gt;父组件传递数据到子组件</font></span></li>
+       </ol>
+      </inherit>
+     </div>
+     <div id="magicdomid9" class="">
+      <br />
+     </div>
+     <div id="magicdomid10" data-author-name="ecma" class="list-start-code1 gutter-author-203135 list-div list-code locate lineguid-2qxhj4ribzztzrPl">
+      <ol start="1" class="list-code1">
+       <li><span class="author-203135">2.setter监听</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid11" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-wefa6gTHEazhh3UF">
+      <ol start="2" class="list-code1">
+       <li><span class="author-203135 autolink">
+         <autolink>
+          @
+         </autolink></span><span class="author-203135">Input()</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid12" data-author-name="ecma" class="font-size-3 gutter-author-203135 list-div list-code locate lineguid-5oguWXyhDIwu73rE">
+      <ol start="3" class="list-code1">
+       <li><span class="author-203135 font-size-3"><font size="3">public set input(v : string) {</font></span></li>
+      </ol>
+     </div>
+     <div id="magicdomid13" data-author-name="ecma" class="font-size-3 gutter-author-203135 list-div list-code locate lineguid-TsH800SNAv3XmrSS">
+      <ol start="4" class="list-code1">
+       <li><span class="author-203135 font-size-3"><font size="3">this._input = v;</font></span></li>
+      </ol>
+     </div>
+     <div id="magicdomid14" data-author-name="ecma" class="font-size-3 gutter-author-203135 list-div list-code locate lineguid-z8XLZTsf7vY0KRMF">
+      <ol start="5" class="list-code1">
+       <li><span class="author-203135 font-size-3"><font size="3">console.log(v);</font></span></li>
+      </ol>
+     </div>
+     <div id="magicdomid15" data-author-name="ecma" class="font-size-3 gutter-author-203135 list-div list-code locate lineguid-hbKTrKdUheZKFIdX">
+      <ol start="6" class="list-code1">
+       <li><span class="author-203135 font-size-3"><font size="3">}</font></span></li>
+      </ol>
+     </div>
+     <div id="magicdomid16" data-author-name="ecma" class="font-size-3 gutter-author-203135 list-div list-code locate lineguid-N0WU7q9YGGBSUTWv">
+      <ol start="7" class="list-code1">
+       <li><span class="author-203135 font-size-3"><font size="3">public get input() : string {</font></span></li>
+      </ol>
+     </div>
+     <div id="magicdomid17" data-author-name="ecma" class="font-size-3 gutter-author-203135 list-div list-code locate lineguid-AxepOijK2y73skpE">
+      <ol start="8" class="list-code1">
+       <li><span class="author-203135 font-size-3"><font size="3">return this._input;</font></span></li>
+      </ol>
+     </div>
+     <div id="magicdomid18" data-author-name="ecma" class="font-size-3 gutter-author-203135 list-div list-code locate lineguid-RahCHhT9Ycz8dDPv">
+      <ol start="9" class="list-code1">
+       <li><span class="author-203135 font-size-3"><font size="3">}</font></span></li>
+      </ol>
+     </div>
+     <div id="magicdomid19" class="">
+      <br />
+     </div>
+     <div id="magicdomid20" data-author-name="ecma" class="list-start-code1 gutter-author-203135 list-div list-code locate lineguid-eedCUDURAn8TvwV1">
+      <ol start="1" class="list-code1">
+       <li><span class="author-203135">3.ngOnChanges－onChanges生命周期钩子</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid21" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-NBVak2b01OEaVtQE">
+      <ol start="2" class="list-code1">
+       <li><span class="author-203135">ngOnChanges(changes: any){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid22" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-kgHVbzFMB8cHEVyD">
+      <ol start="3" class="list-code1">
+       <li><span class="author-203135">&nbsp; if(changes.options){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid23" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-7ARjELUemuoJG5pH lineguid-uAFPknEb72qWN0dn">
+      <ol start="4" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid24" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-Pb0jVrN03zb7Pliu lineguid-AxUdlVGPV5pc0r1h">
+      <ol start="5" class="list-code1">
+       <li><span class="author-203135">&nbsp; }</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid25" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-O7PDs3YzlMpTnbWD">
+      <ol start="6" class="list-code1">
+       <li><span class="author-203135">}</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid26" class="">
+      <br />
+     </div>
+     <div id="magicdomid27" data-author-name="ecma" class="gutter-author-203135 locate lineguid-nSA6NGVgavBKA8s2">
+      <span class="author-203135 font-color-15"><font color="#fe2c23">子组件数据流向父组件以及监听数据的4种方法：</font></span>
+     </div>
+     <div id="magicdomid28" data-author-name="ecma" class="font-color-15 gutter-author-203135">
+      <inherit>
+       <br />
+      </inherit>
+     </div>
+     <div id="magicdomid29" data-author-name="ecma" class="list-start-code1 font-size-3 gutter-author-203135 list-div list-code locate lineguid-wTRZTMsU62Azj0M9">
+      <ol start="1" class="list-code1">
+       <li><span class="author-203135 font-size-3"><font size="3">1.子组件暴露一个EventEmitter属性，广播给父组件</font></span></li>
+      </ol>
+     </div>
+     <div id="magicdomid30" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
+      <ol start="2" class="list-code1">
+       <li><br /></li>
+      </ol>
+     </div>
+     <div id="magicdomid31" data-author-name="ecma" class="font-size-1 gutter-author-203135 list-div list-code locate lineguid-2Fs38VyxdTqvFRZE">
+      <ol start="3" class="list-code1">
+       <li><span class="author-203135">子组件：</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid32" data-author-name="ecma" class="font-size-1 gutter-author-203135 list-div list-code locate lineguid-percuVU13Zh0uMhl">
+      <ol start="4" class="list-code1">
+       <li><span class="author-203135 autolink">
+         <autolink>
+          @
+         </autolink></span><span class="author-203135">Output() onActivate: EventEmitter&lt;any&gt; = new EventEmitter();</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid33" data-author-name="ecma" class="font-size-1 gutter-author-203135 list-div list-code locate lineguid-rebeRK09Xx308w1I">
+      <ol start="5" class="list-code1">
+       <li><span class="author-203135">(onActivate/click)=&quot;activate($event)&quot;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid34" data-author-name="ecma" class="font-size-1 gutter-author-203135 list-div list-code locate lineguid-pTnoaxmybpWFOp4P">
+      <ol start="6" class="list-code1">
+       <li><span class="author-203135">private activate($event: any){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid35" data-author-name="ecma" class="font-size-1 gutter-author-203135 list-div list-code locate lineguid-ydXpiem6BWF1153n lineguid-qsbu7yPfRHW5XPps">
+      <ol start="7" class="list-code1">
+       <li><span class="author-203135">&nbsp; this.onActivate.emit($event);</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid36" data-author-name="ecma" class="font-size-1 gutter-author-203135 list-div list-code locate lineguid-mzMMACHd7DrrJvMH">
+      <ol start="8" class="list-code1">
+       <li><span class="author-203135">}</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid37" data-author-name="ecma" class="font-size-1 gutter-author-203135 list-div list-code">
+      <inherit>
+       <ol start="9" class="list-code1">
+        <li><br /></li>
+       </ol>
+      </inherit>
+     </div>
+     <div id="magicdomid38" data-author-name="ecma" class="font-size-1 gutter-author-203135 list-div list-code locate lineguid-ct0ZJpnL0oW2TKqC">
+      <ol start="10" class="list-code1">
+       <li><span class="author-203135">父组件：</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid39" data-author-name="ecma" class="font-size-1 gutter-author-203135 list-div list-code locate lineguid-y2AaIy6sWWB3OeDX">
+      <inherit>
+       <ol start="11" class="list-code1">
+        <li><span class="author-203135">(onActivate)=&quot;chooseDrug($event)&quot;</span></li>
+       </ol>
+      </inherit>
+     </div>
+     <div id="magicdomid40" data-author-name="ecma" class="font-size-1 gutter-author-203135 list-div list-code locate lineguid-FNsQtwyWhEikvLTE">
+      <ol start="12" class="list-code1">
+       <li><span class="author-203135">private chooseDrug($event: any){}</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid41" class="">
+      <br />
+     </div>
+     <div id="magicdomid42" data-author-name="ecma" class="list-start-code1 gutter-author-203135 list-div list-code locate lineguid-Rf36l8DIutBOS9r3">
+      <ol start="1" class="list-code1">
+       <li><span class="author-203135">2.本地变量</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid43" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-pL1EabESmwUU1UnE">
+      <ol start="2" class="list-code1">
+       <li><span class="author-203135">&lt;drug-tree #tree [options]=&quot;options&quot;&gt;&lt;/drug-tree&gt;{{tree.input}}</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid44" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-MWxSeLkBANvvCfrW">
+      <ol start="3" class="list-code1">
+       <li><span class="author-203135">只限于模版中使用</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid45" class="">
+      <br />
+     </div>
+     <div id="magicdomid46" data-author-name="ecma" class="list-start-code1 gutter-author-203135 list-div list-code locate lineguid-xfkaFJrxe0QKwqug">
+      <ol start="1" class="list-code1">
+       <li><span class="author-203135">3.@ViewChild：在组件类中获取子组件实例</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid47" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-0KzzvbnDcPUqGA7Q">
+      <ol start="2" class="list-code1">
+       <li><span class="author-203135 font-size-3"><font size="3">把子组件作为ViewChild注入到父组件中</font></span></li>
+      </ol>
+     </div>
+     <div id="magicdomid48" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
+      <ol start="3" class="list-code1">
+       <li><br /></li>
+      </ol>
+     </div>
+     <div id="magicdomid49" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-dhJvFBkw631raNzS">
+      <inherit>
+       <ol start="4" class="list-code1">
+        <li><span class="author-203135 autolink">
+          <autolink>
+           @
+          </autolink></span><span class="author-203135">ViewChild(DrugTree) private drugTree: DrugTree;</span></li>
+       </ol>
+      </inherit>
+     </div>
+     <div id="magicdomid50" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-CiwBZTBrM4PrO2WS">
+      <ol start="5" class="list-code1">
+       <li><span class="author-203135 autolink">
+         <autolink>
+          @
+         </autolink></span><span class="author-203135">ViewChild('tree1') private drugTree: DrugTree;</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid51" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
+      <ol start="6" class="list-code1">
+       <li><br /></li>
+      </ol>
+     </div>
+     <div id="magicdomid52" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-a9qZRNw7jGsrg4DF">
+      <inherit>
+       <ol start="7" class="list-code1">
+        <li><span class="author-203135">ViewChild会在ngAfterViewInit回调函数之前做完工作，不能在构造函数中使用这个元素</span></li>
+       </ol>
+      </inherit>
+     </div>
+     <div id="magicdomid53" class="">
+      <br />
+     </div>
+     <div id="magicdomid54" class="">
+      <br />
+     </div>
+     <div id="magicdomid55" data-author-name="ecma" class="list-start-code1 gutter-author-203135 list-div list-code locate lineguid-chwlVVM8BoBGNYv6">
+      <ol start="1" class="list-code1">
+       <li><span class="author-203135">4.服务依赖注入：父子组件之间服务共享（限制服务实例作用域在父子组件之间）</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid56" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-wK0UVhfW0cbbSwBC">
+      <ol start="2" class="list-code1">
+       <li><span class="author-203135">providers:[UserService]</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid57" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
+      <ol start="3" class="list-code1">
+       <li><br /></li>
+      </ol>
+     </div>
+     <div id="magicdomid58" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-XUU2QN9uzJkotpGM">
+      <inherit>
+       <ol start="4" class="list-code1">
+        <li><span class="author-203135 autolink">
+          <autolink>
+           @
+          </autolink></span><span class="author-203135">Injectable()&nbsp;</span></li>
+       </ol>
+      </inherit>
+     </div>
+     <div id="magicdomid59" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-bq9iycLE4gnIIJcd">
+      <ol start="5" class="list-code1">
+       <li><span class="author-203135">export class UserService {</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid60" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-qzdMRoL1EL93UrgX">
+      <ol start="6" class="list-code1">
+       <li><span class="author-203135">&nbsp; constructor(){}</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid61" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-8jBb1YBHZDm6Rxug">
+      <ol start="7" class="list-code1">
+       <li><span class="author-203135">&nbsp; input: EventEmitter&lt;string&gt; = new EventEmitter&lt;string&gt;();</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid62" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-oj5EDCz6FlkpqDOI">
+      <ol start="8" class="list-code1">
+       <li><span class="author-203135">&nbsp; output: EventEmitter&lt;string&gt; = new EventEmitter&lt;string&gt;();</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid63" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-JbY122z0i0fiWXLQ">
+      <ol start="9" class="list-code1">
+       <li><span class="author-203135">}</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid64" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
+      <ol start="10" class="list-code1">
+       <li><br /></li>
+      </ol>
+     </div>
+     <div id="magicdomid65" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-Yb9dVvEOcFdX9blV">
+      <inherit>
+       <ol start="11" class="list-code1">
+        <li><span class="author-203135">export class Child{</span></li>
+       </ol>
+      </inherit>
+     </div>
+     <div id="magicdomid66" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-V8v9lMdZvpQlQ0lV">
+      <ol start="12" class="list-code1">
+       <li><span class="author-203135">&nbsp; constructor(private _service: UserService){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid67" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-G0ixTVxyR61GQLJs lineguid-0HGR5eUXni7VJnVP">
+      <ol start="13" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; this._service.input.subscribe(function(input: string){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid68" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-mB5gxTDM1gZfkVR3 lineguid-6Pqx3D5MXDQVQZSu">
+      <ol start="14" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; console.log(input);</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid69" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-8j6uQi6fkVyduPyY lineguid-F6rTj6NTORaAk2Gj">
+      <ol start="15" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; });</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid70" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-h7tKvcHkWe86x17d lineguid-EOJp1uHtAhOzGbIb">
+      <ol start="16" class="list-code1">
+       <li><span class="author-203135">&nbsp; }</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid71" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-Vr1qiAyFr2ne9uHU">
+      <ol start="17" class="list-code1">
+       <li><span class="author-203135">&nbsp; click(){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid72" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-iftdThwewLo7qOYG lineguid-OGQQ9qKjmzZXr9ve">
+      <ol start="18" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; this._service.output.emit({});</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid73" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-sqsJws4HRrjsA7YX lineguid-eeawDcaFzUFf29dz">
+      <ol start="19" class="list-code1">
+       <li><span class="author-203135">&nbsp; }</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid74" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-7dDtr3mjbAHfsGGD">
+      <ol start="20" class="list-code1">
+       <li><span class="author-203135">}</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid75" data-author-name="ecma" class="gutter-author-203135 list-div list-code">
+      <ol start="21" class="list-code1">
+       <li><br /></li>
+      </ol>
+     </div>
+     <div id="magicdomid76" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-NdJgf6uBzz6HoGo3">
+      <inherit>
+       <ol start="22" class="list-code1">
+        <li><span class="author-203135 autolink">
+          <autolink>
+           @
+          </autolink></span><span class="author-203135">Component({</span></li>
+       </ol>
+      </inherit>
+     </div>
+     <div id="magicdomid77" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-PSeh1GFKmAYthokk">
+      <ol start="23" class="list-code1">
+       <li><span class="author-203135">&nbsp; selector:'',</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid78" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-EUDextpveLWIH4zr">
+      <ol start="24" class="list-code1">
+       <li><span class="author-203135">&nbsp; template:``,</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid79" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-9c81E9pKjYHH7hKf">
+      <ol start="25" class="list-code1">
+       <li><span class="author-203135">&nbsp; providers:[UserService]</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid80" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-5MejxvKYv4KkDSDs">
+      <ol start="26" class="list-code1">
+       <li><span class="author-203135">});</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid81" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-VZgx4ejOdANeejDQ">
+      <inherit>
+       <ol start="27" class="list-code1">
+        <li><span class="author-203135">export class Parent{</span></li>
+       </ol>
+      </inherit>
+     </div>
+     <div id="magicdomid82" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-yyphrhGlXP5n3vu7">
+      <ol start="28" class="list-code1">
+       <li><span class="author-203135">&nbsp; constructor(private _service: UserService){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid83" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-nrAjR2QjP4TYaVuI lineguid-qOvNBoqiQzwtKCji">
+      <ol start="29" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; this._service.output.subscribe(function(input: string){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid84" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-3X0kxeVyMILSLgau lineguid-WMk1yps2C7eS5Hat">
+      <ol start="30" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; console.log(input);</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid85" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-pPb40N7kUYpzncZJ lineguid-JOU0OtaWqVtsoyAI">
+      <ol start="31" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; });</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid86" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-ZWSbQtxNKNLvsBot lineguid-bqbOZ5gARMVHsuvh">
+      <ol start="32" class="list-code1">
+       <li><span class="author-203135">&nbsp; }</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid87" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-ymfWFoN7gfGC7wmr">
+      <ol start="33" class="list-code1">
+       <li><span class="author-203135">&nbsp; click(){</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid88" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-Uy09DOQKJvAZnWgY lineguid-IMMiPMZvQYrDnnJB">
+      <ol start="34" class="list-code1">
+       <li><span class="author-203135">&nbsp;&nbsp;&nbsp; this._service.input.emit({});</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid89" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-CwAg6YCVjQ02QFhR lineguid-iXAIjvuL891p3aE7">
+      <ol start="35" class="list-code1">
+       <li><span class="author-203135">&nbsp; }</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid90" data-author-name="ecma" class="gutter-author-203135 list-div list-code locate lineguid-ewPDpYt1EDjJdQhC">
+      <ol start="36" class="list-code1">
+       <li><span class="author-203135">}</span></li>
+      </ol>
+     </div>
+     <div id="magicdomid91" class="">
+      <br />
+     </div>
+    </div>
+    <div id="mention-pop" class="doc-mention-pop" data-reactid=".2.2.0.0.0.0.0.1.1">
+     <div class="trangle-box" data-reactid=".2.2.0.0.0.0.0.1.1.0">
+      <span class="top doc-metion-trangle-item" data-reactid=".2.2.0.0.0.0.0.1.1.0.0"></span>
+      <span class="down doc-metion-trangle-item" data-reactid=".2.2.0.0.0.0.0.1.1.0.1"></span>
+     </div>
+     <ul class="doc-mention-list" data-reactid=".2.2.0.0.0.0.0.1.1.1">
+      <li class="doc-mention-placeholder doc-mention-item" data-reactid=".2.2.0.0.0.0.0.1.1.1.0">@朋友或者文档</li>
+     </ul>
+     <ul class="result-list doc-mention-list doc-mention-result-list" data-reactid=".2.2.0.0.0.0.0.1.1.2"></ul>
+    </div>
+    <span id="mention-width" data-reactid=".2.2.0.0.0.0.0.1.2"></span>
+    <div id="track-avatars" data-reactid=".2.2.0.0.0.0.0.1.3">
+     <div id="track-avatar-203135" class="track-avatar" style="opacity: 0; left: 0px;"> 
+      <img src="/static/unmd5/default-avatar-moke.png" alt="ecma" title="ecma" /> 
+     </div>
+    </div>
+    <div id="drag-li" tabindex="-1" data-reactid=".2.2.0.0.0.0.0.1.4"></div>
+   </div>
+   <div id="buddle-box" data-reactid=".2.2.0.0.0.0.0.2"></div>
+   <div id="buddle-comment-btn" class="hicon icon-comment-add buddle-comment-btn" data-reactid=".2.2.0.0.0.0.0.3" style="top: 2460.67px; display: block;"></div>
+   <div id="image-resize-frame" data-reactid=".2.2.0.0.0.0.0.4"></div>
+   <div class="image-resize-bar" data-reactid=".2.2.0.0.0.0.0.5"></div>
+   <div class="copy-container" contenteditable="true" data-reactid=".2.2.0.0.0.0.0.6"></div>
+  </div>
+ </div>
+ <div id="overlaysdiv" data-reactid=".2.2.0.0.0.1"></div>
+</div>
+<div class="catalog">
+  <div class="h1">父组件=>子组件</div>
+  <div class="h2">数据流向</div>
+  <div class="h2">子组件监听</div>
+  <div class="h1">子组件=>父组件</div>
+  <div class="h2">数据流向的三种方式</div>
+  <div class="h2">数据监听的一种方式</div>
+</div>

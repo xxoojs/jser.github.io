@@ -7,9 +7,79 @@
 	background: #fff;
 	z-index: 99;
 	overflow: auto;
+	animation: article-in 1s;
 }
 .catalog{
+	width: 250px;
 	position: fixed;
 	top: 100px;
 	left: calc(50% + 408px);
+	animation: catalog-in 1s 1s;
+	box-shadow: 0px 0px 4px #ccc;
+	overflow: hidden;
+	background: #fff;
+	cursor: move;
+	height: 400px;
+	max-height: 500px;
+
+	.h1{
+		padding: 5px 0 5px 10px;
+	}
+
+	.h2{
+		padding: 5px 0 5px  20px;
+	}
+
+	.h3{
+		padding: 5px 0 5px  30px;
+	}
+}
+.article-close{
+	position: fixed;
+    right: 20px;
+    top: 20px;
+    background: #ddd;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    font-size: 26px;
+    z-index: 10;
+}
+.article-close:hover{
+	cursor: pointer;
+	background: #999;
+}
+@keyframes article-in{
+	0%{
+		width: 0;
+		left: 50%;
+	}
+	100%{
+		width: 100%;
+		left: 0;
+	}
+}
+@keyframes article-out{
+	0%{
+		width: 100%;
+		left: 0;
+	}
+	100%{
+		width: 0;
+		left: 50%;
+	}
+}
+.article-out{
+	animation: article-out 1s;
+}
+@keyframes catalog-in{
+	0%{
+		height: 0;
+	}
+	100%{
+		height: 100%;
+	}
 }

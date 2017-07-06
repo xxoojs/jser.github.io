@@ -51,6 +51,20 @@
 
 					$(document).on('mouseup touchend', function(){
 						// $(document).off('mousemove').off('mouseup');
+						var document
+
+						if(parseInt($el.css('left')) < 60){
+							$el.css('left', '0px');
+						}
+						if(parseInt($el.css('top')) < 60){
+							$el.css('top', '0px');
+						}
+						if(parseInt($el.css('right')) < 60){
+							$el.css('right', '0px');
+						}
+						if(parseInt($el.css('bottom')) < 60){
+							$el.css('bottom', '0px');
+						}
 						active = false;
 					});
 				});

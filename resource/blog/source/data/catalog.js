@@ -1,4 +1,8 @@
 catalogJsonp([{
+	id: '1499302122957',
+	title:'ng2组件之间通信',
+	date:'2017-07-07 08:30',
+},{
 	id: '1499074104067',
 	title:'Vue系列之custom-element',
 	date:'2017-07-02 14:56',
